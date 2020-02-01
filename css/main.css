@@ -1163,7 +1163,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7e9467;
+  background: #39ff81;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2638,11 +2638,13 @@ ul.breadcrumb li + li:last-child {
     margin: 8px 0 0;
   }
 }
-body {
-  background: url("https://api.xygeng.cn/bing/1366.php");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
+@media (min-width: 768px) {
+  body {
+    background: url("https://api.xygeng.cn/bing/1366.php");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
 }
 .footer {
   margin-top: 50px;
