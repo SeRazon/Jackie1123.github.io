@@ -946,7 +946,7 @@ pre .javascript .function {
   }
 }
 .headband {
-  background: #cb6553;
+  background: #222;
   height: 3px;
 }
 .site-meta {
@@ -1163,7 +1163,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff8183;
+  background: #81ff0a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2418,7 +2418,7 @@ ul.breadcrumb li + li:last-child {
   position: relative;
 }
 .site-meta {
-  background: #cb6553;
+  background: #222;
   color: #fff;
   padding: 20px 0;
 }
@@ -2752,6 +2752,15 @@ ul.breadcrumb li + li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.site-meta {
+  background: #cb6553;
+}
+.headband {
+  background: #cb6553;
+}
+.menu-item-active a {
+  color: #cb6553;
 }
 .footer {
   margin-top: 10px;
