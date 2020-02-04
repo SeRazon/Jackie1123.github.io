@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>代码</title>
+    <url>/2020/02/04/1/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*页面载入完成后，创建复制按钮*/</span></span><br><span class="line">!<span class="function"><span class="keyword">function</span> (<span class="params">e, t, a</span>) </span>&#123;</span><br><span class="line">  <span class="comment">/* code */</span></span><br><span class="line">  <span class="keyword">var</span> initCopyCode = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> copyHtml = <span class="string">''</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;button class="btn-copy" data-clipboard-snippet=""&gt;'</span>;</span><br><span class="line">    <span class="comment">//fa fa-globe可以去字体库替换自己想要的图标</span></span><br><span class="line">    copyHtml += <span class="string">'  &lt;i class="fa fa-clipboard"&gt;&lt;/i&gt;&lt;span&gt;复制&lt;/span&gt;'</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;/button&gt;'</span>;</span><br><span class="line">    $(<span class="string">".highlight .code pre"</span>).before(copyHtml);</span><br><span class="line">    <span class="keyword">new</span> ClipboardJS(<span class="string">'.btn-copy'</span>, &#123;</span><br><span class="line">      target: <span class="function"><span class="keyword">function</span>(<span class="params">trigger</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> trigger.nextElementSibling;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  initCopyCode();</span><br><span class="line">&#125;(<span class="built_in">window</span>, <span class="built_in">document</span>);</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>单纯就是「一个导航」开发日志</title>
     <url>/2020/01/27/1/</url>
     <content><![CDATA[<blockquote>

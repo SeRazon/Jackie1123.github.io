@@ -129,6 +129,14 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+
+  <!--鼠标点击特效-->
+
+  
+    <script src="/js/cursor/fireworks.js"></script>
+  
+
+
   <div class="container use-motion">
     <div class="headband"></div>
 
@@ -176,7 +184,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-friend">
@@ -266,6 +274,43 @@
               <a href="/tags/HTML/" style="font-size: 12px; color: #ccc">HTML</a> <a href="/tags/JavaScript/" style="font-size: 12px; color: #ccc">JavaScript</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 12px; color: #ccc">前端</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 12px; color: #ccc">开发</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 30px; color: #111">旅行</a> <a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 30px; color: #111">日本</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 12px; color: #ccc">编程</a>
             </div>
           </div>
+
+          <script type="text/javascript">
+     var alltags = document.getElementsByClassName('tag-cloud-tags');
+     var tags = alltags[0].getElementsByTagName('a');
+     for (var i = tags.length - 1; i >= 0; i--) {
+       var r=Math.floor(Math.random()*75+130);
+       var g=Math.floor(Math.random()*75+100);
+       var b=Math.floor(Math.random()*75+80);
+       tags[i].style.background = "rgb("+r+","+g+","+b+")";
+     }
+</script>
+
+<style>
+  .tag-cloud-tags{
+    /*font-family: Helvetica, Tahoma, Arial;*/
+    /*font-weight: 100;*/
+    text-align: center;
+    counter-reset: tags;
+  }
+  .tag-cloud-tags a{
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 8px 5px 0px 0px;
+  }
+  .tag-cloud-tags a:before{
+    content: "🔖";
+  }
+
+  .tag-cloud-tags a:hover{
+     box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);
+     transform: scale(1.1);
+     /*box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);*/
+     transition-duration: 0.15s;
+  }
+</style>
+
         
       </div>
       
@@ -344,7 +389,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -386,6 +431,34 @@
 
 
       </div>
+
+      <div style="color:lightgray" id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("02/01/2020 00:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
       
     </div>
   </aside>
@@ -470,10 +543,8 @@
 
 
 
-  <!-- 点击烟花特效 -->
   
-
-  
-
+  <script type="text/javascript" src="/js/src/instantclick.js" data-no-instant></script>
+  <script data-no-instant>InstantClick.init();</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

@@ -1163,7 +1163,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #21ffc8;
+  background: #fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2753,6 +2753,9 @@ ul.breadcrumb li + li:last-child {
     margin: 8px 0 0;
   }
 }
+body {
+  font-size: 16px;
+}
 .site-meta {
   background: #cb6553;
 }
@@ -2778,4 +2781,50 @@ ul.breadcrumb li + li:last-child {
 }
 .posts-expand .post-title-link::before {
   background-color: #cb6553;
+}
+/*文章底部标签样式*/
+.posts-expand .post-tags a {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: 0.2s ease-out;
+  padding: 3px 5px;
+  margin: 5px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .posts-expand .post-tags a {
+    padding: 1px 3px;
+    font-size: 8px;
+  }
+}
+.posts-expand .post-tags a:hover {
+  background: rgba(100,154,182,0.902);
+  color: #fff;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*文章首字下沉*/
+.post-body>p:first-child::first-letter {
+  float: left;
+/* height: 32px;*/
+  margin-top: 14px;
+  margin-right: 6px;
+  color: #555;
+  font-size: 42px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .post-body>p:first-child::first-letter {
+    margin-top: 10px;
+    margin-right: 4px;
+    font-size: 26px;
+    line-height: 20px;
+  }
 }
