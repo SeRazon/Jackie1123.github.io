@@ -38,12 +38,12 @@
     version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
-    lazyload: false,
+    lazyload: true,
     pangu: false,
     comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
     algolia: {
@@ -181,7 +181,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">4</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-friend">
@@ -241,73 +241,6 @@
             
 
   <div class="posts-expand">
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jackie1123.github.io/2020/02/04/1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="小K同學">
-      <meta itemprop="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小K同學的秘密基地">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/04/1/" class="post-title-link" itemprop="url">代码</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-04 14:16:07 / 修改时间：14:16:15" itemprop="dateCreated datePublished" datetime="2020-02-04T14:16:07+08:00">2020-02-04</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>522</span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*页面载入完成后，创建复制按钮*/</span></span><br><span class="line">!<span class="function"><span class="keyword">function</span> (<span class="params">e, t, a</span>) </span>&#123;</span><br><span class="line">  <span class="comment">/* code */</span></span><br><span class="line">  <span class="keyword">var</span> initCopyCode = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> copyHtml = <span class="string">''</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;button class="btn-copy" data-clipboard-snippet=""&gt;'</span>;</span><br><span class="line">    <span class="comment">//fa fa-globe可以去字体库替换自己想要的图标</span></span><br><span class="line">    copyHtml += <span class="string">'  &lt;i class="fa fa-clipboard"&gt;&lt;/i&gt;&lt;span&gt;复制&lt;/span&gt;'</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;/button&gt;'</span>;</span><br><span class="line">    $(<span class="string">".highlight .code pre"</span>).before(copyHtml);</span><br><span class="line">    <span class="keyword">new</span> ClipboardJS(<span class="string">'.btn-copy'</span>, &#123;</span><br><span class="line">      target: <span class="function"><span class="keyword">function</span>(<span class="params">trigger</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> trigger.nextElementSibling;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  initCopyCode();</span><br><span class="line">&#125;(<span class="built_in">window</span>, <span class="built_in">document</span>);</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
   
   
@@ -489,7 +422,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><a href="https://imgchr.com/i/1U3jTe" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/02/03/1U3jTe.md.jpg" alt="1U3jTe.md.jpg"></a></p>
+          <p><a href="https://imgchr.com/i/1U3jTe" target="_blank" rel="noopener"><img data-src="https://s2.ax1x.com/2020/02/03/1U3jTe.md.jpg" alt="1U3jTe.md.jpg"></a></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/05/04/1/#more" rel="contents">
@@ -587,7 +520,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://s2.ax1x.com/2020/02/02/1twuhF.md.jpg" alt="1twuhF.md.jpg"></p>
+          <p><img data-src="https://s2.ax1x.com/2020/02/02/1twuhF.md.jpg" alt="1twuhF.md.jpg"></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/05/03/1/#more" rel="contents">
@@ -680,7 +613,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -791,6 +724,7 @@ show_date_time();
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -808,6 +742,15 @@ show_date_time();
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
@@ -835,7 +778,5 @@ show_date_time();
 
 
   
-  <script type="text/javascript" src="/js/src/instantclick.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init();</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>
