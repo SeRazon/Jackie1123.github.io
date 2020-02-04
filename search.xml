@@ -2,35 +2,47 @@
 <search>
   <entry>
     <title>单纯就是「一个导航」开发日志</title>
-    <url>/2020/02/03/1/</url>
+    <url>/2020/01/27/1/</url>
     <content><![CDATA[<blockquote>
 <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4></blockquote>
 <p>首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。</p>
 <a id="more"></a>
 
 <p>加上2020年春节的疫情待在家真的是前所未有的无聊，所以决定做一个导航页出来。</p>
-<p><strong>注：本导航为纯手敲系列，bootstrap框架只用于布局。</strong></p>
+<p><strong>注：本导航为纯手敲系列，bootstrap框架只用于布局。<br><em>如果发现你的导航不是最新，进入浏览器清除缓存刷新即可。</em></strong></p>
 <hr>
 <blockquote>
-<h4 id="V-3-0-0-更新（当前最新）"><a href="#V-3-0-0-更新（当前最新）" class="headerlink" title="V 3.0.0 更新（当前最新）"></a>V 3.0.0 更新（当前最新）</h4></blockquote>
+<h4 id="V-3-0-1-更新（当前最新）"><a href="#V-3-0-1-更新（当前最新）" class="headerlink" title="V 3.0.1 更新（当前最新）"></a>V 3.0.1 更新（当前最新）</h4></blockquote>
+<h5 id="更新时间："><a href="#更新时间：" class="headerlink" title="更新时间："></a>更新时间：</h5><p>2020年02月04日</p>
 <h5 id="更新内容："><a href="#更新内容：" class="headerlink" title="更新内容："></a>更新内容：</h5><ol>
+<li>增加了「疫情跟踪」和「疫情辟谣」入口</li>
+</ol>
+<p><strong><u>现在的疫情比较严重，希望各位能保重身体，勤洗手清洁，出门一定要戴口罩！！！</u></strong></p>
+<h5 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/04/1BDDFH.md.jpg">
+
+<hr>
+<blockquote>
+<h4 id="V-3-0-0-更新"><a href="#V-3-0-0-更新" class="headerlink" title="V 3.0.0 更新"></a>V 3.0.0 更新</h4></blockquote>
+<h5 id="更新时间：-1"><a href="#更新时间：-1" class="headerlink" title="更新时间："></a>更新时间：</h5><p>2020年02月01日</p>
+<h5 id="更新内容：-1"><a href="#更新内容：-1" class="headerlink" title="更新内容："></a>更新内容：</h5><ol>
 <li>增加了几个比较常用的快捷入口</li>
 <li>新增搜索时的提示词</li>
 <li>新增右下角当地天气显示(天气的字为什么这样不是我的锅，插件的问题，找到好的插件再换)</li>
 </ol>
-<h5 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
+<h5 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
 <img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVIkq.md.jpg">
 <img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVot0.md.jpg">
 
 <hr>
 <blockquote>
 <h4 id="V-2-0-0-更新"><a href="#V-2-0-0-更新" class="headerlink" title="V 2.0.0 更新"></a>V 2.0.0 更新</h4></blockquote>
-<h5 id="更新内容：-1"><a href="#更新内容：-1" class="headerlink" title="更新内容："></a>更新内容：</h5><ol>
+<h5 id="更新时间：-2"><a href="#更新时间：-2" class="headerlink" title="更新时间："></a>更新时间：</h5><p>2020年01月30日</p>
+<h5 id="更新内容：-2"><a href="#更新内容：-2" class="headerlink" title="更新内容："></a>更新内容：</h5><ol>
 <li>增加了几个比较常用的搜索引擎</li>
 <li>新增侧边栏，有比较多的快捷入口(后续还会添加)</li>
 <li>新增一个不太好用的夜间模式</li>
 </ol>
-<h5 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
+<h5 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
 <img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVtSO.md.jpg">
 <img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVU6e.md.jpg">
 <img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dV8Fx.md.jpg">
@@ -38,12 +50,13 @@
 <hr>
 <blockquote>
 <h4 id="V-1-0-0-发布"><a href="#V-1-0-0-发布" class="headerlink" title="V 1.0.0 发布"></a>V 1.0.0 发布</h4></blockquote>
+<h5 id="更新时间：-3"><a href="#更新时间：-3" class="headerlink" title="更新时间："></a>更新时间：</h5><p>2020年01月27日</p>
 <h5 id="内容："><a href="#内容：" class="headerlink" title="内容："></a>内容：</h5><ol>
 <li>导航页分为[便签]和[导航]两个分区，点击可来回切换</li>
 <li>导航默认是bing搜索</li>
 <li>完[受虐滑稽]</li>
 </ol>
-<h5 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dFP58.md.jpg">
+<h5 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dFP58.md.jpg">
 <img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dFCUf.md.jpg">
 
 <hr>
