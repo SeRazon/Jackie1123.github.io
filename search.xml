@@ -3,7 +3,7 @@
   <entry>
     <title>单纯就是「一个导航」开发日志</title>
     <url>/2020/01/27/1/</url>
-    <content><![CDATA[<p>首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。</p>
+    <content><![CDATA[<p>首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
 <a id="more"></a>
 
 <p>加上2020年春节的疫情待在家真的是前所未有的无聊，所以就做了个导航页出来。</p>

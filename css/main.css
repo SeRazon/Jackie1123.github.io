@@ -1209,7 +1209,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2a8644;
+  background: #0bbaff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1449,7 +1449,7 @@ pre .javascript .function {
   }
 }
 .with-love {
-  color: #808080;
+  color: #ff0000;
   display: inline-block;
   margin: 0 5px;
   animation: iconAnimate 1.33s ease-in-out infinite;
@@ -2799,11 +2799,19 @@ ul.breadcrumb li + li:last-child {
 body {
   font-size: 16px;
 }
+.header-inner,
+.sidebar-inner,
+article,
+.post-block,
+.post-block + .post-block,
+.back-to-top {
+  border-radius: 0.5rem;
+}
 .site-meta {
   background: #cb6553;
 }
 .headband {
-  background: #cb6553;
+  background: none;
 }
 .menu-item-active a {
   color: #cb6553;
