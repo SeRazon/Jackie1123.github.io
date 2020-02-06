@@ -3,11 +3,11 @@
   <title>小K同學的秘密基地</title>
   
   <subtitle>一只程序猿</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="https://jackie1123.github.io/"/>
-  <updated>2020-02-06T04:13:18.914Z</updated>
-  <id>https://jackie1123.github.io/</id>
+  <link href="https://yuenhangho.gitee.io/blog/"/>
+  <updated>2020-02-06T14:21:14.877Z</updated>
+  <id>https://yuenhangho.gitee.io/blog/</id>
   
   <author>
     <name>小K同學</name>
@@ -17,9 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>日本语一类形容词与二类形容词的区别</title>
+    <link href="https://yuenhangho.gitee.io/blog/posts/3557/"/>
+    <id>https://yuenhangho.gitee.io/blog/posts/3557/</id>
+    <published>2020-02-06T13:49:44.000Z</published>
+    <updated>2020-02-06T14:21:14.877Z</updated>
+    
+    <content type="html"><![CDATA[<p>众所周知，江湖上日语的形容词分为两大门派——「一类形容词」和「二类形容词」</p><p>有的教科书上一类形容词和二类形容词也分别称为「い形容词」和「な形容词」</p><p>在日本则称为「形容詞」和「形容動詞」</p><p>二者有何不同呢？</p><ul><li>一类形容词的具体特征是像「高い」「多い」「難しい」这样词尾是「い」或「しい」的。</li></ul><p><strong>当然也有特例：</strong>「綺麗」（きれい）就不是一类形容词，不过熟悉的人很容易分辨出来，「い」其实是「麗」字训读的一部分，不可分割的，这样记就好记多了。</p><ul><li>二类形容词的具体特征是像「静か」「大切」「綺麗」这样有点像名词的词，但是他们后面接名词时都是用「な」的，所以背单词的时候可以把「な」一起背进去，以后一看就知道是二类形容词了。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;众所周知，江湖上日语的形容词分为两大门派——「一类形容词」和「二类形容词」&lt;/p&gt;
+&lt;p&gt;有的教科书上一类形容词和二类形容词也分别称为「い形容词」和「な形容词」&lt;/p&gt;
+&lt;p&gt;在日本则称为「形容詞」和「形容動詞」&lt;/p&gt;
+&lt;p&gt;二者有何不同呢？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>日本语——「に」的用法总结</title>
-    <link href="https://jackie1123.github.io/2020/02/%E6%97%A5%E6%9C%AC%E8%AF%AD%E2%80%94%E2%80%94%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/"/>
-    <id>https://jackie1123.github.io/2020/02/%E6%97%A5%E6%9C%AC%E8%AF%AD%E2%80%94%E2%80%94%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/</id>
+    <link href="https://yuenhangho.gitee.io/blog/posts/9149/"/>
+    <id>https://yuenhangho.gitee.io/blog/posts/9149/</id>
     <published>2020-02-05T06:56:43.000Z</published>
     <updated>2020-02-06T04:13:18.914Z</updated>
     
@@ -32,23 +59,23 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="「に」的用法总结" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+      <category term="「に」的用法总结" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://yuenhangho.gitee.io/blog/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="「に」的用法" scheme="https://jackie1123.github.io/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+      <category term="「に」的用法" scheme="https://yuenhangho.gitee.io/blog/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>日本语学习笔记——标日初第15课</title>
-    <link href="https://jackie1123.github.io/2020/02/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A0%87%E6%97%A5%E5%88%9D%E7%AC%AC15%E8%AF%BE/"/>
-    <id>https://jackie1123.github.io/2020/02/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A0%87%E6%97%A5%E5%88%9D%E7%AC%AC15%E8%AF%BE/</id>
+    <link href="https://yuenhangho.gitee.io/blog/posts/41085/"/>
+    <id>https://yuenhangho.gitee.io/blog/posts/41085/</id>
     <published>2020-02-05T05:44:05.000Z</published>
     <updated>2020-02-05T09:09:58.808Z</updated>
     
@@ -63,25 +90,25 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="标准日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E6%A0%87%E5%87%86%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="标准日本语" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E6%A0%87%E5%87%86%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="第15课" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E6%A0%87%E5%87%86%E6%97%A5%E6%9C%AC%E8%AF%AD/%E7%AC%AC15%E8%AF%BE/"/>
+      <category term="第15课" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E6%A0%87%E5%87%86%E6%97%A5%E6%9C%AC%E8%AF%AD/%E7%AC%AC15%E8%AF%BE/"/>
     
     
-      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://yuenhangho.gitee.io/blog/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://yuenhangho.gitee.io/blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>单纯就是「一个导航」开发日志</title>
-    <link href="https://jackie1123.github.io/2020/01/%E5%8D%95%E7%BA%AF%E5%B0%B1%E6%98%AF%E3%80%8C%E4%B8%80%E4%B8%AA%E5%AF%BC%E8%88%AA%E3%80%8D%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/"/>
-    <id>https://jackie1123.github.io/2020/01/%E5%8D%95%E7%BA%AF%E5%B0%B1%E6%98%AF%E3%80%8C%E4%B8%80%E4%B8%AA%E5%AF%BC%E8%88%AA%E3%80%8D%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</id>
+    <link href="https://yuenhangho.gitee.io/blog/posts/12023/"/>
+    <id>https://yuenhangho.gitee.io/blog/posts/12023/</id>
     <published>2020-01-27T09:00:02.000Z</published>
     <updated>2020-02-05T09:10:19.789Z</updated>
     
@@ -94,29 +121,29 @@
     </summary>
     
     
-      <category term="开发" scheme="https://jackie1123.github.io/categories/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%BC%80%E5%8F%91/"/>
     
-      <category term="开发心得" scheme="https://jackie1123.github.io/categories/%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+      <category term="开发心得" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
     
-      <category term="前端" scheme="https://jackie1123.github.io/categories/%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://yuenhangho.gitee.io/blog/categories/%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="HTML" scheme="https://jackie1123.github.io/tags/HTML/"/>
+      <category term="HTML" scheme="https://yuenhangho.gitee.io/blog/tags/HTML/"/>
     
-      <category term="编程" scheme="https://jackie1123.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+      <category term="编程" scheme="https://yuenhangho.gitee.io/blog/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="JavaScript" scheme="https://jackie1123.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://yuenhangho.gitee.io/blog/tags/JavaScript/"/>
     
-      <category term="开发" scheme="https://jackie1123.github.io/tags/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://yuenhangho.gitee.io/blog/tags/%E5%BC%80%E5%8F%91/"/>
     
-      <category term="前端" scheme="https://jackie1123.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://yuenhangho.gitee.io/blog/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>一人の体験2.0（二）——大学生穷游日本2019</title>
-    <link href="https://jackie1123.github.io/2019/05/%E4%B8%80%E4%BA%BA%E3%81%AE%E4%BD%93%E9%A8%932.0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A9%B7%E6%B8%B8%E6%97%A5%E6%9C%AC2019/"/>
-    <id>https://jackie1123.github.io/2019/05/%E4%B8%80%E4%BA%BA%E3%81%AE%E4%BD%93%E9%A8%932.0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A9%B7%E6%B8%B8%E6%97%A5%E6%9C%AC2019/</id>
+    <link href="https://yuenhangho.gitee.io/blog/posts/11601/"/>
+    <id>https://yuenhangho.gitee.io/blog/posts/11601/</id>
     <published>2019-05-04T02:30:42.000Z</published>
     <updated>2020-02-05T09:10:29.488Z</updated>
     
@@ -129,21 +156,21 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://yuenhangho.gitee.io/blog/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://yuenhangho.gitee.io/blog/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://yuenhangho.gitee.io/blog/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://yuenhangho.gitee.io/blog/tags/%E6%97%A5%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>一人の体験2.0（一）——大学生穷游日本2019</title>
-    <link href="https://jackie1123.github.io/2019/05/%E4%B8%80%E4%BA%BA%E3%81%AE%E4%BD%93%E9%A8%932.0%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A9%B7%E6%B8%B8%E6%97%A5%E6%9C%AC2019/"/>
-    <id>https://jackie1123.github.io/2019/05/%E4%B8%80%E4%BA%BA%E3%81%AE%E4%BD%93%E9%A8%932.0%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A9%B7%E6%B8%B8%E6%97%A5%E6%9C%AC2019/</id>
+    <link href="https://yuenhangho.gitee.io/blog/posts/55052/"/>
+    <id>https://yuenhangho.gitee.io/blog/posts/55052/</id>
     <published>2019-05-03T13:27:39.000Z</published>
     <updated>2020-02-05T09:10:40.318Z</updated>
     
@@ -156,14 +183,14 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://yuenhangho.gitee.io/blog/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://yuenhangho.gitee.io/blog/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://yuenhangho.gitee.io/blog/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://yuenhangho.gitee.io/blog/tags/%E6%97%A5%E6%9C%AC/"/>
     
   </entry>
   
