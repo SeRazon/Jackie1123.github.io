@@ -10,7 +10,8 @@ jQuery(document).ready(function($) {
       "top": y - 28,
       "left": x - a[a_idx].length * 8,
       "position": "absolute",
-      "color": "#ff7a45"
+      "font-weight": "bold",
+      "color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
     });
     $("body").append($i);
     $i.animate({

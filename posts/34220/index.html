@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>从零开始入坑hexo博客 | 小K同學的博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="hexo,hueman主题,前端" />
+    
+    <meta name="description" content="很多人都喜欢自己写写东西，但是在现在信息化的时代，笔纸间的记录已不是那么流行了。所以在上一年心血来潮之时，利用了hexo搭建了自己的博客。用起来还不赖！ 下面是我hexo的入坑过程。 1. 安装Git Bash作为一个经常敲代码的人，电脑很早就已经配置好各种环境了。 在这里我就简单讲下，详细的戳——&gt;Git分布式版本管理系统入门（一）  Git Bash下载地址：Git Bash  下载你">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从零开始入坑hexo博客">
+<meta property="og:url" content="https://jackie1123.github.io/posts/34220/index.html">
+<meta property="og:site_name" content="小K同學的博客">
+<meta property="og:description" content="很多人都喜欢自己写写东西，但是在现在信息化的时代，笔纸间的记录已不是那么流行了。所以在上一年心血来潮之时，利用了hexo搭建了自己的博客。用起来还不赖！ 下面是我hexo的入坑过程。 1. 安装Git Bash作为一个经常敲代码的人，电脑很早就已经配置好各种环境了。 在这里我就简单讲下，详细的戳——&gt;Git分布式版本管理系统入门（一）  Git Bash下载地址：Git Bash  下载你">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/13/1O4Iun.png">
+<meta property="article:published_time" content="2020-02-11T14:32:52.000Z">
+<meta property="article:modified_time" content="2020-02-14T06:16:37.166Z">
+<meta property="article:author" content="小K同學">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="hueman主题">
+<meta property="article:tag" content="前端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/13/1O4Iun.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="小K同學的博客" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/logo.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0c33a04808b4676dbd08eefc992e766a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+
+
+    
+    
+        
+         <script type="text/javascript" src="js/cursor/text.js"></script>
+        
+        
+        
+        
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">一只程序猿</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"><text style="float: left;">頑張ってください！！！</text></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://kktop.lofter.com" target="_blank" rel="noopener">相册</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/movies/index.html">电影</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/links/index.html">友链</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜寻" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Git，hexo，日本语，开发，旅行..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-从零开始入坑hexo博客" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        从零开始入坑hexo博客
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/posts/34220/" class="article-date">
+         <time datetime="2020-02-11T14:32:52.000Z" itemprop="datePublished">2020-02-11</time><i style="margin-left:10px" class="fa fa-user"></i> 小K同學
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/hexo/" rel="tag">hexo</a>, <a class="tag-link" href="/tags/hueman%E4%B8%BB%E9%A2%98/" rel="tag">hueman主题</a>, <a class="tag-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a>
+    </div>
+
+                
+   <span id="/posts/34220/" class="leancloud-visitors" data-flag-title="从零开始入坑hexo博客">
+   <i class="fa fa-eye"></i>
+   <span class="post-meta-item-text">阅读次数: </span>
+   <i class="leancloud-visitors-count">1000000</i>
+   </span>
+
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="https://s2.ax1x.com/2020/02/13/1O4Iun.png" alt=""></p>
+<p>很多人都喜欢自己写写东西，但是在现在信息化的时代，笔纸间的记录已不是那么流行了。所以在上一年心血来潮之时，利用了hexo搭建了自己的博客。用起来还不赖！</p>
+<p>下面是我hexo的入坑过程。</p>
+<h4 id="1-安装Git-Bash"><a href="#1-安装Git-Bash" class="headerlink" title="1. 安装Git Bash"></a><strong>1. 安装Git Bash</strong></h4><p>作为一个经常敲代码的人，电脑很早就已经配置好各种环境了。</p>
+<p>在这里我就简单讲下，详细的戳——&gt;<a href="https://yuenhangho.gitee.io/blog/posts/63722/" target="_blank" rel="noopener" title="Git分布式版本管理系统入门（一）">Git分布式版本管理系统入门（一）</a></p>
+<ul>
+<li><p>Git Bash下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener" title="Git Bash">Git Bash</a></p>
+</li>
+<li><p>下载你系统对应的版本之后，安装的时候一路next就行，当然你可以在中间修改下你的安装路径。</p>
+</li>
+<li><p>打开Git Bash，输入命令<code>git version</code>看看<br><img src="https://s2.ax1x.com/2020/02/13/1qIDe0.png" alt=""><br>显示版本号就说明，恭喜你，安装成功了！</p>
+</li>
+</ul>
+<h4 id="2-安装NodeJs"><a href="#2-安装NodeJs" class="headerlink" title="2. 安装NodeJs"></a><strong>2. 安装NodeJs</strong></h4><p>因为hexo是基于NodeJs的静态博客系统，所以这个依赖文件是肯定要装的，而且以后在博客里安装插件也是需要这个。</p>
+<ul>
+<li><p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener" title="NodeJs">NodeJs</a></p>
+</li>
+<li><p>官网你会看到两个版本。一个是LTS，另一个是Current，其实两个版本都可以，只搭建个博客的话我们只需要下载LTS版本就可以了。</p>
+</li>
+<li><p>下载后你会发现是一个msi文件，没关系，按照平常安装一样双击安装就行。如果中途有看见<code>add to path</code>选项的话记得勾选（作用是不用自己配置环境变量）。不过好像新版的没有这选项，默认已经勾选了。</p>
+</li>
+<li><p>安装好像刚刚一样打开Git Bash或cmd输入命令<code>node -v</code>，查看当前NodeJs版本号。<br><img src="https://s2.ax1x.com/2020/02/13/1q7SJS.png" alt=""><br>安装成功！</p>
+</li>
+</ul>
+<h4 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a><strong>3. 安装hexo</strong></h4><p>真正的主角来了，hexo博客框架，在这里就不需要打开官网安装了，用npm工具安装即可。</p>
+<ul>
+<li><p>首先在你的磁盘里创建一个你项目（博客）的文件夹</p>
+</li>
+<li><p>在项目文件夹中<strong>右键打开</strong>Git Bash或<code>cd</code>进项目文件夹均可。</p>
+</li>
+<li><p>安装hexo，输入命令：<code>npm i -g hexo</code>，过程可能比较久。</p>
+</li>
+<li><p>安装完成后，输入命令查看hexo版本：<br><img src="https://s2.ax1x.com/2020/02/13/1qHA6H.png" alt=""><br>安装成功！</p>
+</li>
+<li><p>别急，还没完，还有初始化，输入命令<code>hexo init</code>（过程也可能比较久），初始化完后你就可以在文件夹下看到如下目录。这就是初始文件了。<br><img src="https://s2.ax1x.com/2020/02/13/1OYdSJ.png" alt=""></p>
+</li>
+<li><p>解释一下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">node_modules：博客的依赖包，你安装的插件都在里面</span><br><span class="line">scaffolds：生成文章的模板</span><br><span class="line">source：存着各个页面和你发表的文章</span><br><span class="line">themes：博客主题</span><br><span class="line">config.yml：站点配置文件</span><br><span class="line">package.json：站点模块的配置信息</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>接下来你就可以开始配置你的博客了！</p>
+<h4 id="4-部署到Github-Gitee"><a href="#4-部署到Github-Gitee" class="headerlink" title="4. 部署到Github/Gitee"></a><strong>4. 部署到Github/Gitee</strong></h4><p>部署到Github你的博客加载速度可能慢点，毕竟人家服务器在国外。推荐使用Gitee，不过缺点是每次更新部署都要手动（什么意思继续看就知道了）。</p>
+<p>以Github为例部署</p>
+<ul>
+<li><p>没Github账户的先创建一个，然后新建一个仓库（repo），仓库名字写<code>yourname.github.io</code>（yourname就是你GitHub的名字），一定要按照这个格式写！！！否则不能自动部署！！！<br>像我这个一样<br><img src="https://s2.ax1x.com/2020/02/13/1qzEjK.png" alt=""></p>
+</li>
+<li><p>然后打开Git Bash，配置账户信息。分别输入以下两条命令<br><code>git config --global user.name &quot;yourname&quot;</code><br><code>git config --global user.email &quot;youremail&quot;</code><br>yourname和youremail都替换成你自己的</p>
+</li>
+<li><p>添加ssh<br>1）在Git Bash中输入命令：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>生成ssh。<br>2）然后在输入<code>cd ~/.ssh</code>（移动到公私钥文件夹）<br>3）输入<code>cat id_rsa.pub</code>，如下图(查看公钥内容)<br><img src="https://s2.ax1x.com/2020/02/13/1OtNHP.jpg" alt=""></p>
+</li>
+<li><p>将上面一大串的ssh复制到GitHub中<br>1）GitHub右上角找到setting（设置）<br><img src="https://s2.ax1x.com/2020/02/13/1ONMbq.png" alt=""><br>2）进入设置后在左边选栏找到SSH and GPG keys<br><img src="https://s2.ax1x.com/2020/02/13/1ONKrn.png" alt=""><br>3）创建一个新的SSH<br>4）复制进去，title随便取或者不填，就像这样，成功！<br><img src="https://s2.ax1x.com/2020/02/13/1ONuKs.jpg" alt=""></p>
+</li>
+<li><p>用你的编辑器打开项目目录，打开根目录的<code>_config.yml</code>进行修改(冒号之后都是有一个半角空格的)：<br>找到deploy，按照下方格式修改</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">      <span class="attr">repo:</span> <span class="string">https://github.com/YourgithubName/YourgithubName.github.io.git</span></span><br><span class="line">      <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>同样是在<code>_config.yml</code>中，找到URL，按照如下格式配置（否则部署后可能出现没有样式）</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment"># If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://yourGithubName.github.io/</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>又要安装，在Git Bash中，输入<code>npm install hexo-deployer-git --save</code></p>
+</li>
+<li><p>然后分别执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>当然，你也可以用缩写形式（注意hexo clean不能缩写）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<p>注意：deploy的过程中要输入你GitHub的Username及Passward。<br>登录你的网址查看下吧！</p>
+</li>
+</ul>
+<h4 id="5-本地服务器预览"><a href="#5-本地服务器预览" class="headerlink" title="5. 本地服务器预览"></a><strong>5. 本地服务器预览</strong></h4><p>如果你想在本地先预览下发布后的效果，可以安装本地服务器。</p>
+<ul>
+<li><p>在Git Bash中执行命令安装本地服务器（hexo 3.0把服务器独立成个别模块，需要单独安装）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>还是Git Bash中，分别执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>你也可以用缩写形式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开浏览器，地址栏输入<code>localhost:4000</code>（默认端口是4000），就可以在本地预览了<br>更改本地服务器端口，在站点<code>_config.yml</code>文件中修改port（没有的话就自己加上去）</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">4000</span></span><br><span class="line">  <span class="attr">compress:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">header:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="6-修改及配置主题"><a href="#6-修改及配置主题" class="headerlink" title="6. 修改及配置主题"></a><strong>6. 修改及配置主题</strong></h4><p>hexo的初始主题是<code>landscape</code>，你喜欢的话用这个也行，不喜欢的话可以到GitHub上或者hexo官网找，clone下来丢进<code>themes/</code>目录下即可。</p>
+<p>hexo官网主题：<a href="https://hexo.io/themes/" target="_blank" rel="noopener" title="主题">主题</a></p>
+<p>在GitHub上搜索的都会有安装教程，按照他的步骤安装就好了。一开始我是用的<code>Next</code>主题（hexo最火），但是用着用着发现这主题虽然是简洁，自定义性高，插件集成或支持的多，但是还是不符合我的口味。所以便换成了现在你们看到的<code>hueman</code>。<br>用过<code>Next</code>之后你们会发现，其他的主题简直就是白纸一张啊！！教程也少，安装什么插件的都要自己改。</p>
+<p>进入主题目录，你会发现这里边也有一个<code>_config.yml</code>配置文件，所以很多教程都会用<strong>站点<code>_config.yml</code></strong>和<strong>主题<code>_config.yml</code></strong>字样来区分二者。<br><img src="https://s2.ax1x.com/2020/02/13/1OyoBF.png" alt=""></p>
+<p>下面以我现在用的<code>hueman</code>主题来简单讲下。</p>
+<ul>
+<li><p><code>menu</code>就是网页中横向的菜单，如图：<br><img src="https://s2.ax1x.com/2020/02/13/1Ogilt.png" alt=""></p>
+</li>
+<li><p><code>logo</code>就是你的网站logo，替换下路径下的图片文件即可，不多说</p>
+</li>
+<li><p><code>theme_color</code>是<strong>关注我</strong>那一栏的颜色，也是全局鼠标悬停(hover)在文字上的颜色<br><img src="https://s2.ax1x.com/2020/02/13/1OgdpR.png" alt=""></p>
+</li>
+<li><p><code>highlight</code>是代码块的主题，<code>hueman</code>啥都不多，就代码块的主题多，我的天，有60多种…</p>
+</li>
+<li><p><code>sidebar</code>可选项有<strong>left</strong>和<strong>right</strong>，用于控制侧边栏的位置</p>
+</li>
+<li><p><code>thumbnail</code>可选项有<strong>true</strong>和<strong>false</strong>，用于控制首页投稿有无头图<br><img src="https://s2.ax1x.com/2020/02/13/1ORoFg.png" alt=""></p>
+</li>
+<li><p><code>favicon</code>是浏览器选项卡中的icon，把ico文件放在<code>css/images/</code>目录下，填下配置文件中的路径即可</p>
+</li>
+<li><p><code>social_links</code>关注我那里的社交信息，填写格式：<code>Font awesome: url</code>，冒号左边是<strong>Font awesome</strong>的图标名字，右边是网址</p>
+</li>
+<li><p><code>widgets</code>就是侧边栏控件</p>
+</li>
+<li><p><code>search</code>这个就不多说了，看下官方文档。推荐使用<strong>insight</strong>，其他两个<strong>不推荐</strong></p>
+</li>
+</ul>
+<p>附上我的个人配置表（search下面的部分因为有个人信息我就没贴出来，自己倒腾倒腾就出来了）</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Menus</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">    <span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line">    <span class="attr">photo:</span> <span class="string">https://kktop.lofter.com</span></span><br><span class="line">    <span class="comment"># Delete this row if you don't want categories in your header nav bar</span></span><br><span class="line">    <span class="comment"># Categories: </span></span><br><span class="line">    <span class="attr">movie:</span> <span class="string">/movies/index.html</span></span><br><span class="line">    <span class="attr">links:</span> <span class="string">/links/index.html</span></span><br><span class="line">    <span class="attr">About:</span> <span class="string">/about/index.html</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Customize</span></span><br><span class="line"><span class="attr">customize:</span></span><br><span class="line">    <span class="attr">logo:</span></span><br><span class="line">        <span class="attr">width:</span> <span class="number">165</span></span><br><span class="line">        <span class="attr">height:</span> <span class="number">60</span></span><br><span class="line">        <span class="attr">url:</span> <span class="string">images/logo-header.png</span></span><br><span class="line">    <span class="attr">theme_color:</span> <span class="string">'#2C5364'</span></span><br><span class="line">    <span class="attr">highlight:</span> <span class="string">androidstudio</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="string">left</span> <span class="comment"># sidebar position, options: left, right</span></span><br><span class="line">    <span class="attr">thumbnail:</span> <span class="literal">true</span> <span class="comment"># enable posts thumbnail, options: true, false</span></span><br><span class="line">    <span class="attr">favicon:</span> <span class="string">css/images/logo.ico</span> <span class="comment"># path to favicon</span></span><br><span class="line">    <span class="attr">social_links:</span> <span class="comment"># for more icons, please see http://fontawesome.io/icons/#brand</span></span><br><span class="line">        <span class="attr">lastfm-square:</span> <span class="string">http://www.coolapk.com/u/691518</span></span><br><span class="line">        <span class="comment"># twitter: https://twitter.com/hexuankeng</span></span><br><span class="line">        <span class="attr">facebook:</span> <span class="string">https://www.facebook.com/yuenhang.ho</span></span><br><span class="line">        <span class="comment"># stack-overflow: /</span></span><br><span class="line">        <span class="attr">github:</span> <span class="string">https://github.com/Jackie1123</span></span><br><span class="line">        <span class="comment"># weibo: /</span></span><br><span class="line">        <span class="attr">instagram:</span> <span class="string">https://instagram.com/mr._jacky</span></span><br><span class="line">        <span class="attr">envelope:</span> <span class="string">mailto:1257868332@qq.com</span></span><br><span class="line">        <span class="attr">rss:</span> <span class="string">/atom.xml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Widgets</span></span><br><span class="line"><span class="attr">widgets:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">catalog</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">recent_posts</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tagcloud</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">category</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tag</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line">    <span class="comment"># - links</span></span><br><span class="line">    <span class="comment">#- google_adsense</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Search</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">    <span class="attr">insight:</span> <span class="literal">true</span> <span class="comment"># you need to install `hexo-generator-json-content` before using Insight Search</span></span><br><span class="line">    <span class="attr">swiftype:</span> <span class="comment"># enter swiftype install key here</span></span><br><span class="line">    <span class="attr">baidu:</span> <span class="literal">false</span> <span class="comment"># you need to disable other search engines to use Baidu search, options: true, false</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="7-写文章部分"><a href="#7-写文章部分" class="headerlink" title="7. 写文章部分"></a><strong>7. 写文章部分</strong></h4><p>写文章可以在项目根目录右键进入Git Bash，输入命令：<code>hexo new &#39;title&#39;</code>,title即为你的文章标题，中英文均可。你也可以直接在<code>source/_posts</code>目录下新建一个<code>.md</code>文件，直接在里面写文章也行。</p>
+<p>按照上面的方法新建文章的话，deploy后你的文章马上会发表在你的博客当中。</p>
+<p>如果你不想这么快发表，或者说你想写一篇草稿，在Git Bash中输入命令：<code>hexo new -draft &#39;title&#39;</code>，生成的文件会保存在<code>source/_drafts</code>目录下，当前目录下的文章不会被发表。</p>
+<p>当你想发表在草稿中的文章时，执行Git Bash命令：<code>hexo publish &#39;title&#39;</code>即可，当然你也可以手动把文章从<code>_drafts</code>目录中移动到<code>_posts</code>目录。</p>
+<h4 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a><strong>8. 总结</strong></h4><p>这篇入坑教程就这么多吧，说了这么多，口水都干了。<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png?v8">&#x1f60a;</span></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" target="_blank" rel="noopener">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "小K同學"
+        },
+        "headline": "从零开始入坑hexo博客",
+        "image": "https://jackie1123.github.iohttps://s2.ax1x.com/2020/02/13/1O4Iun.png",
+        "keywords": "hexo hueman主题 前端",
+        "genre": "学习笔记 hexo",
+        "datePublished": "2020-02-11",
+        "dateCreated": "2020-02-11",
+        "dateModified": "2020-02-14",
+        "url": "https://jackie1123.github.io/posts/34220/",
+        "description": "
+很多人都喜欢自己写写东西，但是在现在信息化的时代，笔纸间的记录已不是那么流行了。所以在上一年心血来潮之时，利用了hexo搭建了自己的博客。用起来还不赖！
+下面是我hexo的入坑过程。
+1. 安装Git Bash作为一个经常敲代码的人，电脑很早就已经配置好各种环境了。
+在这里我就简单讲下，详细的戳——&gt;Git分布式版本管理系统入门（一）
+
+Git Bash下载地址：Git Bash
+
+下载你",
+        "wordCount": 819
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <!-- Valine -->
+    <div class="vcomments"></div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="lastfm-square" href="http://www.coolapk.com/u/691518" target="_blank" rel="noopener">
+                        <i class="icon fa fa-lastfm-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/yuenhang.ho" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/Jackie1123" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="instagram" href="https://instagram.com/mr._jacky" target="_blank" rel="noopener">
+                        <i class="icon fa fa-instagram"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:1257868332@qq.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/posts/63722/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Git分布式版本管理系统入门（一）</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新发出</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/34220/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/13/1O4Iun.png)" alt="从零开始入坑hexo博客" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a></p>
+                            <p class="item-title"><a href="/posts/34220/" class="title">从零开始入坑hexo博客</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T14:32:52.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/63722/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/11/1T3tNq.png)" alt="Git分布式版本管理系统入门（一）" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a></p>
+                            <p class="item-title"><a href="/posts/63722/" class="title">Git分布式版本管理系统入门（一）</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T10:30:04.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/3557/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语一类形容词与二类形容词的区别" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/3557/" class="title">日本语一类形容词与二类形容词的区别</a></p>
+                            <p class="item-date"><time datetime="2020-02-06T13:49:44.000Z" itemprop="datePublished">2020-02-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/9149/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/05/1sXu4O.png)" alt="日本语——「に」的用法总结" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/9149/" class="title">日本语——「に」的用法总结</a></p>
+                            <p class="item-date"><time datetime="2020-02-05T06:56:43.000Z" itemprop="datePublished">2020-02-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/41085/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语学习笔记——标日初第15课" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/41085/" class="title">日本语学习笔记——标日初第15课</a></p>
+                            <p class="item-date"><time datetime="2020-02-05T05:44:05.000Z" itemprop="datePublished">2020-02-05</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hueman%E4%B8%BB%E9%A2%98/" style="font-size: 10px;">hueman主题</a> <a href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" style="font-size: 10px;">「に」的用法</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px;">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">学习笔记</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 10px;">开发</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 20px;">旅行</a> <a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 15px;">日本</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" style="font-size: 20px;">日本语</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" style="font-size: 10px;">日本语形容词</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E9%A6%99%E6%B8%AF/" style="font-size: 10px;">香港</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/">前端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/">日本</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/">香港</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hueman%E4%B8%BB%E9%A2%98/" rel="tag">hueman主题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" rel="tag">「に」的用法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC/" rel="tag">日本</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" rel="tag">日本语</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" rel="tag">日本语形容词</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%99%E6%B8%AF/" rel="tag">香港</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">时间线</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+    <div style="padding:30px 30px 20px;font-size: 15px;text-align: center;color: #777777;" id="days"></div>
+    <script language="javascript">
+        function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("09/01/2019 00:00:00");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML="小站已经运行了"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒啦！";
+        }
+        function setzero(i){
+        if (i<10)
+        {i="0" + i};
+        return i;
+        }
+        show_date_time();
+    </script>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 - 2020 <i style="color:red;" class="fa fa-heartbeat" aria-hidden="true"></i> 小K同學</p>
+
+                <!-- 不蒜子 -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script src="//unpkg.com/valine"></script>
+    <script>
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "true",
+            verify: "true",
+            appId: "GyRlA9NrmdBQx1kkxzrQ4ohm-gzGzoHsz",
+            appKey: "RIeVhydcTUxqDjM6cFnDARUb",
+            placeholder: "说点啥...",
+            avatar:"identicon",
+            recordIP:"",
+            visitor: "true"
+        });
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+    <!-- 
+<script src="/js/clipboard/clipboard.min.js"></script>
+
+    
+<script src="/js/clipboard/clipboard-use.js"></script>
+ -->
+</html>

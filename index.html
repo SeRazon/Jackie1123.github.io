@@ -1,1188 +1,1037 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
+    <meta charset="utf-8" />
 
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误！');
-                history.back();
-            }
-        }
-    })();
-</script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+    
 
-<link rel="stylesheet" href="/blog/css/main.css">
-
-
-<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/blog/lib/pace/pace-theme-bounce.min.css">
-  <script src="/blog/lib/pace/pace.min.js"></script>
-
-
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://yuenhangho.gitee.io/blog').hostname,
-    root: '/blog/',
-    scheme: 'Gemini',
-    version: '7.7.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"mac"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: true,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
-
-  <meta name="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
+    
+    <title>小K同學的博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
 <meta property="og:type" content="website">
-<meta property="og:title" content="小K同學的秘密基地">
-<meta property="og:url" content="https://yuenhangho.gitee.io/blog/index.html">
-<meta property="og:site_name" content="小K同學的秘密基地">
+<meta property="og:title" content="小K同學的博客">
+<meta property="og:url" content="https://jackie1123.github.io/index.html">
+<meta property="og:site_name" content="小K同學的博客">
 <meta property="og:description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="小K同學">
 <meta property="article:tag" content="编程，学习，旅行，生活，摄影，日语，前端，PHP，数据库，α6000">
 <meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://yuenhangho.gitee.io/blog/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: true,
-    isPost: false
-  };
-</script>
-
-  <title>小K同學的秘密基地</title>
-  
-
-
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?0c33a04808b4676dbd08eefc992e766a";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/blog/atom.xml" title="小K同學的秘密基地" type="application/atom+xml">
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-
-  <!--鼠标点击特效-->
-
-  
-    <script src="/js/cursor/fireworks.js"></script>
-  
-
-
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/blog/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">小K同學的秘密基地</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-        <p class="site-subtitle">一只程序猿</p>
-  </div>
-
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
-  
-  <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/blog/" rel="section"><i class="fa fa-fw fa-home"></i>主页</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/blog/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">10</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/blog/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">10</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/blog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">6</span></a>
-
-  </li>
-        <li class="menu-item menu-item-photograph">
-
-    <a href="https://kktop.lofter.com/" rel="noopener" target="_blank"><i class="fa fa-fw fa-camera"></i>相册</a>
-
-  </li>
-        <li class="menu-item menu-item-movies">
-
-    <a href="/blog/movies/" rel="section"><i class="fa fa-fw fa-video-camera"></i>电影</a>
-
-  </li>
-        <li class="menu-item menu-item-links">
-
-    <a href="/blog/links/" rel="section"><i class="fa fa-fw fa-mars"></i>友链</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/blog/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-
-</nav>
-  <div class="site-search">
-    <div class="popup search-popup">
-    <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="旅行，开发，编程，日本语..." spellcheck="false"
-           type="text" id="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result"></div>
-
-</div>
-<div class="search-pop-overlay"></div>
-
-  </div>
-</div>
-    </header>
+    
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+        <link rel="alternate" href="/atom.xml" title="小K同學的博客" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/logo.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
+    
+<link rel="stylesheet" href="/css/style.css">
 
-          <div class="content">
+
+    
+<script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0c33a04808b4676dbd08eefc992e766a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+
+
+    
+    
+        
+         <script type="text/javascript" src="js/cursor/text.js"></script>
+        
+        
+        
+        
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">一只程序猿</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"><text style="float: left;">頑張ってください！！！</text></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://kktop.lofter.com" target="_blank" rel="noopener">相册</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/movies/index.html">电影</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/links/index.html">友链</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜寻" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Git，hexo，日本语，开发，旅行..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <em class="page-title-link" data-url="home">主页</em>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            
+
+    
+    
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2020" class="archive-year"><i class="icon fa fa-calendar-o"></i>2020</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/34220/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/13/1O4Iun.png)" alt="从零开始入坑hexo博客" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/34220/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a>
+            </div>
+            <div class="date"><time datetime="2020-02-11T14:32:52.000Z" itemprop="datePublished">2020-02-11</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/34220/">从零开始入坑hexo博客</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+很多人都喜欢自己写写东西，但是在现在信息化的时代，笔纸间的记录已不是那么流行了。所以在上一年心血来潮之时，利用了hexo搭建了自己的博客。用起来还不赖！
+下面是我hexo的入坑过程。
+1. 安装Git Bash作为一个经常敲代码的人，电脑很早就已经配置好各种环境了。
+在这里我就简单讲下，详细的戳——&gt;Git分布式版本管理系统入门（一）
+
+Git Bash下载地址：Git Bash
+
+下载你
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/63722/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/11/1T3tNq.png)" alt="Git分布式版本管理系统入门（一）" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/63722/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a>
+            </div>
+            <div class="date"><time datetime="2020-02-11T10:30:04.000Z" itemprop="datePublished">2020-02-11</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/63722/">Git分布式版本管理系统入门（一）</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            分布式版本管理系统Git口语化教程，献给初学的小白同学。
+一、集中式VS分布式（来源：廖雪峰的官方网站）Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？
+
+先说集中式版本控制系统，版本库是集中存放在中央服务器的，而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，然后开始干活，干完活
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/3557/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语一类形容词与二类形容词的区别" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/3557/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a>
+            </div>
+            <div class="date"><time datetime="2020-02-06T13:49:44.000Z" itemprop="datePublished">2020-02-06</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/3557/">日本语一类形容词与二类形容词的区别</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+前言
+众所周知，江湖上日语的形容词分为两大门派——「一类形容词」和「二类形容词」有的教科书上一类形容词和二类形容词也分别称为「い形容词」和「な形容词」在日本则称为「形容詞」和「形容動詞」二者有何不同呢？
+
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/9149/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/05/1sXu4O.png)" alt="日本语——「に」的用法总结" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/9149/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a>
+            </div>
+            <div class="date"><time datetime="2020-02-05T06:56:43.000Z" itemprop="datePublished">2020-02-05</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/9149/">日本语——「に」的用法总结</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            表示存在的场所公园里有长椅。公園 に ベンチ が あります。
+表示时间我七点回家。私は七時 に 帰ります。
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/41085/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语学习笔记——标日初第15课" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/41085/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a>
+            </div>
+            <div class="date"><time datetime="2020-02-05T05:44:05.000Z" itemprop="datePublished">2020-02-05</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/41085/">日本语学习笔记——标日初第15课</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+语法&#x1f62d;
+1. 動詞て　います
+表示正在进行，我们英语所说的ing形式组成：动词て型＋いますe.g.我正在图书馆看书 ——&gt; わたしは図書館に本を読んでいます。
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/12023/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/14/1OqnSK.jpg)" alt="单纯就是「一个导航」开发日志" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/12023/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/">前端</a>
+            </div>
+            <div class="date"><time datetime="2020-01-27T09:00:02.000Z" itemprop="datePublished">2020-01-27</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/12023/">单纯就是「一个导航」开发日志</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
             
 
-  <div class="posts-expand">
+首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。&#x2728;
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuenhangho.gitee.io/blog/posts/3557/">
+            </div></section>
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/22920/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/08/1Red0A.md.jpg)" alt="&lt;小k周围走&gt;唔同角度睇香港（一）--港岛北" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/22920/#isso-thread"></a></span>
+    
+</span>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.jpg">
-      <meta itemprop="name" content="小K同學">
-      <meta itemprop="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小K同學的秘密基地">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/posts/3557/" class="post-title-link" itemprop="url">日本语一类形容词与二类形容词的区别</a>
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/">香港</a>
+            </div>
+            <div class="date"><time datetime="2019-08-07T04:25:30.000Z" itemprop="datePublished">2019-08-07</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/22920/">&lt;小k周围走&gt;唔同角度睇香港（一）--港岛北</a>
         </h1>
+    
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <p class="article-excerpt">
+            
+
+前言
+好久不见，是我小K同学~暑假不知不觉已经过半，本K整个7月大部分时间都在家里修行(没办法，热爱学习的我)，到了8月当然是出去耍啦。好了接下来开始8月第一站行程。
+不知道大家对香港的印象是怎样的，香港我是有空就去一下，但是每次很多时候都是为了买点东西，油尖旺地区就是目的地了(游客聚集的购物天堂嘛)，港岛几年没去过。所以这次行程的目的就是看看香港最繁华的地方——港岛。
+
+
+行程计划
+首先po
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/11601/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/03/1U3jTe.md.jpg)" alt="一人の体験2.0（二）——大学生穷游日本2019" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/11601/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/">日本</a>
+            </div>
+            <div class="date"><time datetime="2019-05-04T02:30:42.000Z" itemprop="datePublished">2019-05-04</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/11601/">一人の体験2.0（二）——大学生穷游日本2019</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+
+前言
+大家猴，我是小K同学。ご注意：本篇图文比较长，看完要有点耐心！
+下面先来回答下上期酷友的疑问。
+1. 住哪？很多酷友问我这个问题。住宿我是选择胶囊旅馆和民宿，因为酒店在日本是非常贵的。旅馆的话在国内就订好了哦，一般都是在booking和Airbnb上订，大概也就一百多一晚,热门的景点和有热门活动的地点放假会上升。
+2. 咋交流?语言不通问题大吗？热门问题top1！答案是我会日语,日语不会
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/posts/55052/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/02/1twuhF.md.jpg)" alt="一人の体験2.0（一）——大学生穷游日本2019" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span><a href="https://jackie1123.github.io/posts/55052/#isso-thread"></a></span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/">日本</a>
+            </div>
+            <div class="date"><time datetime="2019-05-03T13:27:39.000Z" itemprop="datePublished">2019-05-03</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/posts/55052/">一人の体験2.0（一）——大学生穷游日本2019</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+
+前言
+本次图文的内容是我寒假去日本时候的精彩分享。为什么标题是大学生穷游日本2.0呢？因为这是我第二次一个人日本自由行啦。第一次是在我高一暑假的时候，我妈叫我自己去，从此爱上日本，所以很多地方都比较有经验，我觉得这次的行程规划是最好的一次了👌比如交通，日本的住宿等等，下面会提及到。本图文不会有很多图片，每个景点大概两三张左右，想看更多还请酷基们自己去探索呢！其实是因为很多图片都放在电脑里懒得
+        </p>
+    </div>
+</article>
+    
+
+
+    </div></section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="lastfm-square" href="http://www.coolapk.com/u/691518" target="_blank" rel="noopener">
+                        <i class="icon fa fa-lastfm-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/yuenhang.ho" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/Jackie1123" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="instagram" href="https://instagram.com/mr._jacky" target="_blank" rel="noopener">
+                        <i class="icon fa fa-instagram"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:1257868332@qq.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新发出</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/34220/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/13/1O4Iun.png)" alt="从零开始入坑hexo博客" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a></p>
+                            <p class="item-title"><a href="/posts/34220/" class="title">从零开始入坑hexo博客</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T14:32:52.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/63722/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/11/1T3tNq.png)" alt="Git分布式版本管理系统入门（一）" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a></p>
+                            <p class="item-title"><a href="/posts/63722/" class="title">Git分布式版本管理系统入门（一）</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T10:30:04.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/3557/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语一类形容词与二类形容词的区别" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/3557/" class="title">日本语一类形容词与二类形容词的区别</a></p>
+                            <p class="item-date"><time datetime="2020-02-06T13:49:44.000Z" itemprop="datePublished">2020-02-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/9149/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/05/1sXu4O.png)" alt="日本语——「に」的用法总结" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/9149/" class="title">日本语——「に」的用法总结</a></p>
+                            <p class="item-date"><time datetime="2020-02-05T06:56:43.000Z" itemprop="datePublished">2020-02-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/41085/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语学习笔记——标日初第15课" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/41085/" class="title">日本语学习笔记——标日初第15课</a></p>
+                            <p class="item-date"><time datetime="2020-02-05T05:44:05.000Z" itemprop="datePublished">2020-02-05</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hueman%E4%B8%BB%E9%A2%98/" style="font-size: 10px;">hueman主题</a> <a href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" style="font-size: 10px;">「に」的用法</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px;">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">学习笔记</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 10px;">开发</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 20px;">旅行</a> <a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 15px;">日本</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" style="font-size: 20px;">日本语</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" style="font-size: 10px;">日本语形容词</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E9%A6%99%E6%B8%AF/" style="font-size: 10px;">香港</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/">前端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/">日本</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/">香港</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hueman%E4%B8%BB%E9%A2%98/" rel="tag">hueman主题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" rel="tag">「に」的用法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC/" rel="tag">日本</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" rel="tag">日本语</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" rel="tag">日本语形容词</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%99%E6%B8%AF/" rel="tag">香港</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">时间线</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+    <div style="padding:30px 30px 20px;font-size: 15px;text-align: center;color: #777777;" id="days"></div>
+    <script language="javascript">
+        function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("09/01/2019 00:00:00");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML="小站已经运行了"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒啦！";
+        }
+        function setzero(i){
+        if (i<10)
+        {i="0" + i};
+        return i;
+        }
+        show_date_time();
+    </script>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 - 2020 <i style="color:red;" class="fa fa-heartbeat" aria-hidden="true"></i> 小K同學</p>
+
+                <!-- 不蒜子 -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+
+                
+            </div>
+            <div class="footer-plugins">
               
-
-              <time title="创建时间：2020-02-06 21:49:44 / 修改时间：22:21:14" itemprop="dateCreated datePublished" datetime="2020-02-06T21:49:44+08:00">2020-02-06</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
     
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/blog/posts/3557/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/blog/posts/3557/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>296</span>
-            </span>
 
-          
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>众所周知，江湖上日语的形容词分为两大门派——「一类形容词」和「二类形容词」</p>
-<p>有的教科书上一类形容词和二类形容词也分别称为「い形容词」和「な形容词」</p>
-<p>在日本则称为「形容詞」和「形容動詞」</p>
-<p>二者有何不同呢？</p>
-<ul>
-<li>一类形容词的具体特征是像「高い」「多い」「難しい」这样词尾是「い」或「しい」的。</li>
-</ul>
-<p><strong>当然也有特例：</strong>「綺麗」（きれい）就不是一类形容词，不过熟悉的人很容易分辨出来，「い」其实是「麗」字训读的一部分，不可分割的，这样记就好记多了。</p>
-<ul>
-<li>二类形容词的具体特征是像「静か」「大切」「綺麗」这样有点像名词的词，但是他们后面接名词时都是用「な」的，所以背单词的时候可以把「な」一起背进去，以后一看就知道是二类形容词了。</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuenhangho.gitee.io/blog/posts/9149/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.jpg">
-      <meta itemprop="name" content="小K同學">
-      <meta itemprop="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小K同學的秘密基地">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/posts/9149/" class="post-title-link" itemprop="url">日本语——「に」的用法总结</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-05 14:56:43" itemprop="dateCreated datePublished" datetime="2020-02-05T14:56:43+08:00">2020-02-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-06 12:13:18" itemprop="dateModified" datetime="2020-02-06T12:13:18+08:00">2020-02-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/" itemprop="url" rel="index">
-                    <span itemprop="name">日本语</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/" itemprop="url" rel="index">
-                    <span itemprop="name">「に」的用法总结</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/blog/posts/9149/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/blog/posts/9149/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>276</span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h5 id="表示存在的场所"><a href="#表示存在的场所" class="headerlink" title="表示存在的场所"></a>表示存在的场所</h5><p>公园里有长椅。<br>公園 <strong><u>に</u></strong> ベンチ が あります。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog/posts/9149/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuenhangho.gitee.io/blog/posts/41085/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.jpg">
-      <meta itemprop="name" content="小K同學">
-      <meta itemprop="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小K同學的秘密基地">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/posts/41085/" class="post-title-link" itemprop="url">日本语学习笔记——标日初第15课</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-05 13:44:05 / 修改时间：17:09:58" itemprop="dateCreated datePublished" datetime="2020-02-05T13:44:05+08:00">2020-02-05</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/" itemprop="url" rel="index">
-                    <span itemprop="name">日本语</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E6%A0%87%E5%87%86%E6%97%A5%E6%9C%AC%E8%AF%AD/" itemprop="url" rel="index">
-                    <span itemprop="name">标准日本语</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/%E6%A0%87%E5%87%86%E6%97%A5%E6%9C%AC%E8%AF%AD/%E7%AC%AC15%E8%AF%BE/" itemprop="url" rel="index">
-                    <span itemprop="name">第15课</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/blog/posts/41085/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/blog/posts/41085/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>852</span>
-            </span>
-
-          
-
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p><span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
-<h5 id="1-動詞て-います"><a href="#1-動詞て-います" class="headerlink" title="1. 動詞て　います"></a>1. <strong><u>動詞</u></strong>て　います</h5><ul>
-<li><strong>表示正在进行，我们英语所说的ing形式</strong><br>组成：动词て型＋います<br>e.g.<br>我正在图书馆看书 ——&gt; わたしは図書館に本を読んでいます。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog/posts/41085/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+</footer>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuenhangho.gitee.io/blog/posts/12023/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.jpg">
-      <meta itemprop="name" content="小K同學">
-      <meta itemprop="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小K同學的秘密基地">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/posts/12023/" class="post-title-link" itemprop="url">单纯就是「一个导航」开发日志</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-27 17:00:02" itemprop="dateCreated datePublished" datetime="2020-01-27T17:00:02+08:00">2020-01-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-05 17:10:19" itemprop="dateModified" datetime="2020-02-05T17:10:19+08:00">2020-02-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%BC%80%E5%8F%91/" itemprop="url" rel="index">
-                    <span itemprop="name">开发</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/" itemprop="url" rel="index">
-                    <span itemprop="name">开发心得</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
     
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/blog/posts/12023/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/blog/posts/12023/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>649</span>
-            </span>
+    <script src="//unpkg.com/valine"></script>
+    <script>
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "true",
+            verify: "true",
+            appId: "GyRlA9NrmdBQx1kkxzrQ4ohm-gzGzoHsz",
+            appKey: "RIeVhydcTUxqDjM6cFnDARUb",
+            placeholder: "说点啥...",
+            avatar:"identicon",
+            recordIP:"",
+            visitor: "true"
+        });
+    </script>
 
-          
 
-        </div>
-      </header>
+
+
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog/posts/12023/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
     </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+    <!-- 
+<script src="/js/clipboard/clipboard.min.js"></script>
 
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuenhangho.gitee.io/blog/posts/11601/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.jpg">
-      <meta itemprop="name" content="小K同學">
-      <meta itemprop="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小K同學的秘密基地">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/posts/11601/" class="post-title-link" itemprop="url">一人の体験2.0（二）——大学生穷游日本2019</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-05-04 10:30:42" itemprop="dateCreated datePublished" datetime="2019-05-04T10:30:42+08:00">2019-05-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-05 17:10:29" itemprop="dateModified" datetime="2020-02-05T17:10:29+08:00">2020-02-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E6%97%85%E8%A1%8C/" itemprop="url" rel="index">
-                    <span itemprop="name">旅行</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/" itemprop="url" rel="index">
-                    <span itemprop="name">日本</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/blog/posts/11601/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/blog/posts/11601/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.4k</span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a href="https://imgchr.com/i/1U3jTe" target="_blank" rel="noopener"><img data-src="https://s2.ax1x.com/2020/02/03/1U3jTe.md.jpg" alt="1U3jTe.md.jpg"></a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog/posts/11601/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuenhangho.gitee.io/blog/posts/55052/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.jpg">
-      <meta itemprop="name" content="小K同學">
-      <meta itemprop="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小K同學的秘密基地">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/posts/55052/" class="post-title-link" itemprop="url">一人の体験2.0（一）——大学生穷游日本2019</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-05-03 21:27:39" itemprop="dateCreated datePublished" datetime="2019-05-03T21:27:39+08:00">2019-05-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-05 17:10:40" itemprop="dateModified" datetime="2020-02-05T17:10:40+08:00">2020-02-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E6%97%85%E8%A1%8C/" itemprop="url" rel="index">
-                    <span itemprop="name">旅行</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/" itemprop="url" rel="index">
-                    <span itemprop="name">日本</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/blog/posts/55052/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/blog/posts/55052/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img data-src="https://s2.ax1x.com/2020/02/02/1twuhF.md.jpg" alt="1twuhF.md.jpg"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog/posts/55052/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-  </div>
-
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="小K同學"
-      src="/blog/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">小K同學</p>
-  <div class="site-description" itemprop="description">📍旅行 | 前端 | PHP | α6000 | 日语 📍</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/blog/archives/">
-        
-          <span class="site-state-item-count">6</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/blog/categories/">
-          
-        <span class="site-state-item-count">10</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/blog/tags/">
-          
-        <span class="site-state-item-count">10</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:1257868332@qq.com" title="E-Mail → mailto:1257868332@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://twitter.com/hexuankeng" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;hexuankeng" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://www.facebook.com/yuenhang.ho" title="Facebook → https:&#x2F;&#x2F;www.facebook.com&#x2F;yuenhang.ho" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://instagram.com/mr._jacky" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;mr._jacky" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
-      </span>
-  </div>
-  <div class="cc-license motion-element" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/blog/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
-  </div>
-
-
-
-      </div>
-
-      <div style="color:lightgray" id="days"></div>
-</script>
-<script language="javascript">
-function show_date_time(){
-window.setTimeout("show_date_time()", 1000);
-BirthDay=new Date("02/01/2020 00:00:00");
-today=new Date();
-timeold=(today.getTime()-BirthDay.getTime());
-sectimeold=timeold/1000
-secondsold=Math.floor(sectimeold);
-msPerDay=24*60*60*1000
-e_daysold=timeold/msPerDay
-daysold=Math.floor(e_daysold);
-e_hrsold=(e_daysold-daysold)*24;
-hrsold=setzero(Math.floor(e_hrsold));
-e_minsold=(e_hrsold-hrsold)*60;
-minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
-seconds=setzero(Math.floor((e_minsold-minsold)*60));
-document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
-}
-function setzero(i){
-if (i<10)
-{i="0" + i};
-return i;
-}
-show_date_time();
-</script>
-      
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-heartbeat"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">小K同學</span>
-</div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script size="300" alpha="0.6" zIndex="-1" src="/blog/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/blog/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/blog/lib/velocity/velocity.min.js"></script>
-  <script src="/blog/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/blog/js/utils.js"></script>
-
-<script src="/blog/js/motion.js"></script>
-
-
-<script src="/blog/js/schemes/pisces.js"></script>
-
-
-<script src="/blog/js/next-boot.js"></script>
-
-
-
-
-  
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-
-
-  
-<script src="/blog/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el: '#valine-comments',
-      verify: false,
-      notify: false,
-      appId: 'GyRlA9NrmdBQx1kkxzrQ4ohm-gzGzoHsz',
-      appKey: 'RIeVhydcTUxqDjM6cFnDARUb',
-      placeholder: "说点啥...",
-      avatar: 'mm',
-      meta: guest,
-      pageSize: '10' || 10,
-      visitor: false,
-      lang: '' || 'zh-cn',
-      path: location.pathname,
-      recordIP: false,
-      serverURLs: ''
-    });
-  }, window.Valine);
-});
-</script>
-
-
-  
-<script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/blog/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+<script src="/js/clipboard/clipboard-use.js"></script>
+ -->
 </html>

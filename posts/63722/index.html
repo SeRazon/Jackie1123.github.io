@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>Git分布式版本管理系统入门（一） | 小K同學的博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="Git,学习笔记" />
+    
+    <meta name="description" content="分布式版本管理系统Git口语化教程，献给初学的小白同学。 一、集中式VS分布式（来源：廖雪峰的官方网站）Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？  先说集中式版本控制系统，版本库是集中存放在中央服务器的，而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，然后开始干活，干完活">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git分布式版本管理系统入门（一）">
+<meta property="og:url" content="https://jackie1123.github.io/posts/63722/index.html">
+<meta property="og:site_name" content="小K同學的博客">
+<meta property="og:description" content="分布式版本管理系统Git口语化教程，献给初学的小白同学。 一、集中式VS分布式（来源：廖雪峰的官方网站）Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？  先说集中式版本控制系统，版本库是集中存放在中央服务器的，而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，然后开始干活，干完活">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/11/1T3tNq.png">
+<meta property="article:published_time" content="2020-02-11T10:30:04.000Z">
+<meta property="article:modified_time" content="2020-02-12T14:52:08.645Z">
+<meta property="article:author" content="小K同學">
+<meta property="article:tag" content="Git分布式版本管理系统">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="GitHub">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/11/1T3tNq.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="小K同學的博客" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/logo.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0c33a04808b4676dbd08eefc992e766a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+
+
+    
+    
+        
+         <script type="text/javascript" src="js/cursor/text.js"></script>
+        
+        
+        
+        
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">一只程序猿</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"><text style="float: left;">頑張ってください！！！</text></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://kktop.lofter.com" target="_blank" rel="noopener">相册</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/movies/index.html">电影</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/links/index.html">友链</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜寻" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Git，hexo，日本语，开发，旅行..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-Git分布式版本管理系统入门" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Git分布式版本管理系统入门（一）
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/posts/63722/" class="article-date">
+         <time datetime="2020-02-11T10:30:04.000Z" itemprop="datePublished">2020-02-11</time><i style="margin-left:10px" class="fa fa-user"></i> 小K同學
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Git/" rel="tag">Git</a>, <a class="tag-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a>
+    </div>
+
+                
+   <span id="/posts/63722/" class="leancloud-visitors" data-flag-title="Git分布式版本管理系统入门（一）">
+   <i class="fa fa-eye"></i>
+   <span class="post-meta-item-text">阅读次数: </span>
+   <i class="leancloud-visitors-count">1000000</i>
+   </span>
+
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>分布式版本管理系统Git口语化教程，献给初学的小白同学。</p>
+<h4 id="一、集中式VS分布式（来源：廖雪峰的官方网站）"><a href="#一、集中式VS分布式（来源：廖雪峰的官方网站）" class="headerlink" title="一、集中式VS分布式（来源：廖雪峰的官方网站）"></a>一、集中式VS分布式<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896202780297248" target="_blank" rel="noopener" title="（来源：廖雪峰的官方网站）">（来源：廖雪峰的官方网站）</a></h4><p>Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？</p>
+<ul>
+<li>先说<strong>集中式版本控制系统，版本库是集中存放在中央服务器的</strong>，而干活的时候，用的都是自己的电脑，所以要<strong>先从中央服务器取得最新的版本</strong>，然后开始干活，干完活了，<strong>再把自己的活推送给中央服务器</strong>。中央服务器就好比是一个图书馆，你要改一本书，必须先从图书馆借出来，然后回到家自己改，改完了，再放回图书馆。</li>
+</ul>
+<img style="width: 50%;" src="https://s2.ax1x.com/2020/02/11/1T3tNq.png">
+
+<ul>
+<li><p>集中式版本控制系统最大的毛病就是<strong>必须联网</strong>才能工作，如果在局域网内还好，带宽够大，速度够快，可如果在互联网上，遇到网速慢的话，可能提交一个10M的文件就需要5分钟，这还不得把人给憋死啊。</p>
+</li>
+<li><p>那分布式版本控制系统与集中式版本控制系统有何不同呢？首先，<strong>分布式版本控制系统</strong>根本<strong>没有“中央服务器”</strong>，<strong>每个人的电脑上都是一个完整的版本库</strong>，这样，<strong>你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。</strong>既然每个人电脑上都有一个完整的版本库，那多个人如何协作呢？比方说你在自己电脑上改了文件A，你的同事也在他的电脑上改了文件A，这时，你们俩之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。</p>
+</li>
+<li><p>和集中式版本控制系统相比，分布式版本控制系统的安全性要高很多，<strong>因为每个人电脑里都有完整的版本库，某一个人的电脑坏掉了不要紧，随便从其他人那里复制一个就可以了。而集中式版本控制系统的中央服务器要是出了问题，所有人都没法干活了。</strong></p>
+</li>
+<li><p>在<strong>实际使用分布式版本控制系统的时候，其实很少在两人之间的电脑上推送版本库的修改</strong>，因为可能你们俩不在一个局域网内，两台电脑互相访问不了，也可能今天你的同事病了，他的电脑压根没有开机。因此，<strong>分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。</strong></p>
+</li>
+</ul>
+<img style="width: 50%;" src="https://s2.ax1x.com/2020/02/11/1T3GHs.png">
+
+<h4 id="二、注册Github账户"><a href="#二、注册Github账户" class="headerlink" title="二、注册Github账户"></a>二、注册Github账户</h4><p><strong>1. Github有什么用？</strong><br>还记得上面Git的介绍吗？<br>“分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。”<br>这里的“中央服务器”所指的其实就是Github。Github是一个远程代码仓库，通俗点说就是用来存代码的。通过把你的代码推送到远程仓库，通过Github，既可以让别人参与你的开源项目，也可以参与别人的开源项目，实现多人协作去完善项目。</p>
+<p><strong>2. 创建自己的Github仓库</strong></p>
+<p>1）登录Github之后会出现下图的界面，点击【New】创建一个新的代码仓库。</p>
+<p><strong>你的账号就是一个总代码库，总代码库下存放着多个代码仓库（项目）</strong>，项目里存放的就是你项目的源代码了。</p>
+<p><text style="color: orange;">黄色框</text>里表示的是<strong>总代码库（你的用户名）</strong>，<text style="color: blue;">蓝色框</text>里代表的是<strong>代码仓库（项目名称）</strong>。</p>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T33uQ.png" alt=""></p>
+<p>2）点击<strong>【New】</strong>之后创建代码仓库，出现下图界面，按要求填写详细信息即可。</p>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T38Bj.png" alt=""></p>
+<p>3）完成后就可以在主页面看见你的代码仓库了。创建完后，先放在一边，继续往下看。</p>
+<h4 id="三、在Windows上安装Git"><a href="#三、在Windows上安装Git" class="headerlink" title="三、在Windows上安装Git"></a>三、在Windows上安装Git</h4><ol>
+<li>在Windows上安装Git，只需要上Git的官网就可以下载了。</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3d3T.png" alt=""></p>
+<ol start="2">
+<li>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3aCV.png" alt=""></p>
+<h4 id="四、工作区、版本库、暂存区和分支概念"><a href="#四、工作区、版本库、暂存区和分支概念" class="headerlink" title="四、工作区、版本库、暂存区和分支概念"></a>四、工作区、版本库、暂存区和分支概念</h4><p><strong>1. 工作区</strong><br>通俗讲，能看见的区域就是工作区，比如下图：<br>(<strong>隐藏</strong>的.git文件里面包含着本地仓库<strong>全部信息</strong>，版本库当然也在里面)</p>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3wgU.png" alt=""></p>
+<ol start="2">
+<li>版本库<br>版本库里面<strong>包含着暂存区(stage/index)和分支(master)信息</strong>。</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T30vF.png" alt=""></p>
+<ol start="3">
+<li>暂存区和分支</li>
+</ol>
+<p>当你开发完或修改完你的代码时，<strong>我们通常会通过命令行(git add)把修改完的文件都添加到暂存区，再通过命令行(git commit)把暂存区的文件提交到分支</strong>。(下面上图)</p>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3Du4.png" alt=""></p>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3rDJ.png" alt=""></p>
+<p>当你把暂存区的文件提交到分支后，用命令行(git status)查看当前“工作树”状态，会显示“working tree clean”。(右图)</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" target="_blank" rel="noopener">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "小K同學"
+        },
+        "headline": "Git分布式版本管理系统入门（一）",
+        "image": "https://jackie1123.github.iohttps://s2.ax1x.com/2020/02/11/1T3tNq.png",
+        "keywords": "Git 学习笔记",
+        "genre": "学习笔记 Git分布式版本管理系统",
+        "datePublished": "2020-02-11",
+        "dateCreated": "2020-02-11",
+        "dateModified": "2020-02-12",
+        "url": "https://jackie1123.github.io/posts/63722/",
+        "description": "分布式版本管理系统Git口语化教程，献给初学的小白同学。
+一、集中式VS分布式（来源：廖雪峰的官方网站）Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？
+
+先说集中式版本控制系统，版本库是集中存放在中央服务器的，而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，然后开始干活，干完活",
+        "wordCount": 59
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <!-- Valine -->
+    <div class="vcomments"></div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="lastfm-square" href="http://www.coolapk.com/u/691518" target="_blank" rel="noopener">
+                        <i class="icon fa fa-lastfm-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/yuenhang.ho" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/Jackie1123" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="instagram" href="https://instagram.com/mr._jacky" target="_blank" rel="noopener">
+                        <i class="icon fa fa-instagram"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:1257868332@qq.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/posts/34220/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            从零开始入坑hexo博客
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/posts/3557/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">日本语一类形容词与二类形容词的区别</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新发出</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/34220/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/13/1O4Iun.png)" alt="从零开始入坑hexo博客" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a></p>
+                            <p class="item-title"><a href="/posts/34220/" class="title">从零开始入坑hexo博客</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T14:32:52.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/63722/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/11/1T3tNq.png)" alt="Git分布式版本管理系统入门（一）" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a></p>
+                            <p class="item-title"><a href="/posts/63722/" class="title">Git分布式版本管理系统入门（一）</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T10:30:04.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/3557/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语一类形容词与二类形容词的区别" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/3557/" class="title">日本语一类形容词与二类形容词的区别</a></p>
+                            <p class="item-date"><time datetime="2020-02-06T13:49:44.000Z" itemprop="datePublished">2020-02-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/9149/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/05/1sXu4O.png)" alt="日本语——「に」的用法总结" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/9149/" class="title">日本语——「に」的用法总结</a></p>
+                            <p class="item-date"><time datetime="2020-02-05T06:56:43.000Z" itemprop="datePublished">2020-02-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/41085/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语学习笔记——标日初第15课" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/41085/" class="title">日本语学习笔记——标日初第15课</a></p>
+                            <p class="item-date"><time datetime="2020-02-05T05:44:05.000Z" itemprop="datePublished">2020-02-05</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hueman%E4%B8%BB%E9%A2%98/" style="font-size: 10px;">hueman主题</a> <a href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" style="font-size: 10px;">「に」的用法</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px;">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">学习笔记</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 10px;">开发</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 20px;">旅行</a> <a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 15px;">日本</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" style="font-size: 20px;">日本语</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" style="font-size: 10px;">日本语形容词</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E9%A6%99%E6%B8%AF/" style="font-size: 10px;">香港</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/">前端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/">日本</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/">香港</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hueman%E4%B8%BB%E9%A2%98/" rel="tag">hueman主题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" rel="tag">「に」的用法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC/" rel="tag">日本</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" rel="tag">日本语</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" rel="tag">日本语形容词</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%99%E6%B8%AF/" rel="tag">香港</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">时间线</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+    <div style="padding:30px 30px 20px;font-size: 15px;text-align: center;color: #777777;" id="days"></div>
+    <script language="javascript">
+        function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("09/01/2019 00:00:00");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML="小站已经运行了"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒啦！";
+        }
+        function setzero(i){
+        if (i<10)
+        {i="0" + i};
+        return i;
+        }
+        show_date_time();
+    </script>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 - 2020 <i style="color:red;" class="fa fa-heartbeat" aria-hidden="true"></i> 小K同學</p>
+
+                <!-- 不蒜子 -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script src="//unpkg.com/valine"></script>
+    <script>
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "true",
+            verify: "true",
+            appId: "GyRlA9NrmdBQx1kkxzrQ4ohm-gzGzoHsz",
+            appKey: "RIeVhydcTUxqDjM6cFnDARUb",
+            placeholder: "说点啥...",
+            avatar:"identicon",
+            recordIP:"",
+            visitor: "true"
+        });
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+    <!-- 
+<script src="/js/clipboard/clipboard.min.js"></script>
+
+    
+<script src="/js/clipboard/clipboard-use.js"></script>
+ -->
+</html>
