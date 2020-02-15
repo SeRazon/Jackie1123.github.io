@@ -120,7 +120,7 @@
 </li>
 </ul>
 <p>接下来你就可以开始配置你的博客了！</p>
-<h4 id="4-部署到Github-Gitee"><a href="#4-部署到Github-Gitee" class="headerlink" title="4. 部署到Github/Gitee"></a><strong>4. 部署到Github/Gitee</strong></h4><p>部署到Github你的博客加载速度可能慢点，毕竟人家服务器在国外。推荐使用Gitee，不过缺点是每次更新部署都要手动（什么意思继续看就知道了）。</p>
+<h4 id="4-部署到Github-Gitee-Coding"><a href="#4-部署到Github-Gitee-Coding" class="headerlink" title="4. 部署到Github/Gitee/Coding"></a><strong>4. 部署到Github/Gitee/Coding</strong></h4><p>部署到Github你的博客加载速度可能慢点，毕竟人家服务器在国外。推荐使用Gitee，不过缺点是每次更新部署都要手动（什么意思继续看就知道了）。</p>
 <p>以Github为例部署</p>
 <ul>
 <li><p>没Github账户的先创建一个，然后新建一个仓库（repo），仓库名字写<code>yourname.github.io</code>（yourname就是你GitHub的名字），一定要按照这个格式写！！！否则不能自动部署！！！<br>像我这个一样<br><img src="https://s2.ax1x.com/2020/02/13/1qzEjK.png" alt=""></p>
@@ -490,11 +490,11 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>HTML</tag>
         <tag>编程</tag>
         <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
