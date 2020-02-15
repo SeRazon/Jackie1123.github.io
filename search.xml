@@ -97,7 +97,9 @@
 </li>
 <li><p>下载后你会发现是一个msi文件，没关系，按照平常安装一样双击安装就行。如果中途有看见<code>add to path</code>选项的话记得勾选（作用是不用自己配置环境变量）。不过好像新版的没有这选项，默认已经勾选了。</p>
 </li>
-<li><p>安装好像刚刚一样打开Git Bash或cmd输入命令<code>node -v</code>，查看当前NodeJs版本号。<br><img src="https://s2.ax1x.com/2020/02/13/1q7SJS.png" alt=""><br>安装成功！</p>
+<li><p>安装好像刚刚一样打开Git Bash或cmd输入命令<code>node -v</code>，查看当前NodeJs版本号。<br><img src="https://s2.ax1x.com/2020/02/13/1q7SJS.png" alt=""></p>
+</li>
+<li><p>如果执行<code>node -v</code>报错的话，那么手动将Node.js的<strong>安装路径</strong>添加到环境变量中，右击点击我的电脑 -&gt;属性 -&gt; 高级系统设置 -&gt; 环境变量，在系统变量下找到名为path的变量名，如下图：<br><img src="https://s2.ax1x.com/2020/02/15/1xW96H.png" alt=""><br>选中path，或者双击，然后将你node.js的安装路径放在path变量值的<strong>最后面</strong>，如果添加之前path值最后有 <strong>英文的分号</strong>，则直接将路径添加进去即可。<strong>如果没有，先添加分号</strong>，然后点击保存，回到项目文件夹，打开Git Bash，执行<code>node -v</code>，看是否成功。</p>
 </li>
 </ul>
 <h4 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a><strong>3. 安装hexo</strong></h4><p>真正的主角来了，hexo博客框架，在这里就不需要打开官网安装了，用npm工具安装即可。</p>
@@ -384,8 +386,8 @@
         <category>日本语</category>
       </categories>
       <tags>
-        <tag>日本语</tag>
         <tag>学习笔记</tag>
+        <tag>日本语</tag>
       </tags>
   </entry>
   <entry>
