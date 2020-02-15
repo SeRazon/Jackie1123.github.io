@@ -1648,6 +1648,69 @@ a.article-title:hover {
 #page-nav .space {
   color: #ddd;
 }
+.read-over {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  color: #d3d3d3;
+  font-size: 14px;
+}
+.post-copyright {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
+.post-copyright-author,
+.post-copyright-link,
+.post-copyright-license {
+  padding: 0.5em 1em;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.post-copyright-link a,
+.post-copyright-license a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #252525;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+.reward {
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+}
+#rewardBtn {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding: 0;
+  margin: 10px 0px 20px;
+  letter-spacing: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+}
+#rewardBtn span {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+  background: #f44336;
+}
+#QR img {
+  width: 180px;
+  max-width: 100%;
+  display: inline-block;
+  margin: 0 2em 0;
+}
 #footer {
 /*background: color-footer-background*/
   margin-top: 60px;
