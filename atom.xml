@@ -5,9 +5,9 @@
   <subtitle>一只程序猿</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://jackie1123.github.io/"/>
+  <link href="http://2st1az.coding-pages.com/"/>
   <updated>2020-02-14T16:19:39.687Z</updated>
-  <id>https://jackie1123.github.io/</id>
+  <id>http://2st1az.coding-pages.com/</id>
   
   <author>
     <name>小K同學</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo——hueman主题美化（持续更新中）</title>
-    <link href="https://jackie1123.github.io/posts/20719/"/>
-    <id>https://jackie1123.github.io/posts/20719/</id>
+    <link href="http://2st1az.coding-pages.com/posts/20719/"/>
+    <id>http://2st1az.coding-pages.com/posts/20719/</id>
     <published>2020-02-14T08:37:27.000Z</published>
     <updated>2020-02-14T16:19:39.687Z</updated>
     
@@ -35,23 +35,23 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="hexo" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
+      <category term="hexo" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
     
     
-      <category term="hexo" scheme="https://jackie1123.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://2st1az.coding-pages.com/tags/hexo/"/>
     
-      <category term="hueman主题" scheme="https://jackie1123.github.io/tags/hueman%E4%B8%BB%E9%A2%98/"/>
+      <category term="hueman主题" scheme="http://2st1az.coding-pages.com/tags/hueman%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="美化" scheme="https://jackie1123.github.io/tags/%E7%BE%8E%E5%8C%96/"/>
+      <category term="美化" scheme="http://2st1az.coding-pages.com/tags/%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>从零开始入坑hexo博客</title>
-    <link href="https://jackie1123.github.io/posts/34220/"/>
-    <id>https://jackie1123.github.io/posts/34220/</id>
+    <link href="http://2st1az.coding-pages.com/posts/34220/"/>
+    <id>http://2st1az.coding-pages.com/posts/34220/</id>
     <published>2020-02-11T14:32:52.000Z</published>
     <updated>2020-02-15T07:37:48.607Z</updated>
     
@@ -68,23 +68,23 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="hexo" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
+      <category term="hexo" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
     
     
-      <category term="前端" scheme="https://jackie1123.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="hexo" scheme="http://2st1az.coding-pages.com/tags/hexo/"/>
     
-      <category term="hexo" scheme="https://jackie1123.github.io/tags/hexo/"/>
+      <category term="hueman主题" scheme="http://2st1az.coding-pages.com/tags/hueman%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="hueman主题" scheme="https://jackie1123.github.io/tags/hueman%E4%B8%BB%E9%A2%98/"/>
+      <category term="前端" scheme="http://2st1az.coding-pages.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>Git分布式版本管理系统入门（一）</title>
-    <link href="https://jackie1123.github.io/posts/63722/"/>
-    <id>https://jackie1123.github.io/posts/63722/</id>
+    <link href="http://2st1az.coding-pages.com/posts/63722/"/>
+    <id>http://2st1az.coding-pages.com/posts/63722/</id>
     <published>2020-02-11T10:30:04.000Z</published>
     <updated>2020-02-12T14:52:08.645Z</updated>
     
@@ -101,21 +101,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Git分布式版本管理系统" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+      <category term="Git分布式版本管理系统" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
     
     
-      <category term="Git" scheme="https://jackie1123.github.io/tags/Git/"/>
+      <category term="Git" scheme="http://2st1az.coding-pages.com/tags/Git/"/>
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>日本语一类形容词与二类形容词的区别</title>
-    <link href="https://jackie1123.github.io/posts/3557/"/>
-    <id>https://jackie1123.github.io/posts/3557/</id>
+    <link href="http://2st1az.coding-pages.com/posts/3557/"/>
+    <id>http://2st1az.coding-pages.com/posts/3557/</id>
     <published>2020-02-06T13:49:44.000Z</published>
     <updated>2020-02-12T14:35:22.840Z</updated>
     
@@ -131,21 +131,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
     
-      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="http://2st1az.coding-pages.com/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="日本语形容词" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/"/>
+      <category term="日本语形容词" scheme="http://2st1az.coding-pages.com/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/"/>
     
   </entry>
   
   <entry>
     <title>日本语——「に」的用法总结</title>
-    <link href="https://jackie1123.github.io/posts/9149/"/>
-    <id>https://jackie1123.github.io/posts/9149/</id>
+    <link href="http://2st1az.coding-pages.com/posts/9149/"/>
+    <id>http://2st1az.coding-pages.com/posts/9149/</id>
     <published>2020-02-05T06:56:43.000Z</published>
     <updated>2020-02-12T14:35:42.639Z</updated>
     
@@ -159,21 +159,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
     
-      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="http://2st1az.coding-pages.com/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="「に」的用法" scheme="https://jackie1123.github.io/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+      <category term="「に」的用法" scheme="http://2st1az.coding-pages.com/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>日本语学习笔记——标日初第15课</title>
-    <link href="https://jackie1123.github.io/posts/41085/"/>
-    <id>https://jackie1123.github.io/posts/41085/</id>
+    <link href="http://2st1az.coding-pages.com/posts/41085/"/>
+    <id>http://2st1az.coding-pages.com/posts/41085/</id>
     <published>2020-02-05T05:44:05.000Z</published>
     <updated>2020-02-12T14:35:15.403Z</updated>
     
@@ -189,21 +189,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="http://2st1az.coding-pages.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
     
-      <category term="学习笔记" scheme="https://jackie1123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://2st1az.coding-pages.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="http://2st1az.coding-pages.com/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>单纯就是「一个导航」开发日志</title>
-    <link href="https://jackie1123.github.io/posts/12023/"/>
-    <id>https://jackie1123.github.io/posts/12023/</id>
+    <link href="http://2st1az.coding-pages.com/posts/12023/"/>
+    <id>http://2st1az.coding-pages.com/posts/12023/</id>
     <published>2020-01-27T09:00:02.000Z</published>
     <updated>2020-02-13T16:33:40.817Z</updated>
     
@@ -218,27 +218,27 @@
     </summary>
     
     
-      <category term="开发" scheme="https://jackie1123.github.io/categories/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="http://2st1az.coding-pages.com/categories/%E5%BC%80%E5%8F%91/"/>
     
-      <category term="前端" scheme="https://jackie1123.github.io/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="http://2st1az.coding-pages.com/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="HTML" scheme="https://jackie1123.github.io/tags/HTML/"/>
+      <category term="前端" scheme="http://2st1az.coding-pages.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="编程" scheme="https://jackie1123.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+      <category term="HTML" scheme="http://2st1az.coding-pages.com/tags/HTML/"/>
     
-      <category term="JavaScript" scheme="https://jackie1123.github.io/tags/JavaScript/"/>
+      <category term="编程" scheme="http://2st1az.coding-pages.com/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="开发" scheme="https://jackie1123.github.io/tags/%E5%BC%80%E5%8F%91/"/>
+      <category term="JavaScript" scheme="http://2st1az.coding-pages.com/tags/JavaScript/"/>
     
-      <category term="前端" scheme="https://jackie1123.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="开发" scheme="http://2st1az.coding-pages.com/tags/%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>&lt;小k周围走&gt;唔同角度睇香港（一）--港岛北</title>
-    <link href="https://jackie1123.github.io/posts/22920/"/>
-    <id>https://jackie1123.github.io/posts/22920/</id>
+    <link href="http://2st1az.coding-pages.com/posts/22920/"/>
+    <id>http://2st1az.coding-pages.com/posts/22920/</id>
     <published>2019-08-07T04:25:30.000Z</published>
     <updated>2020-02-13T10:10:54.699Z</updated>
     
@@ -256,21 +256,21 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="http://2st1az.coding-pages.com/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="香港" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/"/>
+      <category term="香港" scheme="http://2st1az.coding-pages.com/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/"/>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="http://2st1az.coding-pages.com/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="香港" scheme="https://jackie1123.github.io/tags/%E9%A6%99%E6%B8%AF/"/>
+      <category term="香港" scheme="http://2st1az.coding-pages.com/tags/%E9%A6%99%E6%B8%AF/"/>
     
   </entry>
   
   <entry>
     <title>一人の体験2.0（二）——大学生穷游日本2019</title>
-    <link href="https://jackie1123.github.io/posts/11601/"/>
-    <id>https://jackie1123.github.io/posts/11601/</id>
+    <link href="http://2st1az.coding-pages.com/posts/11601/"/>
+    <id>http://2st1az.coding-pages.com/posts/11601/</id>
     <published>2019-05-04T02:30:42.000Z</published>
     <updated>2020-02-12T14:43:38.420Z</updated>
     
@@ -288,21 +288,21 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="http://2st1az.coding-pages.com/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="http://2st1az.coding-pages.com/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="http://2st1az.coding-pages.com/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="http://2st1az.coding-pages.com/tags/%E6%97%A5%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>一人の体験2.0（一）——大学生穷游日本2019</title>
-    <link href="https://jackie1123.github.io/posts/55052/"/>
-    <id>https://jackie1123.github.io/posts/55052/</id>
+    <link href="http://2st1az.coding-pages.com/posts/55052/"/>
+    <id>http://2st1az.coding-pages.com/posts/55052/</id>
     <published>2019-05-03T13:27:39.000Z</published>
     <updated>2020-02-12T14:54:08.936Z</updated>
     
@@ -320,14 +320,14 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="http://2st1az.coding-pages.com/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="http://2st1az.coding-pages.com/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
     
     
-      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="http://2st1az.coding-pages.com/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="http://2st1az.coding-pages.com/tags/%E6%97%A5%E6%9C%AC/"/>
     
   </entry>
   
