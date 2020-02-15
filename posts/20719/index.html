@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>hexo——hueman主题美化（持续更新中） | 小K同學的博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="hexo,hueman主题,美化" />
+    
+    <meta name="description" content="现在hexo的主题中最heat的就是NexT了。截至我在写这篇文章，它GitHub的star已经达到了4.9k。NexT主题以简洁，自定义度高，插件集成多等等因素，被众多人喜爱。就我入坑hexo的那一会，我也用过一段时间的NexT。但是在后来觉得，NexT没有博客该有的样子，太过于简洁，可视页面上给予浏览者的信息太少，感觉除了首页上的文章不知道还有哪里可看，没有一些突出的地方让浏览者有欲望去点击。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo——hueman主题美化（持续更新中）">
+<meta property="og:url" content="https://jackie1123.github.io/posts/20719/index.html">
+<meta property="og:site_name" content="小K同學的博客">
+<meta property="og:description" content="现在hexo的主题中最heat的就是NexT了。截至我在写这篇文章，它GitHub的star已经达到了4.9k。NexT主题以简洁，自定义度高，插件集成多等等因素，被众多人喜爱。就我入坑hexo的那一会，我也用过一段时间的NexT。但是在后来觉得，NexT没有博客该有的样子，太过于简洁，可视页面上给予浏览者的信息太少，感觉除了首页上的文章不知道还有哪里可看，没有一些突出的地方让浏览者有欲望去点击。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/14/1j3QUO.png">
+<meta property="article:published_time" content="2020-02-14T08:37:27.000Z">
+<meta property="article:modified_time" content="2020-02-14T16:19:39.687Z">
+<meta property="article:author" content="小K同學">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="hueman主题">
+<meta property="article:tag" content="美化">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/14/1j3QUO.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="小K同學的博客" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/logo.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0c33a04808b4676dbd08eefc992e766a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+
+
+    
+    
+        
+         <script type="text/javascript" src="js/cursor/text.js"></script>
+        
+        
+        
+        
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">一只程序猿</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"><text style="float: left;">頑張ってください！！！</text></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://kktop.lofter.com" target="_blank" rel="noopener">相册</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/movies/index.html">电影</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/links/index.html">友链</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜寻" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Git，hexo，日本语，开发，旅行..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-hexo——hueman主题美化（持续更新中）" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        hexo——hueman主题美化（持续更新中）
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/posts/20719/" class="article-date">
+         <time datetime="2020-02-14T08:37:27.000Z" itemprop="datePublished">2020-02-14</time><i style="margin-left:10px" class="fa fa-user"></i> 小K同學
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/hexo/" rel="tag">hexo</a>, <a class="tag-link" href="/tags/hueman%E4%B8%BB%E9%A2%98/" rel="tag">hueman主题</a>, <a class="tag-link" href="/tags/%E7%BE%8E%E5%8C%96/" rel="tag">美化</a>
+    </div>
+
+                
+   <span id="/posts/20719/" class="leancloud-visitors" data-flag-title="hexo——hueman主题美化（持续更新中）">
+   <i class="fa fa-eye"></i>
+   <span class="post-meta-item-text">阅读次数: </span>
+   <i class="leancloud-visitors-count">1000000</i>
+   </span>
+
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>现在hexo的主题中最heat的就是<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener" title="NexT">NexT</a>了。截至我在写这篇文章，它GitHub的<code>star</code>已经达到了4.9k。NexT主题以简洁，自定义度高，插件集成多等等因素，被众多人喜爱。就我入坑hexo的那一会，我也用过一段时间的NexT。但是在后来觉得，NexT没有博客该有的样子，太过于简洁，可视页面上给予浏览者的信息太少，感觉除了首页上的文章不知道还有哪里可看，没有一些突出的地方让浏览者有欲望去点击。</p>
+<p>在网络上我们可以看到关于<code>NexT</code>的美化教程一抓一大把，但关于<code>hueman</code>的却少之又少。所以，有了现在这篇关于<code>hueman</code>主题美化的文章。</p>
+<p>用过<code>NexT</code>后再来用<code>hueman</code>，就发现<code>hueman</code>主题里无论是集成的插件，还是可自定义的东西，和<code>NexT</code>比起来就是白纸一张…不过这也阻止不了我对这个主题的喜爱，没有集成的插件就自己装呗，没有自定义选项就自己去改呗。</p>
+<p>以下关于主题里的配置都是经过我自己亲手去配置过的，所以100%可用。如果出现异常情况，或者除了本篇文章所述的还想在<code>hueman</code>加入哪些功能的，可以在评论区留言，我尽力去研究下。</p>
+<h4 id="1-鼠标点击特效（4种）"><a href="#1-鼠标点击特效（4种）" class="headerlink" title="1. 鼠标点击特效（4种）"></a>1. 鼠标点击特效（4种）</h4><ul>
+<li>在<code>hueman/source/js/cursor/</code>目录下，新建四个文件js文件</li>
+</ul>
+<p><strong>1）fireworks.js</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Circle</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(&#123; origin, speed, color, angle, context &#125;) &#123;</span><br><span class="line">    <span class="keyword">this</span>.origin = origin</span><br><span class="line">    <span class="keyword">this</span>.position = &#123; ...this.origin &#125;</span><br><span class="line">    <span class="keyword">this</span>.color = color</span><br><span class="line">    <span class="keyword">this</span>.speed = speed</span><br><span class="line">    <span class="keyword">this</span>.angle = angle</span><br><span class="line">    <span class="keyword">this</span>.context = context</span><br><span class="line">    <span class="keyword">this</span>.renderCount = <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  draw() &#123;</span><br><span class="line">    <span class="keyword">this</span>.context.fillStyle = <span class="keyword">this</span>.color</span><br><span class="line">    <span class="keyword">this</span>.context.beginPath()</span><br><span class="line">    <span class="keyword">this</span>.context.arc(<span class="keyword">this</span>.position.x, <span class="keyword">this</span>.position.y, <span class="number">2</span>, <span class="number">0</span>, <span class="built_in">Math</span>.PI * <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">this</span>.context.fill()</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  move() &#123;</span><br><span class="line">    <span class="keyword">this</span>.position.x = (<span class="built_in">Math</span>.sin(<span class="keyword">this</span>.angle) * <span class="keyword">this</span>.speed) + <span class="keyword">this</span>.position.x</span><br><span class="line">    <span class="keyword">this</span>.position.y = (<span class="built_in">Math</span>.cos(<span class="keyword">this</span>.angle) * <span class="keyword">this</span>.speed) + <span class="keyword">this</span>.position.y + (<span class="keyword">this</span>.renderCount * <span class="number">0.3</span>)</span><br><span class="line">    <span class="keyword">this</span>.renderCount++</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Boom</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span> (&#123; origin, context, circleCount = <span class="number">16</span>, area &#125;) &#123;</span><br><span class="line">    <span class="keyword">this</span>.origin = origin</span><br><span class="line">    <span class="keyword">this</span>.context = context</span><br><span class="line">    <span class="keyword">this</span>.circleCount = circleCount</span><br><span class="line">    <span class="keyword">this</span>.area = area</span><br><span class="line">    <span class="keyword">this</span>.stop = <span class="literal">false</span></span><br><span class="line">    <span class="keyword">this</span>.circles = []</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  randomArray(range) &#123;</span><br><span class="line">    <span class="keyword">const</span> length = range.length</span><br><span class="line">    <span class="keyword">const</span> randomIndex = <span class="built_in">Math</span>.floor(length * <span class="built_in">Math</span>.random())</span><br><span class="line">    <span class="keyword">return</span> range[randomIndex]</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  randomColor() &#123;</span><br><span class="line">    <span class="keyword">const</span> range = [<span class="string">'8'</span>, <span class="string">'9'</span>, <span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>, <span class="string">'F'</span>]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'#'</span> + <span class="keyword">this</span>.randomArray(range) + <span class="keyword">this</span>.randomArray(range) + <span class="keyword">this</span>.randomArray(range) + <span class="keyword">this</span>.randomArray(range) + <span class="keyword">this</span>.randomArray(range) + <span class="keyword">this</span>.randomArray(range)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  randomRange(start, end) &#123;</span><br><span class="line">    <span class="keyword">return</span> (end - start) * <span class="built_in">Math</span>.random() + start</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  init() &#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.circleCount; i++) &#123;</span><br><span class="line">      <span class="keyword">const</span> circle = <span class="keyword">new</span> Circle(&#123;</span><br><span class="line">        context: <span class="keyword">this</span>.context,</span><br><span class="line">        origin: <span class="keyword">this</span>.origin,</span><br><span class="line">        color: <span class="keyword">this</span>.randomColor(),</span><br><span class="line">        angle: <span class="keyword">this</span>.randomRange(<span class="built_in">Math</span>.PI - <span class="number">1</span>, <span class="built_in">Math</span>.PI + <span class="number">1</span>),</span><br><span class="line">        speed: <span class="keyword">this</span>.randomRange(<span class="number">1</span>, <span class="number">6</span>)</span><br><span class="line">      &#125;)</span><br><span class="line">      <span class="keyword">this</span>.circles.push(circle)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  move() &#123;</span><br><span class="line">    <span class="keyword">this</span>.circles.forEach(<span class="function">(<span class="params">circle, index</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (circle.position.x &gt; <span class="keyword">this</span>.area.width || circle.position.y &gt; <span class="keyword">this</span>.area.height) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.circles.splice(index, <span class="number">1</span>)</span><br><span class="line">      &#125;</span><br><span class="line">      circle.move()</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.circles.length == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">this</span>.stop = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  draw() &#123;</span><br><span class="line">    <span class="keyword">this</span>.circles.forEach(<span class="function"><span class="params">circle</span> =&gt;</span> circle.draw())</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CursorSpecialEffects</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">this</span>.computerCanvas = <span class="built_in">document</span>.createElement(<span class="string">'canvas'</span>)</span><br><span class="line">    <span class="keyword">this</span>.renderCanvas = <span class="built_in">document</span>.createElement(<span class="string">'canvas'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.computerContext = <span class="keyword">this</span>.computerCanvas.getContext(<span class="string">'2d'</span>)</span><br><span class="line">    <span class="keyword">this</span>.renderContext = <span class="keyword">this</span>.renderCanvas.getContext(<span class="string">'2d'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.globalWidth = <span class="built_in">window</span>.innerWidth</span><br><span class="line">    <span class="keyword">this</span>.globalHeight = <span class="built_in">window</span>.innerHeight</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.booms = []</span><br><span class="line">    <span class="keyword">this</span>.running = <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  handleMouseDown(e) &#123;</span><br><span class="line">    <span class="keyword">const</span> boom = <span class="keyword">new</span> Boom(&#123;</span><br><span class="line">      origin: &#123; <span class="attr">x</span>: e.clientX, <span class="attr">y</span>: e.clientY &#125;,</span><br><span class="line">      context: <span class="keyword">this</span>.computerContext,</span><br><span class="line">      area: &#123;</span><br><span class="line">        width: <span class="keyword">this</span>.globalWidth,</span><br><span class="line">        height: <span class="keyword">this</span>.globalHeight</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    boom.init()</span><br><span class="line">    <span class="keyword">this</span>.booms.push(boom)</span><br><span class="line">    <span class="keyword">this</span>.running || <span class="keyword">this</span>.run()</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  handlePageHide() &#123;</span><br><span class="line">    <span class="keyword">this</span>.booms = []</span><br><span class="line">    <span class="keyword">this</span>.running = <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  init() &#123;</span><br><span class="line">    <span class="keyword">const</span> style = <span class="keyword">this</span>.renderCanvas.style</span><br><span class="line">    style.position = <span class="string">'fixed'</span></span><br><span class="line">    style.top = style.left = <span class="number">0</span></span><br><span class="line">    style.zIndex = <span class="string">'999999999999999999999999999999999999999999'</span></span><br><span class="line">    style.pointerEvents = <span class="string">'none'</span></span><br><span class="line"></span><br><span class="line">    style.width = <span class="keyword">this</span>.renderCanvas.width = <span class="keyword">this</span>.computerCanvas.width = <span class="keyword">this</span>.globalWidth</span><br><span class="line">    style.height = <span class="keyword">this</span>.renderCanvas.height = <span class="keyword">this</span>.computerCanvas.height = <span class="keyword">this</span>.globalHeight</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.body.append(<span class="keyword">this</span>.renderCanvas)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">'mousedown'</span>, <span class="keyword">this</span>.handleMouseDown.bind(<span class="keyword">this</span>))</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">'pagehide'</span>, <span class="keyword">this</span>.handlePageHide.bind(<span class="keyword">this</span>))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  run() &#123;</span><br><span class="line">    <span class="keyword">this</span>.running = <span class="literal">true</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.booms.length == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.running = <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    requestAnimationFrame(<span class="keyword">this</span>.run.bind(<span class="keyword">this</span>))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.computerContext.clearRect(<span class="number">0</span>, <span class="number">0</span>, <span class="keyword">this</span>.globalWidth, <span class="keyword">this</span>.globalHeight)</span><br><span class="line">    <span class="keyword">this</span>.renderContext.clearRect(<span class="number">0</span>, <span class="number">0</span>, <span class="keyword">this</span>.globalWidth, <span class="keyword">this</span>.globalHeight)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.booms.forEach(<span class="function">(<span class="params">boom, index</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (boom.stop) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.booms.splice(index, <span class="number">1</span>)</span><br><span class="line">      &#125;</span><br><span class="line">      boom.move()</span><br><span class="line">      boom.draw()</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">this</span>.renderContext.drawImage(<span class="keyword">this</span>.computerCanvas, <span class="number">0</span>, <span class="number">0</span>, <span class="keyword">this</span>.globalWidth, <span class="keyword">this</span>.globalHeight)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> cursorSpecialEffects = <span class="keyword">new</span> CursorSpecialEffects()</span><br><span class="line">cursorSpecialEffects.init()</span><br></pre></td></tr></table></figure>
+<p><strong>2）explosion.min.js</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">"use strict"</span>;<span class="function"><span class="keyword">function</span> <span class="title">updateCoords</span>(<span class="params">e</span>)</span>&#123;pointerX=(e.clientX||e.touches[<span class="number">0</span>].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[<span class="number">0</span>].clientY-canvasEl.getBoundingClientRect().top&#125;<span class="function"><span class="keyword">function</span> <span class="title">setParticuleDirection</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> t=anime.random(<span class="number">0</span>,<span class="number">360</span>)*<span class="built_in">Math</span>.PI/<span class="number">180</span>,a=anime.random(<span class="number">50</span>,<span class="number">180</span>),n=[<span class="number">-1</span>,<span class="number">1</span>][anime.random(<span class="number">0</span>,<span class="number">1</span>)]*a;<span class="keyword">return</span>&#123;<span class="attr">x</span>:e.x+n*<span class="built_in">Math</span>.cos(t),<span class="attr">y</span>:e.y+n*<span class="built_in">Math</span>.sin(t)&#125;&#125;<span class="function"><span class="keyword">function</span> <span class="title">createParticule</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">var</span> a=&#123;&#125;;<span class="keyword">return</span> a.x=e,a.y=t,a.color=colors[anime.random(<span class="number">0</span>,colors.length<span class="number">-1</span>)],a.radius=anime.random(<span class="number">16</span>,<span class="number">32</span>),a.endPos=setParticuleDirection(a),a.draw=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">Math</span>.PI,!<span class="number">0</span>),ctx.fillStyle=a.color,ctx.fill()&#125;,a&#125;<span class="function"><span class="keyword">function</span> <span class="title">createCircle</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">var</span> a=&#123;&#125;;<span class="keyword">return</span> a.x=e,a.y=t,a.color=<span class="string">"#F00"</span>,a.radius=<span class="number">0.1</span>,a.alpha=<span class="number">0.5</span>,a.lineWidth=<span class="number">6</span>,a.draw=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">Math</span>.PI,!<span class="number">0</span>),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=<span class="number">1</span>&#125;,a&#125;<span class="function"><span class="keyword">function</span> <span class="title">renderParticule</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">for</span>(<span class="keyword">var</span> t=<span class="number">0</span>;t&lt;e.animatables.length;t++)&#123;e.animatables[t].target.draw()&#125;&#125;<span class="function"><span class="keyword">function</span> <span class="title">animateParticules</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">for</span>(<span class="keyword">var</span> a=createCircle(e,t),n=[],i=<span class="number">0</span>;i&lt;numberOfParticules;i++)&#123;n.push(createParticule(e,t))&#125;anime.timeline().add(&#123;<span class="attr">targets</span>:n,<span class="attr">x</span>:<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">return</span> e.endPos.x&#125;,<span class="attr">y</span>:<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">return</span> e.endPos.y&#125;,<span class="attr">radius</span>:<span class="number">0.1</span>,<span class="attr">duration</span>:anime.random(<span class="number">1200</span>,<span class="number">1800</span>),<span class="attr">easing</span>:<span class="string">"easeOutExpo"</span>,<span class="attr">update</span>:renderParticule&#125;).add(&#123;<span class="attr">targets</span>:a,<span class="attr">radius</span>:anime.random(<span class="number">80</span>,<span class="number">160</span>),<span class="attr">lineWidth</span>:<span class="number">0</span>,<span class="attr">alpha</span>:&#123;<span class="attr">value</span>:<span class="number">0</span>,<span class="attr">easing</span>:<span class="string">"linear"</span>,<span class="attr">duration</span>:anime.random(<span class="number">600</span>,<span class="number">800</span>)&#125;,<span class="attr">duration</span>:anime.random(<span class="number">1200</span>,<span class="number">1800</span>),<span class="attr">easing</span>:<span class="string">"easeOutExpo"</span>,<span class="attr">update</span>:renderParticule,<span class="attr">offset</span>:<span class="number">0</span>&#125;)&#125;<span class="function"><span class="keyword">function</span> <span class="title">debounce</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">var</span> a;<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">var</span> n=<span class="keyword">this</span>,i=<span class="built_in">arguments</span>;clearTimeout(a),a=setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;e.apply(n,i)&#125;,t)&#125;&#125;<span class="keyword">var</span> canvasEl=<span class="built_in">document</span>.querySelector(<span class="string">".fireworks"</span>);<span class="keyword">if</span>(canvasEl)&#123;<span class="keyword">var</span> ctx=canvasEl.getContext(<span class="string">"2d"</span>),numberOfParticules=<span class="number">30</span>,pointerX=<span class="number">0</span>,pointerY=<span class="number">0</span>,tap=<span class="string">"mousedown"</span>,colors=[<span class="string">"#FF1461"</span>,<span class="string">"#18FF92"</span>,<span class="string">"#5A87FF"</span>,<span class="string">"#FBF38C"</span>],setCanvasSize=debounce(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;canvasEl.width=<span class="number">2</span>*<span class="built_in">window</span>.innerWidth,canvasEl.height=<span class="number">2</span>*<span class="built_in">window</span>.innerHeight,canvasEl.style.width=<span class="built_in">window</span>.innerWidth+<span class="string">"px"</span>,canvasEl.style.height=<span class="built_in">window</span>.innerHeight+<span class="string">"px"</span>,canvasEl.getContext(<span class="string">"2d"</span>).scale(<span class="number">2</span>,<span class="number">2</span>)&#125;,<span class="number">500</span>),render=anime(&#123;<span class="attr">duration</span>:<span class="number">1</span>/<span class="number">0</span>,<span class="attr">update</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,canvasEl.width,canvasEl.height)&#125;&#125;);<span class="built_in">document</span>.addEventListener(tap,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="string">"sidebar"</span>!==e.target.id&amp;&amp;<span class="string">"toggle-sidebar"</span>!==e.target.id&amp;&amp;<span class="string">"A"</span>!==e.target.nodeName&amp;&amp;<span class="string">"IMG"</span>!==e.target.nodeName&amp;&amp;(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))&#125;,!<span class="number">1</span>),setCanvasSize(),<span class="built_in">window</span>.addEventListener(<span class="string">"resize"</span>,setCanvasSize,!<span class="number">1</span>)&#125;<span class="string">"use strict"</span>;<span class="function"><span class="keyword">function</span> <span class="title">updateCoords</span>(<span class="params">e</span>)</span>&#123;pointerX=(e.clientX||e.touches[<span class="number">0</span>].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[<span class="number">0</span>].clientY-canvasEl.getBoundingClientRect().top&#125;<span class="function"><span class="keyword">function</span> <span class="title">setParticuleDirection</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> t=anime.random(<span class="number">0</span>,<span class="number">360</span>)*<span class="built_in">Math</span>.PI/<span class="number">180</span>,a=anime.random(<span class="number">50</span>,<span class="number">180</span>),n=[<span class="number">-1</span>,<span class="number">1</span>][anime.random(<span class="number">0</span>,<span class="number">1</span>)]*a;<span class="keyword">return</span>&#123;<span class="attr">x</span>:e.x+n*<span class="built_in">Math</span>.cos(t),<span class="attr">y</span>:e.y+n*<span class="built_in">Math</span>.sin(t)&#125;&#125;<span class="function"><span class="keyword">function</span> <span class="title">createParticule</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">var</span> a=&#123;&#125;;<span class="keyword">return</span> a.x=e,a.y=t,a.color=colors[anime.random(<span class="number">0</span>,colors.length<span class="number">-1</span>)],a.radius=anime.random(<span class="number">16</span>,<span class="number">32</span>),a.endPos=setParticuleDirection(a),a.draw=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">Math</span>.PI,!<span class="number">0</span>),ctx.fillStyle=a.color,ctx.fill()&#125;,a&#125;<span class="function"><span class="keyword">function</span> <span class="title">createCircle</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">var</span> a=&#123;&#125;;<span class="keyword">return</span> a.x=e,a.y=t,a.color=<span class="string">"#F00"</span>,a.radius=<span class="number">0.1</span>,a.alpha=<span class="number">0.5</span>,a.lineWidth=<span class="number">6</span>,a.draw=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">Math</span>.PI,!<span class="number">0</span>),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=<span class="number">1</span>&#125;,a&#125;<span class="function"><span class="keyword">function</span> <span class="title">renderParticule</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">for</span>(<span class="keyword">var</span> t=<span class="number">0</span>;t&lt;e.animatables.length;t++)&#123;e.animatables[t].target.draw()&#125;&#125;<span class="function"><span class="keyword">function</span> <span class="title">animateParticules</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">for</span>(<span class="keyword">var</span> a=createCircle(e,t),n=[],i=<span class="number">0</span>;i&lt;numberOfParticules;i++)&#123;n.push(createParticule(e,t))&#125;anime.timeline().add(&#123;<span class="attr">targets</span>:n,<span class="attr">x</span>:<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">return</span> e.endPos.x&#125;,<span class="attr">y</span>:<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">return</span> e.endPos.y&#125;,<span class="attr">radius</span>:<span class="number">0.1</span>,<span class="attr">duration</span>:anime.random(<span class="number">1200</span>,<span class="number">1800</span>),<span class="attr">easing</span>:<span class="string">"easeOutExpo"</span>,<span class="attr">update</span>:renderParticule&#125;).add(&#123;<span class="attr">targets</span>:a,<span class="attr">radius</span>:anime.random(<span class="number">80</span>,<span class="number">160</span>),<span class="attr">lineWidth</span>:<span class="number">0</span>,<span class="attr">alpha</span>:&#123;<span class="attr">value</span>:<span class="number">0</span>,<span class="attr">easing</span>:<span class="string">"linear"</span>,<span class="attr">duration</span>:anime.random(<span class="number">600</span>,<span class="number">800</span>)&#125;,<span class="attr">duration</span>:anime.random(<span class="number">1200</span>,<span class="number">1800</span>),<span class="attr">easing</span>:<span class="string">"easeOutExpo"</span>,<span class="attr">update</span>:renderParticule,<span class="attr">offset</span>:<span class="number">0</span>&#125;)&#125;<span class="function"><span class="keyword">function</span> <span class="title">debounce</span>(<span class="params">e,t</span>)</span>&#123;<span class="keyword">var</span> a;<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">var</span> n=<span class="keyword">this</span>,i=<span class="built_in">arguments</span>;clearTimeout(a),a=setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;e.apply(n,i)&#125;,t)&#125;&#125;<span class="keyword">var</span> canvasEl=<span class="built_in">document</span>.querySelector(<span class="string">".fireworks"</span>);<span class="keyword">if</span>(canvasEl)&#123;<span class="keyword">var</span> ctx=canvasEl.getContext(<span class="string">"2d"</span>),numberOfParticules=<span class="number">30</span>,pointerX=<span class="number">0</span>,pointerY=<span class="number">0</span>,tap=<span class="string">"mousedown"</span>,colors=[<span class="string">"#FF1461"</span>,<span class="string">"#18FF92"</span>,<span class="string">"#5A87FF"</span>,<span class="string">"#FBF38C"</span>],setCanvasSize=debounce(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;canvasEl.width=<span class="number">2</span>*<span class="built_in">window</span>.innerWidth,canvasEl.height=<span class="number">2</span>*<span class="built_in">window</span>.innerHeight,canvasEl.style.width=<span class="built_in">window</span>.innerWidth+<span class="string">"px"</span>,canvasEl.style.height=<span class="built_in">window</span>.innerHeight+<span class="string">"px"</span>,canvasEl.getContext(<span class="string">"2d"</span>).scale(<span class="number">2</span>,<span class="number">2</span>)&#125;,<span class="number">500</span>),render=anime(&#123;<span class="attr">duration</span>:<span class="number">1</span>/<span class="number">0</span>,<span class="attr">update</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,canvasEl.width,canvasEl.height)&#125;&#125;);<span class="built_in">document</span>.addEventListener(tap,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="string">"sidebar"</span>!==e.target.id&amp;&amp;<span class="string">"toggle-sidebar"</span>!==e.target.id&amp;&amp;<span class="string">"A"</span>!==e.target.nodeName&amp;&amp;<span class="string">"IMG"</span>!==e.target.nodeName&amp;&amp;(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))&#125;,!<span class="number">1</span>),setCanvasSize(),<span class="built_in">window</span>.addEventListener(<span class="string">"resize"</span>,setCanvasSize,!<span class="number">1</span>)&#125;;</span><br></pre></td></tr></table></figure>
+<p><strong>3）love.min.js</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="function"><span class="keyword">function</span>(<span class="params">e,t,a</span>)</span>&#123;<span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>)</span>&#123;c(<span class="string">".heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;"</span>),o(),r()&#125;<span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>)</span>&#123;<span class="keyword">for</span>(<span class="keyword">var</span> e=<span class="number">0</span>;e&lt;d.length;e++)d[e].alpha&lt;=<span class="number">0</span>?(t.body.removeChild(d[e].el),d.splice(e,<span class="number">1</span>)):(d[e].y--,d[e].scale+=<span class="number">.004</span>,d[e].alpha-=<span class="number">.013</span>,d[e].el.style.cssText=<span class="string">"left:"</span>+d[e].x+<span class="string">"px;top:"</span>+d[e].y+<span class="string">"px;opacity:"</span>+d[e].alpha+<span class="string">";transform:scale("</span>+d[e].scale+<span class="string">","</span>+d[e].scale+<span class="string">") rotate(45deg);background:"</span>+d[e].color+<span class="string">";z-index:99999"</span>);requestAnimationFrame(r)&#125;<span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params"></span>)</span>&#123;<span class="keyword">var</span> t=<span class="string">"function"</span>==<span class="keyword">typeof</span> e.onclick&amp;&amp;e.onclick;e.onclick=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;t&amp;&amp;t(),i(e)&#125;&#125;<span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> a=t.createElement(<span class="string">"div"</span>);a.className=<span class="string">"heart"</span>,d.push(&#123;<span class="attr">el</span>:a,<span class="attr">x</span>:e.clientX<span class="number">-5</span>,<span class="attr">y</span>:e.clientY<span class="number">-5</span>,<span class="attr">scale</span>:<span class="number">1</span>,<span class="attr">alpha</span>:<span class="number">1</span>,<span class="attr">color</span>:s()&#125;),t.body.appendChild(a)&#125;<span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> a=t.createElement(<span class="string">"style"</span>);a.type=<span class="string">"text/css"</span>;<span class="keyword">try</span>&#123;a.appendChild(t.createTextNode(e))&#125;<span class="keyword">catch</span>(t)&#123;a.styleSheet.cssText=e&#125;t.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(a)&#125;<span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span><span class="string">"rgb("</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">","</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">","</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">")"</span>&#125;<span class="keyword">var</span> d=[];e.requestAnimationFrame=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;setTimeout(e,<span class="number">1e3</span>/<span class="number">60</span>)&#125;&#125;(),n()&#125;(<span class="built_in">window</span>,<span class="built_in">document</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>4）text.js</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a_idx = <span class="number">0</span>;</span><br><span class="line">jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">  $(<span class="string">"body"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">"富强"</span>, <span class="string">"民主"</span>, <span class="string">"文明"</span>, <span class="string">"和谐"</span>, <span class="string">"自由"</span>, <span class="string">"平等"</span>, <span class="string">"公正"</span> ,<span class="string">"法治"</span>, <span class="string">"爱国"</span>, <span class="string">"敬业"</span>, <span class="string">"诚信"</span>, <span class="string">"友善"</span>);</span><br><span class="line">    <span class="keyword">var</span> $i = $(<span class="string">"&lt;span/&gt;"</span>).text(a[a_idx]);</span><br><span class="line">    <span class="keyword">var</span> x = e.pageX,</span><br><span class="line">      y = e.pageY;</span><br><span class="line">    $i.css(&#123;</span><br><span class="line">      <span class="string">"z-index"</span>: <span class="number">99999</span>,</span><br><span class="line">      <span class="string">"top"</span>: y - <span class="number">28</span>,</span><br><span class="line">      <span class="string">"left"</span>: x - a[a_idx].length * <span class="number">8</span>,</span><br><span class="line">      <span class="string">"position"</span>: <span class="string">"absolute"</span>,</span><br><span class="line">      <span class="string">"font-weight"</span>: <span class="string">"bold"</span>,</span><br><span class="line">      <span class="string">"color"</span>: <span class="string">"rgb("</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">")"</span></span><br><span class="line">    &#125;);</span><br><span class="line">    $(<span class="string">"body"</span>).append($i);</span><br><span class="line">    $i.animate(&#123;</span><br><span class="line">      <span class="string">"top"</span>: y - <span class="number">180</span>,</span><br><span class="line">      <span class="string">"opacity"</span>: <span class="number">0</span></span><br><span class="line">    &#125;, <span class="number">1500</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      $i.remove();</span><br><span class="line">    &#125;);</span><br><span class="line">    a_idx = (a_idx + <span class="number">1</span>) % a.length;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>在<code>hueman/layout/common/head.js</code>文件中<code>&lt;/head&gt;</code>标签上方添加如下代码（引入）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.cursor.switch</span>) &#123; %&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.cursor.type</span> == <span class="string">'text'</span>) &#123; %&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/cursor/text.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.cursor.type</span> == <span class="string">'explosion'</span>) &#123; %&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/cursor/explosion.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.cursor.type</span> == <span class="string">'fireworks'</span>) &#123; %&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/cursor/fireworks.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span>(<span class="attr">theme.cursor.type</span> == <span class="string">'love'</span>) &#123; %&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/cursor/love.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在主题<code>_config.yml</code>中添加配置项：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cursor effect</span></span><br><span class="line"><span class="attr">cursor:</span></span><br><span class="line">    <span class="attr">switch:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">text</span> <span class="comment"># option: text explosion love fireworks</span></span><br></pre></td></tr></table></figure>
+<p><code>switch</code>设置为true打开，<code>type</code>是选择效果</p>
+</li>
+</ul>
+<h4 id="2-在侧边栏-sidebar-加入站点运行时间"><a href="#2-在侧边栏-sidebar-加入站点运行时间" class="headerlink" title="2. 在侧边栏(sidebar)加入站点运行时间"></a>2. 在侧边栏(sidebar)加入站点运行时间</h4><p><strong>效果</strong><br><img src="https://s2.ax1x.com/2020/02/14/1j3QUO.png" alt=""></p>
+<p>在<code>hueman/layout/common/sidebar.ejs</code>文件最下面的<code>&lt;/aside&gt;</code>标签上方加入如下代码</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=<span class="string">"padding:30px 30px 20px;font-size: 15px;text-align: center;color: #777777;"</span> id=<span class="string">"days"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;script language=<span class="string">"javascript"</span>&gt;</span><br><span class="line">        <span class="keyword">function</span> show<span class="constructor">_date_time()</span> &#123;</span><br><span class="line">		window.set<span class="constructor">Timeout(<span class="string">"show_date_time()"</span>, 1000)</span>;</span><br><span class="line">		BirthDay = <span class="keyword">new</span> <span class="constructor">Date(<span class="string">"09/01/2019 00:00:00"</span>)</span>;</span><br><span class="line">		today = <span class="keyword">new</span> <span class="constructor">Date()</span>;</span><br><span class="line">		timeold = (today.get<span class="constructor">Time()</span> - <span class="module-access"><span class="module"><span class="identifier">BirthDay</span>.</span></span>get<span class="constructor">Time()</span>);</span><br><span class="line">		sectimeold = timeold<span class="operator"> / </span><span class="number">1000</span> secondsold = <span class="module-access"><span class="module"><span class="identifier">Math</span>.</span></span>floor(sectimeold);</span><br><span class="line">		msPerDay = <span class="number">24</span><span class="operator"> * </span><span class="number">60</span><span class="operator"> * </span><span class="number">60</span><span class="operator"> * </span><span class="number">1000</span> e_daysold = timeold<span class="operator"> / </span>msPerDay daysold = <span class="module-access"><span class="module"><span class="identifier">Math</span>.</span></span>floor(e_daysold);</span><br><span class="line">		e_hrsold = (e_daysold - daysold)<span class="operator"> * </span><span class="number">24</span>;</span><br><span class="line">		hrsold = setzero(<span class="module-access"><span class="module"><span class="identifier">Math</span>.</span></span>floor(e_hrsold));</span><br><span class="line">		e_minsold = (e_hrsold - hrsold)<span class="operator"> * </span><span class="number">60</span>;</span><br><span class="line">		minsold = setzero(<span class="module-access"><span class="module"><span class="identifier">Math</span>.</span></span>floor((e_hrsold - hrsold)<span class="operator"> * </span><span class="number">60</span>));</span><br><span class="line">		seconds = setzero(<span class="module-access"><span class="module"><span class="identifier">Math</span>.</span></span>floor((e_minsold - minsold)<span class="operator"> * </span><span class="number">60</span>));</span><br><span class="line">		document.get<span class="constructor">ElementById('<span class="params">days</span>')</span>.innerHTML = <span class="string">"小站已经运行了"</span> + daysold + <span class="string">"天"</span> + hrsold + <span class="string">"时"</span> + minsold + <span class="string">"分"</span> + seconds + <span class="string">"秒啦！"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">		<span class="keyword">function</span> setzero(i) &#123;</span><br><span class="line">			<span class="keyword">if</span> (i &lt; <span class="number">10</span>) &#123;</span><br><span class="line">				i = <span class="string">"0"</span> + i</span><br><span class="line">			&#125;;</span><br><span class="line">			return i;</span><br><span class="line">		&#125;</span><br><span class="line">		show<span class="constructor">_date_time()</span>;</span><br><span class="line">	&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>在<code>BirthDay</code>那里改成你的创站时间即可。</p>
+<h4 id="3-美化侧边栏-sidebar-标签云"><a href="#3-美化侧边栏-sidebar-标签云" class="headerlink" title="3. 美化侧边栏(sidebar)标签云"></a>3. 美化侧边栏(sidebar)标签云</h4><p><strong>效果：</strong><br><img src="https://s2.ax1x.com/2020/02/14/1j8JFU.png" alt=""></p>
+<p>在<code>hueman/source/css/_partial/sidebar.styl</code>文件中，找到<code>.tagcloud</code>下面<code>&lt;a&gt;</code>标签的样式代码，覆盖为以下代码就行了，整体就是下面这样</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.tagcloud</span></span><br><span class="line">    <span class="selector-tag">a</span></span><br><span class="line">        <span class="selector-tag">white-space</span><span class="selector-pseudo">:nowrap</span></span><br><span class="line">        <span class="selector-tag">-webkit-box-shadow</span>: 0 1<span class="selector-tag">px</span> 3<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0, 0, 0, <span class="selector-class">.12</span>), 0 1<span class="selector-tag">px</span> 2<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0, 0, 0, <span class="selector-class">.24</span>)</span><br><span class="line">        <span class="selector-tag">-moz-box-shadow</span>: 0 1<span class="selector-tag">px</span> 3<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0, 0, 0, <span class="selector-class">.12</span>), 0 1<span class="selector-tag">px</span> 2<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0, 0, 0, <span class="selector-class">.24</span>)</span><br><span class="line">        <span class="selector-tag">box-shadow</span>: 0 1<span class="selector-tag">px</span> 3<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0, 0, 0, <span class="selector-class">.12</span>), 0 1<span class="selector-tag">px</span> 2<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0, 0, 0, <span class="selector-class">.24</span>)</span><br><span class="line">        font-family: 'Comic Sans MS', sans-serif</span><br><span class="line">        <span class="selector-tag">transition</span>: <span class="selector-class">.2s</span> <span class="selector-tag">ease-out</span></span><br><span class="line">        <span class="selector-tag">padding</span>: 3<span class="selector-tag">px</span> 5<span class="selector-tag">px</span></span><br><span class="line">        <span class="selector-tag">margin</span>: 8<span class="selector-tag">px</span></span><br><span class="line">        <span class="selector-tag">background</span>: <span class="selector-id">#f5f5f5</span></span><br><span class="line">        <span class="selector-tag">border-bottom</span>: <span class="selector-tag">none</span></span><br><span class="line">        <span class="selector-tag">border-radius</span>: 15<span class="selector-tag">px</span></span><br><span class="line"></span><br><span class="line">        &amp;<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">            <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">100</span>,<span class="number">154</span>,<span class="number">182</span>,<span class="number">0.902</span>)</span><br><span class="line">            color: <span class="number">#fff</span></span><br><span class="line">            -webkit-box-shadow: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>), <span class="number">0</span> <span class="number">6px</span> <span class="number">20px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.19</span>)</span><br><span class="line">            -moz-box-shadow: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>), <span class="number">0</span> <span class="number">6px</span> <span class="number">20px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.19</span>)</span><br><span class="line">            box-shadow: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>), <span class="number">0</span> <span class="number">6px</span> <span class="number">20px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.19</span>)</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-修改页面颜色"><a href="#4-修改页面颜色" class="headerlink" title="4. 修改页面颜色"></a>4. 修改页面颜色</h4><p><strong>header颜色</strong><br><img src="https://s2.ax1x.com/2020/02/14/1vZuP1.jpg" alt=""></p>
+<p>其实就是修改上图所示区域的颜色。进入<code>hueman/source/css/_variables.styl</code>文件中，找到<code>color-header-background</code>，修改后面的十六进制颜色就好了。<br>如果不想要这个背景色的话，进入<code>hueman/source/css/_partial/header.styl</code>文件中，把<code>#header</code>样式下的<code>background</code>整句删掉或注释掉即可。</p>
+<p><strong>footer颜色</strong><br><img src="https://s2.ax1x.com/2020/02/14/1vZEb4.png" alt=""></p>
+<p>修改了header颜色别忘了修改页面底部的颜色，对称美嘛。进入<code>hueman/source/css/_variables.styl</code>文件中，找到<code>color-footer-background</code>，修改后面的十六进制颜色就好了。<br>如果不想要这个背景色的话，进入<code>hueman/source/css/_partial/footer.styl</code>文件中，把<code>#footer</code>样式下的<code>background</code>整句删掉或注释掉即可。</p>
+<p><strong>nav颜色</strong><br><img src="https://s2.ax1x.com/2020/02/14/1vZm5R.jpg" alt=""></p>
+<p>修改菜单栏颜色。进入<code>hueman/source/css/_variables.styl</code>文件中，找到<code>color-mobile-nav-background</code>和<code>color-nav-background</code>，修改后面的十六进制颜色就好了。有mobile那个应该是移动端的，有兴趣的自己改改看呗~<br>如果不想要这个背景色的话，emm…应该没人会删掉菜单栏颜色吧…</p>
+<p><strong>主题颜色</strong><br><img src="https://s2.ax1x.com/2020/02/14/1vZea9.jpg" alt=""></p>
+<p>修改主题颜色。主题颜色就是上面圈起来部分的颜色，加上全局鼠标悬停(hover)在文字上时的颜色。在主题<code>_config.yml</code>文件中找到<code>customize</code>下的<code>theme_color</code>修改后面的十六进制颜色就行了。</p>
+<h4 id="5-自定义网页背景图"><a href="#5-自定义网页背景图" class="headerlink" title="5. 自定义网页背景图"></a>5. 自定义网页背景图</h4><p>你们想不想像我一样网页有背景图呢？把你想设为背景图的图片放入<code>hueman/source/css/images/</code>目录下并命名为<code>bg.jpg</code>，然后进入<code>hueman/source/css/style.styl</code>文件，注释掉或删掉<code>body</code>样式下的<code>background</code>整句，添加以下代码就可啦！</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">background-image: url("images/bg.jpg")</span><br><span class="line">    <span class="selector-tag">background-attachment</span><span class="selector-pseudo">:fixed</span>;</span><br><span class="line">    <span class="selector-tag">background-size</span><span class="selector-pseudo">:cover</span>;</span><br></pre></td></tr></table></figure>
+
+<p>但是机智的你们会发现，这么大的图片在移动端显示的话会变得特别模糊。所以，我们可以在移动端切换成另一张和手机壁纸同等大小的图片。把你想设为<strong>小屏幕下</strong>背景图的图片放入<code>hueman/source/css/images/</code>目录下并命名为<code>bg-xs.jpg</code>，进入<code>hueman/source/css/images/_responsive.styl</code>文件下，在最顶端加入下面这段媒体查询代码就一切都解决了。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ------------------------------------------------------------------------- *</span></span><br><span class="line"><span class="comment"> *    customlize</span></span><br><span class="line"><span class="comment">/* ------------------------------------------------------------------------- */</span></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width:</span> <span class="number">768px</span>)</span><br><span class="line">    body</span><br><span class="line">        <span class="attribute">background-image:</span> url(<span class="string">"images/bg-xs.jpg"</span>)</span><br><span class="line">        <span class="attribute">background-attachment:</span>fixed;</span><br><span class="line">        <span class="selector-tag">background-size</span><span class="selector-pseudo">:cover</span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-回到顶部按钮"><a href="#6-回到顶部按钮" class="headerlink" title="6. 回到顶部按钮"></a>6. 回到顶部按钮</h4><p><strong>效果</strong><br><img src="https://s2.ax1x.com/2020/02/14/1jYEo6.png" alt=""></p>
+<p>看效果图我是把它变成圆形了</p>
+<ul>
+<li>在<code>hueman/source/css/_partial/footer.styl</code>文件中，找到<code>#back-to-top</code>的样式代码，覆盖为以下代码<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#back-to-top</span></span><br><span class="line">        <span class="selector-tag">background</span>: <span class="selector-tag">color-background</span></span><br><span class="line">        <span class="selector-tag">color</span>: <span class="selector-id">#777</span></span><br><span class="line">        <span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span></span><br><span class="line">        <span class="selector-tag">text-align</span>: <span class="selector-tag">center</span></span><br><span class="line">        <span class="selector-tag">width</span>: 60<span class="selector-tag">px</span></span><br><span class="line">        <span class="selector-tag">height</span>: 60<span class="selector-tag">px</span></span><br><span class="line">        <span class="selector-tag">display</span>: <span class="selector-tag">block</span></span><br><span class="line">        <span class="selector-tag">margin</span>: 0 <span class="selector-tag">auto</span> <span class="selector-tag">-30px</span></span><br><span class="line">        <span class="selector-tag">border-radius</span>: 50%</span><br><span class="line">        <span class="selector-tag">box-shadow</span>: 0 1<span class="selector-tag">px</span> 1<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0,0,0,0<span class="selector-class">.1</span>)</span><br><span class="line">        &amp;<span class="selector-pseudo">:hover</span></span><br><span class="line">            <span class="selector-tag">color</span>: <span class="selector-id">#444</span></span><br><span class="line">        <span class="selector-tag">i</span></span><br><span class="line">            <span class="selector-tag">font-size</span>: 38<span class="selector-tag">px</span></span><br><span class="line">            <span class="selector-tag">line-height</span>: 53<span class="selector-tag">px</span></span><br></pre></td></tr></table></figure></li>
+<li>因为修改后在小屏情况下，按钮会和文章板块紧贴着，非常不美观，所以要把<code>hueman/source/css/_responsive.styl</code>（专门控制响应式布局的）文件中的<code>#back-to-top</code>样式代码覆盖为下面的代码<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#back-to-top</span></span><br><span class="line">            <span class="selector-tag">margin</span>: 20<span class="selector-tag">px</span> <span class="selector-tag">auto</span> 0;</span><br><span class="line">            <span class="selector-tag">box-shadow</span>: 0 1<span class="selector-tag">px</span> 1<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0,0,0,0<span class="selector-class">.1</span>), <span class="selector-tag">inset</span> 0 1<span class="selector-tag">px</span> 0 <span class="selector-tag">rgba</span>(0,0,0,0<span class="selector-class">.05</span>);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="7-添加不蒜子统计"><a href="#7-添加不蒜子统计" class="headerlink" title="7. 添加不蒜子统计"></a>7. 添加不蒜子统计</h4><p>在<code>hueman/layout/common/footer.ejs</code>文件中，在<code>&lt;% if (theme.poweredby) { %&gt;</code>语句上方添加两句代码即可</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 不蒜子 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_uv"</span>&gt;</span>本站访客数<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>人次<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>持续更新中…</strong></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" target="_blank" rel="noopener">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "小K同學"
+        },
+        "headline": "hexo——hueman主题美化（持续更新中）",
+        "image": "https://jackie1123.github.iohttps://s2.ax1x.com/2020/02/14/1j3QUO.png",
+        "keywords": "hexo hueman主题 美化",
+        "genre": "学习笔记 hexo",
+        "datePublished": "2020-02-14",
+        "dateCreated": "2020-02-14",
+        "dateModified": "2020-02-15",
+        "url": "https://jackie1123.github.io/posts/20719/",
+        "description": "现在hexo的主题中最heat的就是NexT了。截至我在写这篇文章，它GitHub的star已经达到了4.9k。NexT主题以简洁，自定义度高，插件集成多等等因素，被众多人喜爱。就我入坑hexo的那一会，我也用过一段时间的NexT。但是在后来觉得，NexT没有博客该有的样子，太过于简洁，可视页面上给予浏览者的信息太少，感觉除了首页上的文章不知道还有哪里可看，没有一些突出的地方让浏览者有欲望去点击。",
+        "wordCount": 3436
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <!-- Valine -->
+    <div class="vcomments"></div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="lastfm-square" href="http://www.coolapk.com/u/691518" target="_blank" rel="noopener">
+                        <i class="icon fa fa-lastfm-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/yuenhang.ho" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/Jackie1123" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="instagram" href="https://instagram.com/mr._jacky" target="_blank" rel="noopener">
+                        <i class="icon fa fa-instagram"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:1257868332@qq.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/posts/34220/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">从零开始入坑hexo博客</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新发出</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/20719/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/14/1j3QUO.png)" alt="hexo——hueman主题美化（持续更新中）" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a></p>
+                            <p class="item-title"><a href="/posts/20719/" class="title">hexo——hueman主题美化（持续更新中）</a></p>
+                            <p class="item-date"><time datetime="2020-02-14T08:37:27.000Z" itemprop="datePublished">2020-02-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/34220/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/13/1O4Iun.png)" alt="从零开始入坑hexo博客" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a></p>
+                            <p class="item-title"><a href="/posts/34220/" class="title">从零开始入坑hexo博客</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T14:32:52.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/63722/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/11/1T3tNq.png)" alt="Git分布式版本管理系统入门（一）" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a></p>
+                            <p class="item-title"><a href="/posts/63722/" class="title">Git分布式版本管理系统入门（一）</a></p>
+                            <p class="item-date"><time datetime="2020-02-11T10:30:04.000Z" itemprop="datePublished">2020-02-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/3557/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/12/1b0APO.png)" alt="日本语一类形容词与二类形容词的区别" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/3557/" class="title">日本语一类形容词与二类形容词的区别</a></p>
+                            <p class="item-date"><time datetime="2020-02-06T13:49:44.000Z" itemprop="datePublished">2020-02-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/posts/9149/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://s2.ax1x.com/2020/02/05/1sXu4O.png)" alt="日本语——「に」的用法总结" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a></p>
+                            <p class="item-title"><a href="/posts/9149/" class="title">日本语——「に」的用法总结</a></p>
+                            <p class="item-date"><time datetime="2020-02-05T06:56:43.000Z" itemprop="datePublished">2020-02-05</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/hueman%E4%B8%BB%E9%A2%98/" style="font-size: 15px;">hueman主题</a> <a href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" style="font-size: 10px;">「に」的用法</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px;">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">学习笔记</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 10px;">开发</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 20px;">旅行</a> <a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 15px;">日本</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" style="font-size: 20px;">日本语</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" style="font-size: 10px;">日本语形容词</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E7%BE%8E%E5%8C%96/" style="font-size: 10px;">美化</a> <a href="/tags/%E9%A6%99%E6%B8%AF/" style="font-size: 10px;">香港</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Git分布式版本管理系统</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/">日本语</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/">前端</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/">日本</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/">香港</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hueman%E4%B8%BB%E9%A2%98/" rel="tag">hueman主题</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/" rel="tag">「に」的用法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC/" rel="tag">日本</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/" rel="tag">日本语</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/" rel="tag">日本语形容词</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BE%8E%E5%8C%96/" rel="tag">美化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%99%E6%B8%AF/" rel="tag">香港</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">时间线</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+    <div style="padding:30px 30px 20px;font-size: 15px;text-align: center;color: #777777;" id="days"></div>
+    <script language="javascript">
+        function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("09/01/2019 00:00:00");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML="小站已经运行了"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒啦！";
+        }
+        function setzero(i){
+        if (i<10)
+        {i="0" + i};
+        return i;
+        }
+        show_date_time();
+    </script>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 - 2020 <i style="color:red;" class="fa fa-heartbeat" aria-hidden="true"></i> 小K同學</p>
+
+                <!-- 不蒜子 -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script src="//unpkg.com/valine"></script>
+    <script>
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "true",
+            verify: "true",
+            appId: "GyRlA9NrmdBQx1kkxzrQ4ohm-gzGzoHsz",
+            appKey: "RIeVhydcTUxqDjM6cFnDARUb",
+            placeholder: "说点啥...",
+            avatar:"identicon",
+            recordIP:"",
+            visitor: "true"
+        });
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+    <!-- 
+<script src="/js/clipboard/clipboard.min.js"></script>
+
+    
+<script src="/js/clipboard/clipboard-use.js"></script>
+ -->
+</html>
