@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git分布式版本管理系统入门（二）</title>
+    <url>/posts/26768/</url>
+    <content><![CDATA[<p>前篇回顾：<a href="https://kksan.top/posts/63722/">Git分布式版本管理系统入门（一）</a></p>
+<h4 id="五、Github开源代码库工作方式"><a href="#五、Github开源代码库工作方式" class="headerlink" title="五、Github开源代码库工作方式"></a>五、Github开源代码库工作方式</h4><p>想要完成一个简单的项目，下图中最基本的操作必须要掌握。<br>首先我们要知道，一个项目代码仓库是由任意个分支组成的，<text style="color: red;">每个仓库都应该会自动初始化一个主支【master】</text>。本地仓库有分支，远程仓库也有分支。<br>分支的含义：<text style="color: red;">其实是主支的分支，就像树枝一样。</text>新建一个分支时，Git会自动把主支的内容copy一份到你的分支。</p>
+<ul>
+<li><strong>Git分布式版本管理系统日常习惯：</strong></li>
+</ul>
+<ol>
+<li>主支【master】的作用：把分支合并进主支</li>
+<li>本地仓库除了【master】主支外，习惯性地还会新建一个自己的分支(一次开发完后习惯性地删除自己的分支)。主支用于查看项目代码，自己的分支用于修改项目。<text style="color: red">(非必要)</text></li>
+<li><text style="color: red">本地仓库推送到远程仓库时不应该直接推送到远程主支【master】</text>，应新建一个自己的分支，把项目推送到自己的分支。(例如下图的【xiaoming】分支)</li>
+<li>合并分支必须通过项目管理员同意。</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3xKg.png" alt=""></p>
+<ul>
+<li><strong>情景：</strong></li>
+</ul>
+<ol>
+<li>假如你叫小明，你刚刚部署了本地Git仓库(Local)，<text style="color: red">Git就会自动帮你新建一个本地主支【master】(远程仓库也一样)</text>。</li>
+<li>你已经把远程仓库<text style="color: red">连接</text>好，并且在远程仓库上新建了两个分支【xiaoming】和【partner】，本地新建了一个分支【xiaoming】。</li>
+<li><text style="color: red">切换</text>到本地【xiaoming】分支，这时你就可以使用<text style="color: red">克隆命令</text>或者<text style="color: red">拉取命令</text>把远程仓库主支【master】的项目拉取到本地仓库(如果你的远程仓库有项目的话)。</li>
+<li>好了，拉取到本地仓库后你就可以开始开发你的项目，在你的项目上面做修改。</li>
+<li>开发完成！你想把项目推送到远程仓库合并进主支。现在可以打开命令行用<text style="color: red">推送命令</text>把你的项目推送到远程仓库中自己的分支【xiaoming】。</li>
+<li>推送成功！下一步便是把自己的分支<text style="color: red">合并</text>进远程主支(Github网页操作)。这里就需要项目的管理员去<text style="color: red">审核</text>你的修改，管理员审核完后就可以把你的分支合并，合并后你修改的内容就会出现在远程主支了。(如出现严重冲突要拉回本地修改，简单的冲突可以在Github网页修改)。</li>
+<li>最后一步，把远程主支的项目<text style="color: red">拉取</text>到本地仓库的【master】主支，<text style="color: red">删除</text>本地【xiaoming】主支，一次的开发完成了。</li>
+</ol>
+<h4 id="六、Git的基本工作流程"><a href="#六、Git的基本工作流程" class="headerlink" title="六、Git的基本工作流程"></a>六、Git的基本工作流程</h4><ol>
+<li>git clone克隆远程资源到本地目录，作为工作目录；</li>
+<li>然后在本地的克隆目录上添加或修改文件；</li>
+<li>(如果远程修改了，需要同步远程的内容，直接git pull就可以更新本地的文件；)</li>
+<li>本地在修改之后，可以通过git status 查看修改的文件。然后使用git add 添加修改的文件暂到缓冲区；</li>
+<li>在添加之后，可以使用git commit添加到当前的工作区；</li>
+<li>在修改完成后，如果发现错误，可以撤回提交并再次修改并提交；</li>
+<li>git push将本地的修改推送到远程的git服务器。</li>
+</ol>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T89Vs.png" alt=""></p>
+<h4 id="七、Git的基本命令"><a href="#七、Git的基本命令" class="headerlink" title="七、Git的基本命令"></a>七、Git的基本命令</h4><p><strong><text style="color: red">注：项目文件夹鼠标右键打开Git Bash</text></strong></p>
+<ol>
+<li><p>初始化(建立)本地Git仓库<br>第一种方式：</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">init</span>  (对于已创建的文件夹，直接在文件夹目录下执行)</span><br></pre></td></tr></table></figure>
+<p>第二种方式：</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">cd</span>  <span class="string">文件夹</span></span><br><span class="line"><span class="attr">git</span>  <span class="string">init  ______ 在当前路径创建和项目同名的文件夹(红线为文件夹名)</span></span><br><span class="line"><span class="attr">cd</span>  <span class="string">your_project</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>连接远程仓库</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/Jackie/test.git</span><br></pre></td></tr></table></figure>
+<p>把地址部分改成自己远程仓库的地址，建完远程仓库后可看见<br><img src="https://s2.ax1x.com/2020/02/11/1T8Can.png" alt=""></p>
+</li>
+<li><p>从远程克隆项目(分支)到当前本地目录</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git clone <span class="strong">_____</span><span class="strong">_____</span><span class="strong">_____</span><span class="strong">_____</span><span class="emphasis">___</span>_  (项目仓库地址)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从远程取回某个分支的更新</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把本地的所有文件提交到暂存区</p>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> .  (命令后面的&lt; . &gt;代表全部文件)</span></span><br><span class="line">把本地的个别文件提交到暂存区</span><br><span class="line">git <span class="keyword">add</span><span class="bash"> ________  (红线处为需提交的文件名，需要写后缀)</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把暂存区的文件提交到分支</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="strong">_____</span><span class="emphasis">___</span>  (红线处填写此次更改的主要内容，注释)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把本地项目推送到远程仓库<br>第一次推送</p>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> _____  (红线处填你的远程分支名)</span><br></pre></td></tr></table></figure>
+<p>把本地项目推送到远程仓库的同名分支</p>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> _____  (红线处填你的远程分支名)</span><br></pre></td></tr></table></figure>
+<p>把本地项目推送到远程仓库的非同名分支</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git push  <span class="strong">_____</span><span class="emphasis">_  _</span><span class="strong">_____</span>  (红线处填你的远程分支名，蓝色线填你的本地分支名)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>其他本地基本操作：</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">git</span> <span class="string">status  查看变更情况</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log  查看提交日志</span></span><br><span class="line"></span><br><span class="line"><span class="attr">ls</span> <span class="string">-al 显示当前路径下的所有文件</span></span><br><span class="line"><span class="attr">mkdir</span> <span class="string">______  新建一个文件夹(红线为文件夹名称)</span></span><br><span class="line"><span class="attr">git</span> <span class="string">reset --hard 清除暂存区所有变更（此命令较危险，请谨慎使用）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">mv  原文件名   新文件名（给文件重命名）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">branch -v  查看分支</span></span><br><span class="line"><span class="attr">git</span> <span class="string">checkout -b 新分支名  创立新分支并切换   (分支=独立的开发空间)</span></span><br><span class="line"><span class="attr">git</span> <span class="string">checkout 分支名  切换分支</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --all  查看所有分支日志</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --all --graph  图形化</span></span><br><span class="line"><span class="attr">clear</span>  <span class="string">清屏</span></span><br><span class="line"> </span><br><span class="line"><span class="attr">gitk</span> <span class="string">图形化界面工具查看版本历史</span></span><br><span class="line"><span class="attr">gitk</span> <span class="string">--all  显示所有分支</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p><text style="color: red">更多相关命令代码可以到Github官方文档中查找</text></p>
+<h4 id="八、配置SSH公私钥，使用SSH连接到Github"><a href="#八、配置SSH公私钥，使用SSH连接到Github" class="headerlink" title="八、配置SSH公私钥，使用SSH连接到Github"></a>八、配置SSH公私钥，使用SSH连接到Github</h4><ol>
+<li><p>配置SSH公私钥有什么用？<br>我们要知道，当你使用<text style="color: red">https</text>的连接去推送项目时，在<text style="color: red">每次推送项目到远程时都需要输入账号密码验证你的身份</text>。<br><text style="color:red">而SSH公私钥代表你的身份</text>，可以把公私钥粘贴到N个git的服务器上（网站，云服务器），之后推送项目就不需重复输入密码验证身份了。<br>查看官方文档：<a href="https://help.github.com/cn/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key" target="_blank" rel="noopener">生成新SSH密钥以用于身份验证</a></p>
+</li>
+<li><p>新增SSH密钥到GitHub帐户<br>在生成 SSH 密钥之前，你可以检查是否有任何现有的SSH密钥<br>打开 Git Bash终端。<br>输入<code>ls -al  ~/.ssh</code>以查看是否存在现有SSH密钥：<br>检查目录列表以查看是否已经有SSH公钥。 默认情况下，公钥的文件名是以下之一：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">id_rsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">id_ecdsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">id_ed25519</span><span class="selector-class">.pub</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3zrQ.png" alt=""><br>如果你收到错误<code>~/.ssh 不存在</code>，不要担心！ 我们在生成新的SSH密钥时会创建它。<br>打开Git Bash终端。<br>粘贴下面的文本（替换为你的 GitHub 电子邮件地址）。</p>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b <span class="number">4096</span> -C <span class="symbol">your_email@</span>example.com</span><br><span class="line">（这将创建以所提供的电子邮件地址为标签的新 SSH 密钥）</span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.ax1x.com/2020/02/11/1T3jxS.png" alt=""></p>
+<figure class="highlight lasso"><table><tr><td class="code"><pre><span class="line">&gt; Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa key <span class="built_in">pair</span>.</span><br></pre></td></tr></table></figure>
+<p>提示你<code>Enter a file in which to save the key</code>（输入要保存密钥的文件）时，<text style="color: red">直接按 Enter 键，接受默认文件位置。</text></p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">&gt; Enter <span class="keyword">a</span> <span class="built_in">file</span> <span class="keyword">in</span> which <span class="built_in">to</span> save <span class="keyword">the</span> key (/c/textsers/you/.ssh/id_rsa):[Press enter]</span><br><span class="line">&gt; Enter <span class="keyword">a</span> <span class="built_in">file</span> <span class="keyword">in</span> which <span class="built_in">to</span> save <span class="keyword">the</span> key (/home/you/.ssh/id_rsa): [Press enter]</span><br></pre></td></tr></table></figure>
+<p>在提示时输入安全密码。<text style="color: red">（建议直接按 Enter 键）</text></p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">&gt; Enter passphrase (empty <span class="keyword">for</span> no passphrase): [<span class="keyword">Type</span> <span class="type">a </span>passphrase]</span><br><span class="line">&gt; Enter same passphrase again: [<span class="keyword">Type</span> <span class="type">passphrase </span>again]</span><br></pre></td></tr></table></figure>
+<p>如下图：<br><img src="https://s2.ax1x.com/2020/02/11/1T8P5q.png" alt=""><br>再次检查<code>ls -al ~/.ssh</code><br><img src="https://s2.ax1x.com/2020/02/11/1T8FP0.png" alt=""><br><text style="color: red"><code>.pub</code>结尾的是公钥，私钥留于本地</text><br>输入：<br><code>cd ~/.ssh</code>（移动到公私钥文件夹）<br><code>cat id_rsa.pub</code> (查看公钥内容)<br><img src="https://s2.ax1x.com/2020/02/11/1T8kGV.png" alt=""><br>复制所得的密钥代码<br>到github个人页面右上角点击设置<br>在左侧找到此选项<br><img src="https://s2.ax1x.com/2020/02/11/1T8A2T.png" alt=""><br>在左侧找到此选项<br><img src="https://s2.ax1x.com/2020/02/11/1T8ExU.png" alt=""><br>单击New SSH key（新 SSH 密钥）或Add SSH key（添加 SSH 密钥）<br><img src="https://s2.ax1x.com/2020/02/11/1T8ZMF.png" alt=""><br>将密钥粘贴到 “Key”（密钥）字段Title(标题）可以不用写.<br>如图：<br><img src="https://s2.ax1x.com/2020/02/11/1T8uZ9.png" alt=""><br>单击Add SSH key（添加SSH密钥）<br><img src="https://s2.ax1x.com/2020/02/11/1T8MI1.png" alt=""><br>弹回认证页面，输入密码<br><img src="https://s2.ax1x.com/2020/02/11/1T8lPx.png" alt=""><br>登入后查看，配置成功。</p>
+</li>
+</ol>
+<p><strong><center>本教程完。</center></strong></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>Git分布式版本管理系统</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo——hueman主题美化（持续更新中）</title>
     <url>/posts/20719/</url>
     <content><![CDATA[<p>现在hexo的主题中最heat的就是<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener" title="NexT">NexT</a>了。截至我在写这篇文章，它GitHub的<code>star</code>已经达到了4.9k。NexT主题以简洁，自定义度高，插件集成多等等因素，被众多人喜爱。就我入坑hexo的那一会，我也用过一段时间的NexT。但是在后来觉得，NexT没有博客该有的样子，太过于简洁，可视页面上给予浏览者的信息太少，感觉除了首页上的文章不知道还有哪里可看，没有一些突出的地方让浏览者有欲望去点击。</p>
@@ -585,11 +685,11 @@
         <category>前端</category>
       </categories>
       <tags>
+        <tag>前端</tag>
         <tag>HTML</tag>
         <tag>编程</tag>
         <tag>JavaScript</tag>
         <tag>开发</tag>
-        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
