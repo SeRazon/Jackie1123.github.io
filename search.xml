@@ -452,6 +452,7 @@
 <p><img src="https://s2.ax1x.com/2020/02/11/1T3Du4.png" alt=""></p>
 <p><img src="https://s2.ax1x.com/2020/02/11/1T3rDJ.png" alt=""></p>
 <p>当你把暂存区的文件提交到分支后，用命令行(git status)查看当前“工作树”状态，会显示“working tree clean”。(右图)</p>
+<p>后篇：<a href="https://kksan.top/posts/26768/">Git分布式版本管理系统入门（二）</a></p>
 ]]></content>
       <categories>
         <category>学习笔记</category>
