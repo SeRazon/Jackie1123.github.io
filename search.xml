@@ -500,6 +500,8 @@
 <blockquote>
 <h3 id="小版本更新"><a href="#小版本更新" class="headerlink" title="小版本更新"></a>小版本更新</h3></blockquote>
 <ul>
+<li>2020年02月17日 V4.0.2 <strong>更改</strong>右下角天气为可修改位置，避免定位不准确</li>
+<li>2020年02月16日 V4.0.1 <strong>更改</strong>桌面端的背景图</li>
 <li>2020年02月10日 V3.1.2 <strong>增加</strong>「知乎」和「少数派」标签，<strong>移动</strong>标签中的三个个人网站到侧边栏「个人网站」列</li>
 <li>2020年02月09日 V3.1.1 <strong>增加</strong>seeres搜索，<strong>增加</strong>侧边栏工具列的常用入口，<strong>改变</strong>打开书签位置——点击logo</li>
 <li>2020年02月08日 V3.1.0 <strong>优化</strong>页面加载速度！加载变快了！输入提示词框微调</li>
@@ -583,11 +585,11 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>HTML</tag>
         <tag>编程</tag>
         <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
