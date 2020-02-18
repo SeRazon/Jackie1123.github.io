@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kksan.top/"/>
-  <updated>2020-02-17T12:40:04.829Z</updated>
+  <updated>2020-02-18T08:13:13.849Z</updated>
   <id>https://kksan.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日本语——「を」的用法总结</title>
+    <link href="https://kksan.top/posts/35177/"/>
+    <id>https://kksan.top/posts/35177/</id>
+    <published>2020-02-19T06:56:43.000Z</published>
+    <updated>2020-02-18T08:13:13.849Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="表示他动词的宾语（包括助动词后续使役动词的场合）。"><a href="#表示他动词的宾语（包括助动词后续使役动词的场合）。" class="headerlink" title="表示他动词的宾语（包括助动词后续使役动词的场合）。"></a>表示他动词的宾语（包括助动词后续使役动词的场合）。</h4><p>学生在图书馆读书。<br>学生は図书馆で本 <strong>を</strong> 読みます。</p><h4 id="表示临时带有他动词性质的自动词的目的或对象。"><a href="#表示临时带有他动词性质的自动词的目的或对象。" class="headerlink" title="表示临时带有他动词性质的自动词的目的或对象。"></a>表示临时带有他动词性质的自动词的目的或对象。</h4><p>因病向公司请假一周。<br>病気で一周间会社 <strong>を</strong> 休みました。</p><h4 id="表示动作移动或经过的场所，を后面的动词为移动性动词。"><a href="#表示动作移动或经过的场所，を后面的动词为移动性动词。" class="headerlink" title="表示动作移动或经过的场所，を后面的动词为移动性动词。"></a>表示动作移动或经过的场所，を后面的动词为移动性动词。</h4><p>夏天放假的时候，去了北海道和九州旅游。<br>如：夏休みには、北海道や九州 <strong>を</strong> 旅行して行きました。 </p><h4 id="表示经过的时间或时间点。"><a href="#表示经过的时间或时间点。" class="headerlink" title="表示经过的时间或时间点。"></a>表示经过的时间或时间点。</h4><p>就这样过了3年。<br>そこで3年 <strong>を</strong> 过ごした。 </p><h4 id="表示出发点。"><a href="#表示出发点。" class="headerlink" title="表示出发点。"></a>表示出发点。</h4><p>我每天八点从家里出去，去学校上学。<br>私は毎朝八时に家 <strong>を</strong> 出て、学校へ行きます。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;表示他动词的宾语（包括助动词后续使役动词的场合）。&quot;&gt;&lt;a href=&quot;#表示他动词的宾语（包括助动词后续使役动词的场合）。&quot; class=&quot;headerlink&quot; title=&quot;表示他动词的宾语（包括助动词后续使役动词的场合）。&quot;&gt;&lt;/a&gt;表示他动词的宾语（包括
+      
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="日本语" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+    
+    
+      <category term="日本语" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+    
+      <category term="「を」的用法" scheme="https://kksan.top/tags/%E3%80%8C%E3%82%92%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Git分布式版本管理系统入门（二）</title>
