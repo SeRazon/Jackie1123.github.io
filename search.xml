@@ -20,6 +20,31 @@
       </tags>
   </entry>
   <entry>
+    <title>在hexo博客中插入视频</title>
+    <url>/posts/16422/</url>
+    <content><![CDATA[<p>有时候我们写一些文章需要在文中插入一些视频做辅助，那怎样在文章页面中插入视频呢？其实很简单，我们可以参考 <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">hexo官方文档</a> 中嵌入的视频源码。</p>
+<p><img src="https://s2.ax1x.com/2020/02/18/3k8LJH.png" alt=""><br>我们按F12（或Fn＋F12）打开浏览器的控制台，按照上图图先点击元素审查(1)，接着点击屏幕上的元素(2),然后就会发现控制台自动定义到视频元素那一行了。右键直接把整个div复制下来。如下：</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="attribute">class</span>=<span class="string">"video-container"</span>&gt;&lt;iframe <span class="attribute">src</span>=<span class="string">"https://www.youtube.com/embed/PsXWbI2Mqu0"</span> <span class="attribute">frameborder</span>=<span class="string">"0"</span> <span class="attribute">loading</span>=<span class="string">"lazy"</span> <span class="attribute">allowfullscreen</span>=<span class="string">""</span>&gt;&lt;/iframe&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>假如你要放置b站的视频在你的文章中，在b站的视频下分享那里，复制<strong>嵌入代码</strong>那一坨代码，再把里面b站视频的地址替换到上面代码的<code>src</code>中<br><img src="https://s2.ax1x.com/2020/02/18/3kGbn0.jpg" alt=""></p>
+<p>有的人会问了，为什么不直接用b站的嵌入代码呢？原因就是b站嵌入代码在文章中显示的视频很小👇</p>
+<iframe src="//player.bilibili.com/player.html?aid=33341112&cid=58355445&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p>而用hexo的代码展示出来的视频可以更美观些👇</p>
+<div class="video-container"><iframe src="//player.bilibili.com/player.html?aid=33341112&cid=58355445&page=1" frameborder="0" loading="lazy" allowfullscreen=""></iframe></div>
+<br><br>
+<center style="font-weight: bold;">带点私货~十元是我老婆！！！(拔刀！)</center>
+<br>]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>美化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git分布式版本管理系统入门（二）</title>
     <url>/posts/26768/</url>
     <content><![CDATA[<p>前篇回顾：<a href="https://kksan.top/posts/63722/">Git分布式版本管理系统入门（一）</a></p>
