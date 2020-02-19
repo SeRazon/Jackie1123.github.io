@@ -5,9 +5,9 @@
   <subtitle>一只程序猿</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://kksan.top/"/>
+  <link href="https://jackie1123.github.io/"/>
   <updated>2020-02-18T08:15:34.109Z</updated>
-  <id>https://kksan.top/</id>
+  <id>https://jackie1123.github.io/</id>
   
   <author>
     <name>小K同學</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>日本语——「を」的用法总结</title>
-    <link href="https://kksan.top/posts/35177/"/>
-    <id>https://kksan.top/posts/35177/</id>
+    <link href="https://jackie1123.github.io/posts/35177/"/>
+    <id>https://jackie1123.github.io/posts/35177/</id>
     <published>2020-02-19T06:56:43.000Z</published>
     <updated>2020-02-18T08:15:34.109Z</updated>
     
@@ -36,21 +36,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
     
-      <category term="日本语" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="「を」的用法" scheme="https://kksan.top/tags/%E3%80%8C%E3%82%92%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+      <category term="「を」的用法" scheme="https://jackie1123.github.io/tags/%E3%80%8C%E3%82%92%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>在hexo博客中插入视频</title>
-    <link href="https://kksan.top/posts/16422/"/>
-    <id>https://kksan.top/posts/16422/</id>
+    <link href="https://jackie1123.github.io/posts/16422/"/>
+    <id>https://jackie1123.github.io/posts/16422/</id>
     <published>2020-02-18T09:47:00.000Z</published>
     <updated>2020-02-18T10:22:17.398Z</updated>
     
@@ -66,52 +66,52 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="hexo" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
+      <category term="hexo" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
     
     
-      <category term="hexo" scheme="https://kksan.top/tags/hexo/"/>
+      <category term="hexo" scheme="https://jackie1123.github.io/tags/hexo/"/>
     
-      <category term="美化" scheme="https://kksan.top/tags/%E7%BE%8E%E5%8C%96/"/>
+      <category term="美化" scheme="https://jackie1123.github.io/tags/%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Git分布式版本管理系统入门（二）</title>
-    <link href="https://kksan.top/posts/26768/"/>
-    <id>https://kksan.top/posts/26768/</id>
+    <link href="https://jackie1123.github.io/posts/26768/"/>
+    <id>https://jackie1123.github.io/posts/26768/</id>
     <published>2020-02-17T08:30:04.000Z</published>
     <updated>2020-02-18T09:52:26.053Z</updated>
     
-    <content type="html"><![CDATA[<p>前篇回顾：<a href="https://kksan.top/posts/63722/">Git分布式版本管理系统入门（一）</a></p><h4 id="五、Github开源代码库工作方式"><a href="#五、Github开源代码库工作方式" class="headerlink" title="五、Github开源代码库工作方式"></a>五、Github开源代码库工作方式</h4><p>想要完成一个简单的项目，下图中最基本的操作必须要掌握。<br>首先我们要知道，一个项目代码仓库是由任意个分支组成的，<text style="color: red;">每个仓库都应该会自动初始化一个主支【master】</text>。本地仓库有分支，远程仓库也有分支。<br>分支的含义：<text style="color: red;">其实是主支的分支，就像树枝一样。</text>新建一个分支时，Git会自动把主支的内容copy一份到你的分支。</p><ul><li><strong>Git分布式版本管理系统日常习惯：</strong></li></ul><ol><li>主支【master】的作用：把分支合并进主支</li><li>本地仓库除了【master】主支外，习惯性地还会新建一个自己的分支(一次开发完后习惯性地删除自己的分支)。主支用于查看项目代码，自己的分支用于修改项目。<text style="color: red">(非必要)</text></li><li><text style="color: red">本地仓库推送到远程仓库时不应该直接推送到远程主支【master】</text>，应新建一个自己的分支，把项目推送到自己的分支。(例如下图的【xiaoming】分支)</li><li>合并分支必须通过项目管理员同意。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T3xKg.png" alt=""></p><ul><li><strong>情景：</strong></li></ul><ol><li>假如你叫小明，你刚刚部署了本地Git仓库(Local)，<text style="color: red">Git就会自动帮你新建一个本地主支【master】(远程仓库也一样)</text>。</li><li>你已经把远程仓库<text style="color: red">连接</text>好，并且在远程仓库上新建了两个分支【xiaoming】和【partner】，本地新建了一个分支【xiaoming】。</li><li><text style="color: red">切换</text>到本地【xiaoming】分支，这时你就可以使用<text style="color: red">克隆命令</text>或者<text style="color: red">拉取命令</text>把远程仓库主支【master】的项目拉取到本地仓库(如果你的远程仓库有项目的话)。</li><li>好了，拉取到本地仓库后你就可以开始开发你的项目，在你的项目上面做修改。</li><li>开发完成！你想把项目推送到远程仓库合并进主支。现在可以打开命令行用<text style="color: red">推送命令</text>把你的项目推送到远程仓库中自己的分支【xiaoming】。</li><li>推送成功！下一步便是把自己的分支<text style="color: red">合并</text>进远程主支(Github网页操作)。这里就需要项目的管理员去<text style="color: red">审核</text>你的修改，管理员审核完后就可以把你的分支合并，合并后你修改的内容就会出现在远程主支了。(如出现严重冲突要拉回本地修改，简单的冲突可以在Github网页修改)。</li><li>最后一步，把远程主支的项目<text style="color: red">拉取</text>到本地仓库的【master】主支，<text style="color: red">删除</text>本地【xiaoming】主支，一次的开发完成了。</li></ol><h4 id="六、Git的基本工作流程"><a href="#六、Git的基本工作流程" class="headerlink" title="六、Git的基本工作流程"></a>六、Git的基本工作流程</h4><ol><li>git clone克隆远程资源到本地目录，作为工作目录；</li><li>然后在本地的克隆目录上添加或修改文件；</li><li>(如果远程修改了，需要同步远程的内容，直接git pull就可以更新本地的文件；)</li><li>本地在修改之后，可以通过git status 查看修改的文件。然后使用git add 添加修改的文件暂到缓冲区；</li><li>在添加之后，可以使用git commit添加到当前的工作区；</li><li>在修改完成后，如果发现错误，可以撤回提交并再次修改并提交；</li><li>git push将本地的修改推送到远程的git服务器。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T89Vs.png" alt=""></p><h4 id="七、Git的基本命令"><a href="#七、Git的基本命令" class="headerlink" title="七、Git的基本命令"></a>七、Git的基本命令</h4><p><strong><text style="color: red">注：项目文件夹鼠标右键打开Git Bash</text></strong></p><ol><li><p>初始化(建立)本地Git仓库<br>第一种方式：</p><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">init</span>  (对于已创建的文件夹，直接在文件夹目录下执行)</span><br></pre></td></tr></table></figure><p>第二种方式：</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cd</span>  <span class="string">文件夹</span></span><br><span class="line"><span class="attr">git</span>  <span class="string">init  ______ 在当前路径创建和项目同名的文件夹(红线为文件夹名)</span></span><br><span class="line"><span class="attr">cd</span>  <span class="string">your_project</span></span><br></pre></td></tr></table></figure></li><li><p>连接远程仓库</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/Jackie/test.git</span><br></pre></td></tr></table></figure><p>把地址部分改成自己远程仓库的地址，建完远程仓库后可看见<br><img src="https://s2.ax1x.com/2020/02/11/1T8Can.png" alt=""></p></li><li><p>从远程克隆项目(分支)到当前本地目录</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="strong">_____</span><span class="strong">_____</span><span class="strong">_____</span><span class="strong">_____</span><span class="emphasis">___</span>_  (项目仓库地址)</span><br></pre></td></tr></table></figure></li><li><p>从远程取回某个分支的更新</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure></li><li><p>把本地的所有文件提交到暂存区</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> .  (命令后面的&lt; . &gt;代表全部文件)</span></span><br><span class="line">把本地的个别文件提交到暂存区</span><br><span class="line">git <span class="keyword">add</span><span class="bash"> ________  (红线处为需提交的文件名，需要写后缀)</span></span><br></pre></td></tr></table></figure></li><li><p>把暂存区的文件提交到分支</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="strong">_____</span><span class="emphasis">___</span>  (红线处填写此次更改的主要内容，注释)</span><br></pre></td></tr></table></figure></li><li><p>把本地项目推送到远程仓库<br>第一次推送</p><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> _____  (红线处填你的远程分支名)</span><br></pre></td></tr></table></figure><p>把本地项目推送到远程仓库的同名分支</p><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> _____  (红线处填你的远程分支名)</span><br></pre></td></tr></table></figure><p>把本地项目推送到远程仓库的非同名分支</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push  <span class="strong">_____</span><span class="emphasis">_  _</span><span class="strong">_____</span>  (红线处填你的远程分支名，蓝色线填你的本地分支名)</span><br></pre></td></tr></table></figure></li><li><p>其他本地基本操作：</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">git</span> <span class="string">status  查看变更情况</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log  查看提交日志</span></span><br><span class="line"></span><br><span class="line"><span class="attr">ls</span> <span class="string">-al 显示当前路径下的所有文件</span></span><br><span class="line"><span class="attr">mkdir</span> <span class="string">______  新建一个文件夹(红线为文件夹名称)</span></span><br><span class="line"><span class="attr">git</span> <span class="string">reset --hard 清除暂存区所有变更（此命令较危险，请谨慎使用）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">mv  原文件名   新文件名（给文件重命名）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">branch -v  查看分支</span></span><br><span class="line"><span class="attr">git</span> <span class="string">checkout -b 新分支名  创立新分支并切换   (分支=独立的开发空间)</span></span><br><span class="line"><span class="attr">git</span> <span class="string">checkout 分支名  切换分支</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --all  查看所有分支日志</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --all --graph  图形化</span></span><br><span class="line"><span class="attr">clear</span>  <span class="string">清屏</span></span><br><span class="line"> </span><br><span class="line"><span class="attr">gitk</span> <span class="string">图形化界面工具查看版本历史</span></span><br><span class="line"><span class="attr">gitk</span> <span class="string">--all  显示所有分支</span></span><br></pre></td></tr></table></figure></li></ol><p><text style="color: red">更多相关命令代码可以到Github官方文档中查找</text></p><h4 id="八、配置SSH公私钥，使用SSH连接到Github"><a href="#八、配置SSH公私钥，使用SSH连接到Github" class="headerlink" title="八、配置SSH公私钥，使用SSH连接到Github"></a>八、配置SSH公私钥，使用SSH连接到Github</h4><ol><li><p>配置SSH公私钥有什么用？<br>我们要知道，当你使用<text style="color: red">https</text>的连接去推送项目时，在<text style="color: red">每次推送项目到远程时都需要输入账号密码验证你的身份</text>。<br><text style="color:red">而SSH公私钥代表你的身份</text>，可以把公私钥粘贴到N个git的服务器上（网站，云服务器），之后推送项目就不需重复输入密码验证身份了。<br>查看官方文档：<a href="https://help.github.com/cn/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key" target="_blank" rel="noopener">生成新SSH密钥以用于身份验证</a></p></li><li><p>新增SSH密钥到GitHub帐户<br>在生成 SSH 密钥之前，你可以检查是否有任何现有的SSH密钥<br>打开 Git Bash终端。<br>输入<code>ls -al  ~/.ssh</code>以查看是否存在现有SSH密钥：<br>检查目录列表以查看是否已经有SSH公钥。 默认情况下，公钥的文件名是以下之一：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">id_rsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">id_ecdsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">id_ed25519</span><span class="selector-class">.pub</span></span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2020/02/11/1T3zrQ.png" alt=""><br>如果你收到错误<code>~/.ssh 不存在</code>，不要担心！ 我们在生成新的SSH密钥时会创建它。<br>打开Git Bash终端。<br>粘贴下面的文本（替换为你的 GitHub 电子邮件地址）。</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b <span class="number">4096</span> -C <span class="symbol">your_email@</span>example.com</span><br><span class="line">（这将创建以所提供的电子邮件地址为标签的新 SSH 密钥）</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2020/02/11/1T3jxS.png" alt=""></p><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa key <span class="built_in">pair</span>.</span><br></pre></td></tr></table></figure><p>提示你<code>Enter a file in which to save the key</code>（输入要保存密钥的文件）时，<text style="color: red">直接按 Enter 键，接受默认文件位置。</text></p><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; Enter <span class="keyword">a</span> <span class="built_in">file</span> <span class="keyword">in</span> which <span class="built_in">to</span> save <span class="keyword">the</span> key (/c/textsers/you/.ssh/id_rsa):[Press enter]</span><br><span class="line">&gt; Enter <span class="keyword">a</span> <span class="built_in">file</span> <span class="keyword">in</span> which <span class="built_in">to</span> save <span class="keyword">the</span> key (/home/you/.ssh/id_rsa): [Press enter]</span><br></pre></td></tr></table></figure><p>在提示时输入安全密码。<text style="color: red">（建议直接按 Enter 键）</text></p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; Enter passphrase (empty <span class="keyword">for</span> no passphrase): [<span class="keyword">Type</span> <span class="type">a </span>passphrase]</span><br><span class="line">&gt; Enter same passphrase again: [<span class="keyword">Type</span> <span class="type">passphrase </span>again]</span><br></pre></td></tr></table></figure><p>如下图：<br><img src="https://s2.ax1x.com/2020/02/11/1T8P5q.png" alt=""><br>再次检查<code>ls -al ~/.ssh</code><br><img src="https://s2.ax1x.com/2020/02/11/1T8FP0.png" alt=""><br><text style="color: red"><code>.pub</code>结尾的是公钥，私钥留于本地</text><br>输入：<br><code>cd ~/.ssh</code>（移动到公私钥文件夹）<br><code>cat id_rsa.pub</code> (查看公钥内容)<br><img src="https://s2.ax1x.com/2020/02/11/1T8kGV.png" alt=""><br>复制所得的密钥代码<br>到github个人页面右上角点击设置<br>在左侧找到此选项<br><img src="https://s2.ax1x.com/2020/02/11/1T8A2T.png" alt=""><br>在左侧找到此选项<br><img src="https://s2.ax1x.com/2020/02/11/1T8ExU.png" alt=""><br>单击New SSH key（新 SSH 密钥）或Add SSH key（添加 SSH 密钥）<br><img src="https://s2.ax1x.com/2020/02/11/1T8ZMF.png" alt=""><br>将密钥粘贴到 “Key”（密钥）字段Title(标题）可以不用写.<br>如图：<br><img src="https://s2.ax1x.com/2020/02/11/1T8uZ9.png" alt=""><br>单击Add SSH key（添加SSH密钥）<br><img src="https://s2.ax1x.com/2020/02/11/1T8MI1.png" alt=""><br>弹回认证页面，输入密码<br><img src="https://s2.ax1x.com/2020/02/11/1T8lPx.png" alt=""><br>登入后查看，配置成功。</p></li></ol><p><strong><center>本教程完。</center></strong></p>]]></content>
+    <content type="html"><![CDATA[<p>前篇回顾：<a href="https://kksan.top/posts/63722/" target="_blank" rel="noopener">Git分布式版本管理系统入门（一）</a></p><h4 id="五、Github开源代码库工作方式"><a href="#五、Github开源代码库工作方式" class="headerlink" title="五、Github开源代码库工作方式"></a>五、Github开源代码库工作方式</h4><p>想要完成一个简单的项目，下图中最基本的操作必须要掌握。<br>首先我们要知道，一个项目代码仓库是由任意个分支组成的，<text style="color: red;">每个仓库都应该会自动初始化一个主支【master】</text>。本地仓库有分支，远程仓库也有分支。<br>分支的含义：<text style="color: red;">其实是主支的分支，就像树枝一样。</text>新建一个分支时，Git会自动把主支的内容copy一份到你的分支。</p><ul><li><strong>Git分布式版本管理系统日常习惯：</strong></li></ul><ol><li>主支【master】的作用：把分支合并进主支</li><li>本地仓库除了【master】主支外，习惯性地还会新建一个自己的分支(一次开发完后习惯性地删除自己的分支)。主支用于查看项目代码，自己的分支用于修改项目。<text style="color: red">(非必要)</text></li><li><text style="color: red">本地仓库推送到远程仓库时不应该直接推送到远程主支【master】</text>，应新建一个自己的分支，把项目推送到自己的分支。(例如下图的【xiaoming】分支)</li><li>合并分支必须通过项目管理员同意。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T3xKg.png" alt=""></p><ul><li><strong>情景：</strong></li></ul><ol><li>假如你叫小明，你刚刚部署了本地Git仓库(Local)，<text style="color: red">Git就会自动帮你新建一个本地主支【master】(远程仓库也一样)</text>。</li><li>你已经把远程仓库<text style="color: red">连接</text>好，并且在远程仓库上新建了两个分支【xiaoming】和【partner】，本地新建了一个分支【xiaoming】。</li><li><text style="color: red">切换</text>到本地【xiaoming】分支，这时你就可以使用<text style="color: red">克隆命令</text>或者<text style="color: red">拉取命令</text>把远程仓库主支【master】的项目拉取到本地仓库(如果你的远程仓库有项目的话)。</li><li>好了，拉取到本地仓库后你就可以开始开发你的项目，在你的项目上面做修改。</li><li>开发完成！你想把项目推送到远程仓库合并进主支。现在可以打开命令行用<text style="color: red">推送命令</text>把你的项目推送到远程仓库中自己的分支【xiaoming】。</li><li>推送成功！下一步便是把自己的分支<text style="color: red">合并</text>进远程主支(Github网页操作)。这里就需要项目的管理员去<text style="color: red">审核</text>你的修改，管理员审核完后就可以把你的分支合并，合并后你修改的内容就会出现在远程主支了。(如出现严重冲突要拉回本地修改，简单的冲突可以在Github网页修改)。</li><li>最后一步，把远程主支的项目<text style="color: red">拉取</text>到本地仓库的【master】主支，<text style="color: red">删除</text>本地【xiaoming】主支，一次的开发完成了。</li></ol><h4 id="六、Git的基本工作流程"><a href="#六、Git的基本工作流程" class="headerlink" title="六、Git的基本工作流程"></a>六、Git的基本工作流程</h4><ol><li>git clone克隆远程资源到本地目录，作为工作目录；</li><li>然后在本地的克隆目录上添加或修改文件；</li><li>(如果远程修改了，需要同步远程的内容，直接git pull就可以更新本地的文件；)</li><li>本地在修改之后，可以通过git status 查看修改的文件。然后使用git add 添加修改的文件暂到缓冲区；</li><li>在添加之后，可以使用git commit添加到当前的工作区；</li><li>在修改完成后，如果发现错误，可以撤回提交并再次修改并提交；</li><li>git push将本地的修改推送到远程的git服务器。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T89Vs.png" alt=""></p><h4 id="七、Git的基本命令"><a href="#七、Git的基本命令" class="headerlink" title="七、Git的基本命令"></a>七、Git的基本命令</h4><p><strong><text style="color: red">注：项目文件夹鼠标右键打开Git Bash</text></strong></p><ol><li><p>初始化(建立)本地Git仓库<br>第一种方式：</p><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">init</span>  (对于已创建的文件夹，直接在文件夹目录下执行)</span><br></pre></td></tr></table></figure><p>第二种方式：</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cd</span>  <span class="string">文件夹</span></span><br><span class="line"><span class="attr">git</span>  <span class="string">init  ______ 在当前路径创建和项目同名的文件夹(红线为文件夹名)</span></span><br><span class="line"><span class="attr">cd</span>  <span class="string">your_project</span></span><br></pre></td></tr></table></figure></li><li><p>连接远程仓库</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/Jackie/test.git</span><br></pre></td></tr></table></figure><p>把地址部分改成自己远程仓库的地址，建完远程仓库后可看见<br><img src="https://s2.ax1x.com/2020/02/11/1T8Can.png" alt=""></p></li><li><p>从远程克隆项目(分支)到当前本地目录</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="strong">_____</span><span class="strong">_____</span><span class="strong">_____</span><span class="strong">_____</span><span class="emphasis">___</span>_  (项目仓库地址)</span><br></pre></td></tr></table></figure></li><li><p>从远程取回某个分支的更新</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure></li><li><p>把本地的所有文件提交到暂存区</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> .  (命令后面的&lt; . &gt;代表全部文件)</span></span><br><span class="line">把本地的个别文件提交到暂存区</span><br><span class="line">git <span class="keyword">add</span><span class="bash"> ________  (红线处为需提交的文件名，需要写后缀)</span></span><br></pre></td></tr></table></figure></li><li><p>把暂存区的文件提交到分支</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="strong">_____</span><span class="emphasis">___</span>  (红线处填写此次更改的主要内容，注释)</span><br></pre></td></tr></table></figure></li><li><p>把本地项目推送到远程仓库<br>第一次推送</p><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> _____  (红线处填你的远程分支名)</span><br></pre></td></tr></table></figure><p>把本地项目推送到远程仓库的同名分支</p><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> _____  (红线处填你的远程分支名)</span><br></pre></td></tr></table></figure><p>把本地项目推送到远程仓库的非同名分支</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push  <span class="strong">_____</span><span class="emphasis">_  _</span><span class="strong">_____</span>  (红线处填你的远程分支名，蓝色线填你的本地分支名)</span><br></pre></td></tr></table></figure></li><li><p>其他本地基本操作：</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">git</span> <span class="string">status  查看变更情况</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log  查看提交日志</span></span><br><span class="line"></span><br><span class="line"><span class="attr">ls</span> <span class="string">-al 显示当前路径下的所有文件</span></span><br><span class="line"><span class="attr">mkdir</span> <span class="string">______  新建一个文件夹(红线为文件夹名称)</span></span><br><span class="line"><span class="attr">git</span> <span class="string">reset --hard 清除暂存区所有变更（此命令较危险，请谨慎使用）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">mv  原文件名   新文件名（给文件重命名）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">branch -v  查看分支</span></span><br><span class="line"><span class="attr">git</span> <span class="string">checkout -b 新分支名  创立新分支并切换   (分支=独立的开发空间)</span></span><br><span class="line"><span class="attr">git</span> <span class="string">checkout 分支名  切换分支</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --all  查看所有分支日志</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --all --graph  图形化</span></span><br><span class="line"><span class="attr">clear</span>  <span class="string">清屏</span></span><br><span class="line"> </span><br><span class="line"><span class="attr">gitk</span> <span class="string">图形化界面工具查看版本历史</span></span><br><span class="line"><span class="attr">gitk</span> <span class="string">--all  显示所有分支</span></span><br></pre></td></tr></table></figure></li></ol><p><text style="color: red">更多相关命令代码可以到Github官方文档中查找</text></p><h4 id="八、配置SSH公私钥，使用SSH连接到Github"><a href="#八、配置SSH公私钥，使用SSH连接到Github" class="headerlink" title="八、配置SSH公私钥，使用SSH连接到Github"></a>八、配置SSH公私钥，使用SSH连接到Github</h4><ol><li><p>配置SSH公私钥有什么用？<br>我们要知道，当你使用<text style="color: red">https</text>的连接去推送项目时，在<text style="color: red">每次推送项目到远程时都需要输入账号密码验证你的身份</text>。<br><text style="color:red">而SSH公私钥代表你的身份</text>，可以把公私钥粘贴到N个git的服务器上（网站，云服务器），之后推送项目就不需重复输入密码验证身份了。<br>查看官方文档：<a href="https://help.github.com/cn/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key" target="_blank" rel="noopener">生成新SSH密钥以用于身份验证</a></p></li><li><p>新增SSH密钥到GitHub帐户<br>在生成 SSH 密钥之前，你可以检查是否有任何现有的SSH密钥<br>打开 Git Bash终端。<br>输入<code>ls -al  ~/.ssh</code>以查看是否存在现有SSH密钥：<br>检查目录列表以查看是否已经有SSH公钥。 默认情况下，公钥的文件名是以下之一：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">id_rsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">id_ecdsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">id_ed25519</span><span class="selector-class">.pub</span></span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2020/02/11/1T3zrQ.png" alt=""><br>如果你收到错误<code>~/.ssh 不存在</code>，不要担心！ 我们在生成新的SSH密钥时会创建它。<br>打开Git Bash终端。<br>粘贴下面的文本（替换为你的 GitHub 电子邮件地址）。</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b <span class="number">4096</span> -C <span class="symbol">your_email@</span>example.com</span><br><span class="line">（这将创建以所提供的电子邮件地址为标签的新 SSH 密钥）</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2020/02/11/1T3jxS.png" alt=""></p><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa key <span class="built_in">pair</span>.</span><br></pre></td></tr></table></figure><p>提示你<code>Enter a file in which to save the key</code>（输入要保存密钥的文件）时，<text style="color: red">直接按 Enter 键，接受默认文件位置。</text></p><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; Enter <span class="keyword">a</span> <span class="built_in">file</span> <span class="keyword">in</span> which <span class="built_in">to</span> save <span class="keyword">the</span> key (/c/textsers/you/.ssh/id_rsa):[Press enter]</span><br><span class="line">&gt; Enter <span class="keyword">a</span> <span class="built_in">file</span> <span class="keyword">in</span> which <span class="built_in">to</span> save <span class="keyword">the</span> key (/home/you/.ssh/id_rsa): [Press enter]</span><br></pre></td></tr></table></figure><p>在提示时输入安全密码。<text style="color: red">（建议直接按 Enter 键）</text></p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; Enter passphrase (empty <span class="keyword">for</span> no passphrase): [<span class="keyword">Type</span> <span class="type">a </span>passphrase]</span><br><span class="line">&gt; Enter same passphrase again: [<span class="keyword">Type</span> <span class="type">passphrase </span>again]</span><br></pre></td></tr></table></figure><p>如下图：<br><img src="https://s2.ax1x.com/2020/02/11/1T8P5q.png" alt=""><br>再次检查<code>ls -al ~/.ssh</code><br><img src="https://s2.ax1x.com/2020/02/11/1T8FP0.png" alt=""><br><text style="color: red"><code>.pub</code>结尾的是公钥，私钥留于本地</text><br>输入：<br><code>cd ~/.ssh</code>（移动到公私钥文件夹）<br><code>cat id_rsa.pub</code> (查看公钥内容)<br><img src="https://s2.ax1x.com/2020/02/11/1T8kGV.png" alt=""><br>复制所得的密钥代码<br>到github个人页面右上角点击设置<br>在左侧找到此选项<br><img src="https://s2.ax1x.com/2020/02/11/1T8A2T.png" alt=""><br>在左侧找到此选项<br><img src="https://s2.ax1x.com/2020/02/11/1T8ExU.png" alt=""><br>单击New SSH key（新 SSH 密钥）或Add SSH key（添加 SSH 密钥）<br><img src="https://s2.ax1x.com/2020/02/11/1T8ZMF.png" alt=""><br>将密钥粘贴到 “Key”（密钥）字段Title(标题）可以不用写.<br>如图：<br><img src="https://s2.ax1x.com/2020/02/11/1T8uZ9.png" alt=""><br>单击Add SSH key（添加SSH密钥）<br><img src="https://s2.ax1x.com/2020/02/11/1T8MI1.png" alt=""><br>弹回认证页面，输入密码<br><img src="https://s2.ax1x.com/2020/02/11/1T8lPx.png" alt=""><br>登入后查看，配置成功。</p></li></ol><p><strong><center>本教程完。</center></strong></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;前篇回顾：&lt;a href=&quot;https://kksan.top/posts/63722/&quot;&gt;Git分布式版本管理系统入门（一）&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;五、Github开源代码库工作方式&quot;&gt;&lt;a href=&quot;#五、Github开源代码库工作方式&quot; class=&quot;he
+        &lt;p&gt;前篇回顾：&lt;a href=&quot;https://kksan.top/posts/63722/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git分布式版本管理系统入门（一）&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;五、Github开源代码库工作方式&quot;&gt;&lt;a href
       
     
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Git分布式版本管理系统" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+      <category term="Git分布式版本管理系统" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
     
     
-      <category term="Git" scheme="https://kksan.top/tags/Git/"/>
+      <category term="Git" scheme="https://jackie1123.github.io/tags/Git/"/>
     
-      <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>hexo——hueman主题美化（持续更新中）</title>
-    <link href="https://kksan.top/posts/20719/"/>
-    <id>https://kksan.top/posts/20719/</id>
+    <link href="https://jackie1123.github.io/posts/20719/"/>
+    <id>https://jackie1123.github.io/posts/20719/</id>
     <published>2020-02-14T08:37:27.000Z</published>
     <updated>2020-02-18T09:50:46.668Z</updated>
     
@@ -127,23 +127,23 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="hexo" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
+      <category term="hexo" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
     
     
-      <category term="hexo" scheme="https://kksan.top/tags/hexo/"/>
+      <category term="hexo" scheme="https://jackie1123.github.io/tags/hexo/"/>
     
-      <category term="hueman主题" scheme="https://kksan.top/tags/hueman%E4%B8%BB%E9%A2%98/"/>
+      <category term="hueman主题" scheme="https://jackie1123.github.io/tags/hueman%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="美化" scheme="https://kksan.top/tags/%E7%BE%8E%E5%8C%96/"/>
+      <category term="美化" scheme="https://jackie1123.github.io/tags/%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>从零开始入坑hexo博客</title>
-    <link href="https://kksan.top/posts/34220/"/>
-    <id>https://kksan.top/posts/34220/</id>
+    <link href="https://jackie1123.github.io/posts/34220/"/>
+    <id>https://jackie1123.github.io/posts/34220/</id>
     <published>2020-02-11T14:32:52.000Z</published>
     <updated>2020-02-18T09:51:36.772Z</updated>
     
@@ -160,27 +160,27 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="hexo" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
+      <category term="hexo" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
     
     
-      <category term="hexo" scheme="https://kksan.top/tags/hexo/"/>
+      <category term="hexo" scheme="https://jackie1123.github.io/tags/hexo/"/>
     
-      <category term="hueman主题" scheme="https://kksan.top/tags/hueman%E4%B8%BB%E9%A2%98/"/>
+      <category term="hueman主题" scheme="https://jackie1123.github.io/tags/hueman%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://jackie1123.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>Git分布式版本管理系统入门（一）</title>
-    <link href="https://kksan.top/posts/63722/"/>
-    <id>https://kksan.top/posts/63722/</id>
+    <link href="https://jackie1123.github.io/posts/63722/"/>
+    <id>https://jackie1123.github.io/posts/63722/</id>
     <published>2020-02-11T10:30:04.000Z</published>
     <updated>2020-02-18T09:52:29.349Z</updated>
     
-    <content type="html"><![CDATA[<p>分布式版本管理系统Git口语化教程，献给初学的小白同学。</p><h4 id="一、集中式VS分布式（来源：廖雪峰的官方网站）"><a href="#一、集中式VS分布式（来源：廖雪峰的官方网站）" class="headerlink" title="一、集中式VS分布式（来源：廖雪峰的官方网站）"></a>一、集中式VS分布式<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896202780297248" target="_blank" rel="noopener" title="（来源：廖雪峰的官方网站）">（来源：廖雪峰的官方网站）</a></h4><p>Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？</p><ul><li>先说<strong>集中式版本控制系统，版本库是集中存放在中央服务器的</strong>，而干活的时候，用的都是自己的电脑，所以要<strong>先从中央服务器取得最新的版本</strong>，然后开始干活，干完活了，<strong>再把自己的活推送给中央服务器</strong>。中央服务器就好比是一个图书馆，你要改一本书，必须先从图书馆借出来，然后回到家自己改，改完了，再放回图书馆。</li></ul><img style="width: 50%;" src="https://s2.ax1x.com/2020/02/11/1T3tNq.png"><ul><li><p>集中式版本控制系统最大的毛病就是<strong>必须联网</strong>才能工作，如果在局域网内还好，带宽够大，速度够快，可如果在互联网上，遇到网速慢的话，可能提交一个10M的文件就需要5分钟，这还不得把人给憋死啊。</p></li><li><p>那分布式版本控制系统与集中式版本控制系统有何不同呢？首先，<strong>分布式版本控制系统</strong>根本<strong>没有“中央服务器”</strong>，<strong>每个人的电脑上都是一个完整的版本库</strong>，这样，<strong>你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。</strong>既然每个人电脑上都有一个完整的版本库，那多个人如何协作呢？比方说你在自己电脑上改了文件A，你的同事也在他的电脑上改了文件A，这时，你们俩之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。</p></li><li><p>和集中式版本控制系统相比，分布式版本控制系统的安全性要高很多，<strong>因为每个人电脑里都有完整的版本库，某一个人的电脑坏掉了不要紧，随便从其他人那里复制一个就可以了。而集中式版本控制系统的中央服务器要是出了问题，所有人都没法干活了。</strong></p></li><li><p>在<strong>实际使用分布式版本控制系统的时候，其实很少在两人之间的电脑上推送版本库的修改</strong>，因为可能你们俩不在一个局域网内，两台电脑互相访问不了，也可能今天你的同事病了，他的电脑压根没有开机。因此，<strong>分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。</strong></p></li></ul><img style="width: 50%;" src="https://s2.ax1x.com/2020/02/11/1T3GHs.png"><h4 id="二、注册Github账户"><a href="#二、注册Github账户" class="headerlink" title="二、注册Github账户"></a>二、注册Github账户</h4><p><strong>1. Github有什么用？</strong><br>还记得上面Git的介绍吗？<br>“分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。”<br>这里的“中央服务器”所指的其实就是Github。Github是一个远程代码仓库，通俗点说就是用来存代码的。通过把你的代码推送到远程仓库，通过Github，既可以让别人参与你的开源项目，也可以参与别人的开源项目，实现多人协作去完善项目。</p><p><strong>2. 创建自己的Github仓库</strong></p><p>1）登录Github之后会出现下图的界面，点击【New】创建一个新的代码仓库。</p><p><strong>你的账号就是一个总代码库，总代码库下存放着多个代码仓库（项目）</strong>，项目里存放的就是你项目的源代码了。</p><p><text style="color: orange;">黄色框</text>里表示的是<strong>总代码库（你的用户名）</strong>，<text style="color: blue;">蓝色框</text>里代表的是<strong>代码仓库（项目名称）</strong>。</p><p><img src="https://s2.ax1x.com/2020/02/11/1T33uQ.png" alt=""></p><p>2）点击<strong>【New】</strong>之后创建代码仓库，出现下图界面，按要求填写详细信息即可。</p><p><img src="https://s2.ax1x.com/2020/02/11/1T38Bj.png" alt=""></p><p>3）完成后就可以在主页面看见你的代码仓库了。创建完后，先放在一边，继续往下看。</p><h4 id="三、在Windows上安装Git"><a href="#三、在Windows上安装Git" class="headerlink" title="三、在Windows上安装Git"></a>三、在Windows上安装Git</h4><ol><li>在Windows上安装Git，只需要上Git的官网就可以下载了。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T3d3T.png" alt=""></p><ol start="2"><li>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T3aCV.png" alt=""></p><h4 id="四、工作区、版本库、暂存区和分支概念"><a href="#四、工作区、版本库、暂存区和分支概念" class="headerlink" title="四、工作区、版本库、暂存区和分支概念"></a>四、工作区、版本库、暂存区和分支概念</h4><p><strong>1. 工作区</strong><br>通俗讲，能看见的区域就是工作区，比如下图：<br>(<strong>隐藏</strong>的.git文件里面包含着本地仓库<strong>全部信息</strong>，版本库当然也在里面)</p><p><img src="https://s2.ax1x.com/2020/02/11/1T3wgU.png" alt=""></p><ol start="2"><li>版本库<br>版本库里面<strong>包含着暂存区(stage/index)和分支(master)信息</strong>。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T30vF.png" alt=""></p><ol start="3"><li>暂存区和分支</li></ol><p>当你开发完或修改完你的代码时，<strong>我们通常会通过命令行(git add)把修改完的文件都添加到暂存区，再通过命令行(git commit)把暂存区的文件提交到分支</strong>。(下面上图)</p><p><img src="https://s2.ax1x.com/2020/02/11/1T3Du4.png" alt=""></p><p><img src="https://s2.ax1x.com/2020/02/11/1T3rDJ.png" alt=""></p><p>当你把暂存区的文件提交到分支后，用命令行(git status)查看当前“工作树”状态，会显示“working tree clean”。(右图)</p><p>后篇：<a href="https://kksan.top/posts/26768/">Git分布式版本管理系统入门（二）</a></p>]]></content>
+    <content type="html"><![CDATA[<p>分布式版本管理系统Git口语化教程，献给初学的小白同学。</p><h4 id="一、集中式VS分布式（来源：廖雪峰的官方网站）"><a href="#一、集中式VS分布式（来源：廖雪峰的官方网站）" class="headerlink" title="一、集中式VS分布式（来源：廖雪峰的官方网站）"></a>一、集中式VS分布式<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896202780297248" target="_blank" rel="noopener" title="（来源：廖雪峰的官方网站）">（来源：廖雪峰的官方网站）</a></h4><p>Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？</p><ul><li>先说<strong>集中式版本控制系统，版本库是集中存放在中央服务器的</strong>，而干活的时候，用的都是自己的电脑，所以要<strong>先从中央服务器取得最新的版本</strong>，然后开始干活，干完活了，<strong>再把自己的活推送给中央服务器</strong>。中央服务器就好比是一个图书馆，你要改一本书，必须先从图书馆借出来，然后回到家自己改，改完了，再放回图书馆。</li></ul><img style="width: 50%;" src="https://s2.ax1x.com/2020/02/11/1T3tNq.png"><ul><li><p>集中式版本控制系统最大的毛病就是<strong>必须联网</strong>才能工作，如果在局域网内还好，带宽够大，速度够快，可如果在互联网上，遇到网速慢的话，可能提交一个10M的文件就需要5分钟，这还不得把人给憋死啊。</p></li><li><p>那分布式版本控制系统与集中式版本控制系统有何不同呢？首先，<strong>分布式版本控制系统</strong>根本<strong>没有“中央服务器”</strong>，<strong>每个人的电脑上都是一个完整的版本库</strong>，这样，<strong>你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。</strong>既然每个人电脑上都有一个完整的版本库，那多个人如何协作呢？比方说你在自己电脑上改了文件A，你的同事也在他的电脑上改了文件A，这时，你们俩之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。</p></li><li><p>和集中式版本控制系统相比，分布式版本控制系统的安全性要高很多，<strong>因为每个人电脑里都有完整的版本库，某一个人的电脑坏掉了不要紧，随便从其他人那里复制一个就可以了。而集中式版本控制系统的中央服务器要是出了问题，所有人都没法干活了。</strong></p></li><li><p>在<strong>实际使用分布式版本控制系统的时候，其实很少在两人之间的电脑上推送版本库的修改</strong>，因为可能你们俩不在一个局域网内，两台电脑互相访问不了，也可能今天你的同事病了，他的电脑压根没有开机。因此，<strong>分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。</strong></p></li></ul><img style="width: 50%;" src="https://s2.ax1x.com/2020/02/11/1T3GHs.png"><h4 id="二、注册Github账户"><a href="#二、注册Github账户" class="headerlink" title="二、注册Github账户"></a>二、注册Github账户</h4><p><strong>1. Github有什么用？</strong><br>还记得上面Git的介绍吗？<br>“分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。”<br>这里的“中央服务器”所指的其实就是Github。Github是一个远程代码仓库，通俗点说就是用来存代码的。通过把你的代码推送到远程仓库，通过Github，既可以让别人参与你的开源项目，也可以参与别人的开源项目，实现多人协作去完善项目。</p><p><strong>2. 创建自己的Github仓库</strong></p><p>1）登录Github之后会出现下图的界面，点击【New】创建一个新的代码仓库。</p><p><strong>你的账号就是一个总代码库，总代码库下存放着多个代码仓库（项目）</strong>，项目里存放的就是你项目的源代码了。</p><p><text style="color: orange;">黄色框</text>里表示的是<strong>总代码库（你的用户名）</strong>，<text style="color: blue;">蓝色框</text>里代表的是<strong>代码仓库（项目名称）</strong>。</p><p><img src="https://s2.ax1x.com/2020/02/11/1T33uQ.png" alt=""></p><p>2）点击<strong>【New】</strong>之后创建代码仓库，出现下图界面，按要求填写详细信息即可。</p><p><img src="https://s2.ax1x.com/2020/02/11/1T38Bj.png" alt=""></p><p>3）完成后就可以在主页面看见你的代码仓库了。创建完后，先放在一边，继续往下看。</p><h4 id="三、在Windows上安装Git"><a href="#三、在Windows上安装Git" class="headerlink" title="三、在Windows上安装Git"></a>三、在Windows上安装Git</h4><ol><li>在Windows上安装Git，只需要上Git的官网就可以下载了。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T3d3T.png" alt=""></p><ol start="2"><li>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T3aCV.png" alt=""></p><h4 id="四、工作区、版本库、暂存区和分支概念"><a href="#四、工作区、版本库、暂存区和分支概念" class="headerlink" title="四、工作区、版本库、暂存区和分支概念"></a>四、工作区、版本库、暂存区和分支概念</h4><p><strong>1. 工作区</strong><br>通俗讲，能看见的区域就是工作区，比如下图：<br>(<strong>隐藏</strong>的.git文件里面包含着本地仓库<strong>全部信息</strong>，版本库当然也在里面)</p><p><img src="https://s2.ax1x.com/2020/02/11/1T3wgU.png" alt=""></p><ol start="2"><li>版本库<br>版本库里面<strong>包含着暂存区(stage/index)和分支(master)信息</strong>。</li></ol><p><img src="https://s2.ax1x.com/2020/02/11/1T30vF.png" alt=""></p><ol start="3"><li>暂存区和分支</li></ol><p>当你开发完或修改完你的代码时，<strong>我们通常会通过命令行(git add)把修改完的文件都添加到暂存区，再通过命令行(git commit)把暂存区的文件提交到分支</strong>。(下面上图)</p><p><img src="https://s2.ax1x.com/2020/02/11/1T3Du4.png" alt=""></p><p><img src="https://s2.ax1x.com/2020/02/11/1T3rDJ.png" alt=""></p><p>当你把暂存区的文件提交到分支后，用命令行(git status)查看当前“工作树”状态，会显示“working tree clean”。(右图)</p><p>后篇：<a href="https://kksan.top/posts/26768/" target="_blank" rel="noopener">Git分布式版本管理系统入门（二）</a></p>]]></content>
     
     <summary type="html">
     
@@ -193,21 +193,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Git分布式版本管理系统" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+      <category term="Git分布式版本管理系统" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
     
     
-      <category term="Git" scheme="https://kksan.top/tags/Git/"/>
+      <category term="Git" scheme="https://jackie1123.github.io/tags/Git/"/>
     
-      <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>日本语一类形容词与二类形容词的区别</title>
-    <link href="https://kksan.top/posts/3557/"/>
-    <id>https://kksan.top/posts/3557/</id>
+    <link href="https://jackie1123.github.io/posts/3557/"/>
+    <id>https://jackie1123.github.io/posts/3557/</id>
     <published>2020-02-06T13:49:44.000Z</published>
     <updated>2020-02-18T09:51:47.516Z</updated>
     
@@ -223,21 +223,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
     
-      <category term="日本语" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="日本语形容词" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/"/>
+      <category term="日本语形容词" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD%E5%BD%A2%E5%AE%B9%E8%AF%8D/"/>
     
   </entry>
   
   <entry>
     <title>日本语——「に」的用法总结</title>
-    <link href="https://kksan.top/posts/9149/"/>
-    <id>https://kksan.top/posts/9149/</id>
+    <link href="https://jackie1123.github.io/posts/9149/"/>
+    <id>https://jackie1123.github.io/posts/9149/</id>
     <published>2020-02-05T06:56:43.000Z</published>
     <updated>2020-02-18T09:51:57.452Z</updated>
     
@@ -251,21 +251,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
     
-      <category term="日本语" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
-      <category term="「に」的用法" scheme="https://kksan.top/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+      <category term="「に」的用法" scheme="https://jackie1123.github.io/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>日本语学习笔记——标日初第15课</title>
-    <link href="https://kksan.top/posts/41085/"/>
-    <id>https://kksan.top/posts/41085/</id>
+    <link href="https://jackie1123.github.io/posts/41085/"/>
+    <id>https://jackie1123.github.io/posts/41085/</id>
     <published>2020-02-05T05:44:05.000Z</published>
     <updated>2020-02-18T09:51:50.651Z</updated>
     
@@ -281,21 +281,21 @@
     </summary>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://jackie1123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="日本语" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+      <category term="日本语" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>单纯就是「一个导航」开发日志</title>
-    <link href="https://kksan.top/posts/12023/"/>
-    <id>https://kksan.top/posts/12023/</id>
+    <link href="https://jackie1123.github.io/posts/12023/"/>
+    <id>https://jackie1123.github.io/posts/12023/</id>
     <published>2020-01-27T09:00:02.000Z</published>
     <updated>2020-02-18T09:52:04.821Z</updated>
     
@@ -310,27 +310,27 @@
     </summary>
     
     
-      <category term="开发" scheme="https://kksan.top/categories/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://jackie1123.github.io/categories/%E5%BC%80%E5%8F%91/"/>
     
-      <category term="前端" scheme="https://kksan.top/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://jackie1123.github.io/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://jackie1123.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="HTML" scheme="https://kksan.top/tags/HTML/"/>
+      <category term="HTML" scheme="https://jackie1123.github.io/tags/HTML/"/>
     
-      <category term="编程" scheme="https://kksan.top/tags/%E7%BC%96%E7%A8%8B/"/>
+      <category term="编程" scheme="https://jackie1123.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="JavaScript" scheme="https://kksan.top/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://jackie1123.github.io/tags/JavaScript/"/>
     
-      <category term="开发" scheme="https://kksan.top/tags/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://jackie1123.github.io/tags/%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象</title>
-    <link href="https://kksan.top/posts/24835/"/>
-    <id>https://kksan.top/posts/24835/</id>
+    <link href="https://jackie1123.github.io/posts/24835/"/>
+    <id>https://jackie1123.github.io/posts/24835/</id>
     <published>2019-08-20T16:43:20.000Z</published>
     <updated>2020-02-17T12:40:04.840Z</updated>
     
@@ -347,21 +347,21 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="马来西亚" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/"/>
+      <category term="马来西亚" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/"/>
     
     
-      <category term="旅行" scheme="https://kksan.top/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="马来西亚" scheme="https://kksan.top/tags/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/"/>
+      <category term="马来西亚" scheme="https://jackie1123.github.io/tags/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/"/>
     
   </entry>
   
   <entry>
     <title>&lt;小k周围走&gt;唔同角度睇香港（一）--港岛北</title>
-    <link href="https://kksan.top/posts/22920/"/>
-    <id>https://kksan.top/posts/22920/</id>
+    <link href="https://jackie1123.github.io/posts/22920/"/>
+    <id>https://jackie1123.github.io/posts/22920/</id>
     <published>2019-08-07T04:25:30.000Z</published>
     <updated>2020-02-17T12:40:04.835Z</updated>
     
@@ -379,21 +379,21 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="香港" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/"/>
+      <category term="香港" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E9%A6%99%E6%B8%AF/"/>
     
     
-      <category term="旅行" scheme="https://kksan.top/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="香港" scheme="https://kksan.top/tags/%E9%A6%99%E6%B8%AF/"/>
+      <category term="香港" scheme="https://jackie1123.github.io/tags/%E9%A6%99%E6%B8%AF/"/>
     
   </entry>
   
   <entry>
     <title>一人の体験2.0（二）——大学生穷游日本2019</title>
-    <link href="https://kksan.top/posts/11601/"/>
-    <id>https://kksan.top/posts/11601/</id>
+    <link href="https://jackie1123.github.io/posts/11601/"/>
+    <id>https://jackie1123.github.io/posts/11601/</id>
     <published>2019-05-04T02:30:42.000Z</published>
     <updated>2020-02-18T09:52:11.699Z</updated>
     
@@ -411,21 +411,21 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
     
     
-      <category term="旅行" scheme="https://kksan.top/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>一人の体験2.0（一）——大学生穷游日本2019</title>
-    <link href="https://kksan.top/posts/55052/"/>
-    <id>https://kksan.top/posts/55052/</id>
+    <link href="https://jackie1123.github.io/posts/55052/"/>
+    <id>https://jackie1123.github.io/posts/55052/</id>
     <published>2019-05-03T13:27:39.000Z</published>
     <updated>2020-02-18T09:52:20.272Z</updated>
     
@@ -443,14 +443,14 @@
     </summary>
     
     
-      <category term="旅行" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://kksan.top/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://jackie1123.github.io/categories/%E6%97%85%E8%A1%8C/%E6%97%A5%E6%9C%AC/"/>
     
     
-      <category term="旅行" scheme="https://kksan.top/tags/%E6%97%85%E8%A1%8C/"/>
+      <category term="旅行" scheme="https://jackie1123.github.io/tags/%E6%97%85%E8%A1%8C/"/>
     
-      <category term="日本" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC/"/>
+      <category term="日本" scheme="https://jackie1123.github.io/tags/%E6%97%A5%E6%9C%AC/"/>
     
   </entry>
   

@@ -47,7 +47,7 @@
   <entry>
     <title>Git分布式版本管理系统入门（二）</title>
     <url>/posts/26768/</url>
-    <content><![CDATA[<p>前篇回顾：<a href="https://kksan.top/posts/63722/">Git分布式版本管理系统入门（一）</a></p>
+    <content><![CDATA[<p>前篇回顾：<a href="https://kksan.top/posts/63722/" target="_blank" rel="noopener">Git分布式版本管理系统入门（一）</a></p>
 <h4 id="五、Github开源代码库工作方式"><a href="#五、Github开源代码库工作方式" class="headerlink" title="五、Github开源代码库工作方式"></a>五、Github开源代码库工作方式</h4><p>想要完成一个简单的项目，下图中最基本的操作必须要掌握。<br>首先我们要知道，一个项目代码仓库是由任意个分支组成的，<text style="color: red;">每个仓库都应该会自动初始化一个主支【master】</text>。本地仓库有分支，远程仓库也有分支。<br>分支的含义：<text style="color: red;">其实是主支的分支，就像树枝一样。</text>新建一个分支时，Git会自动把主支的内容copy一份到你的分支。</p>
 <ul>
 <li><strong>Git分布式版本管理系统日常习惯：</strong></li>
@@ -496,7 +496,7 @@
 <p><img src="https://s2.ax1x.com/2020/02/11/1T3Du4.png" alt=""></p>
 <p><img src="https://s2.ax1x.com/2020/02/11/1T3rDJ.png" alt=""></p>
 <p>当你把暂存区的文件提交到分支后，用命令行(git status)查看当前“工作树”状态，会显示“working tree clean”。(右图)</p>
-<p>后篇：<a href="https://kksan.top/posts/26768/">Git分布式版本管理系统入门（二）</a></p>
+<p>后篇：<a href="https://kksan.top/posts/26768/" target="_blank" rel="noopener">Git分布式版本管理系统入门（二）</a></p>
 ]]></content>
       <categories>
         <category>学习笔记</category>
