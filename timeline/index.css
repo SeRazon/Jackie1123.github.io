@@ -103,7 +103,7 @@ p{
   height: 10px;
   border-radius: 10px;
   background-color: #bdbdbd;
-  box-shadow: 0 0 2px 6px #fff;
+  /*box-shadow: 0 0 2px 6px #fff;*/
 }
 .card:nth-child(even) .card__header::before {
   z-index: 10;
@@ -114,7 +114,7 @@ p{
   height: 10px;
   border-radius: 10px;
   background-color: #bdbdbd;
-  box-shadow: 0 0 2px 6px #fff;
+  /*box-shadow: 0 0 2px 6px #fff;*/
 }
 .header__title {
   display: flex;
