@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-}
-
 h1 {
   text-align: center;
 }
@@ -31,6 +27,10 @@ p{
 }
 .card:nth-child(4n+3) {
   --bg-color: #346c9c;
+}
+
+.logo{
+  height: 80px;
 }
 
 .cards {
