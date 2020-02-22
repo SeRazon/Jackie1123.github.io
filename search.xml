@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cookie使用总结</title>
+    <url>/posts/3340/</url>
+    <content><![CDATA[<h4 id="Cookie介绍"><a href="#Cookie介绍" class="headerlink" title="Cookie介绍"></a>Cookie介绍</h4><p>某些网站储存在用户本地终端上的数据</p>
+<ul>
+<li>在应用层面，Cookie是一串字符串</li>
+<li>在JS层面，Cookie是document对象下的一个String类型属性</li>
+</ul>
+<hr>
+<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><p>储存用户数据（在本地）</p>
+<ul>
+<li>账户密码</li>
+<li>浏览记录</li>
+</ul>
+<hr>
+<h4 id="Cookie和变量的区别"><a href="#Cookie和变量的区别" class="headerlink" title="Cookie和变量的区别"></a>Cookie和变量的区别</h4><p>所谓变量，就是会变的。变量在每次你刷新页面或重启浏览器的时候，变量就会复原到你在代码中设定的值。<br>但是Cookie的话，只要没有过期（可设定过期时间），就一直会存在你的客户端本地，不管你关没关页面。<br><img src="https://s2.ax1x.com/2020/02/22/3MP4Wn.png" alt="163邮箱十天免登录就是利用Cookie记录用户信息"></p>
+<hr>
+<h4 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h4><p><strong>1. 查看Cookie：</strong></p>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">document</span>.cookie</span><br></pre></td></tr></table></figure>
+<p><strong>2. Cookie三个关键：</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><center>键</center></td>
+<td><center>key</center></td>
+</tr>
+<tr>
+<td><center>值</center></td>
+<td><center>value</center></td>
+</tr>
+<tr>
+<td><center>过期时间</center></td>
+<td><center>date</center></td>
+</tr>
+</tbody></table>
+<p><strong>example</strong></p>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="built_in">document</span>.cookie = <span class="string">"name=kksan;expires=[GTM格式日期]"</span></span><br><span class="line"><span class="comment">//name为键；kksan为值；expires为过期时间</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>3. 设置和获取Cookie</strong></p>
+<ul>
+<li>设置Cookie<br>直接对document.cookie赋值（key不同不会覆盖）</li>
+<li>获取Cookie<br>Cookie是个字符串，所以只能对字符串去分析</li>
+</ul>
+<p><strong>4. 删除Cookie</strong><br>利用Cookie过期属性去删除Cookie。<br>比如今天是8号，你设置了一个Cookie是10号过期。但是你现在就想删除它，这时你可以重新设置一遍这个Cookie的过期时间为7号，那浏览器检测到这个Cookie已经过期了，就可以达到删除的目的了。</p>
+<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><ul>
+<li><p>设置Cookie函数：</p>
+<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> set<span class="constructor">Cookie(<span class="params">cname</span>, <span class="params">cvalue</span>, <span class="params">exdays</span>)</span> &#123;</span><br><span class="line">    var d = <span class="keyword">new</span> <span class="constructor">Date()</span>;</span><br><span class="line">    d.set<span class="constructor">Time(<span class="params">d</span>.<span class="params">getTime</span>()</span> + (exdays*<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span>));</span><br><span class="line">    var expires = <span class="string">"expires="</span>+ d.<span class="keyword">to</span><span class="constructor">UTCString()</span>;</span><br><span class="line">    document.cookie = cname + <span class="string">"="</span> + cvalue + <span class="string">";"</span> + expires + <span class="string">";path=/"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>获取Cookie函数</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line">function getCookie(cname) &#123;</span><br><span class="line">    <span class="keyword">var</span> name = cname + <span class="string">"="</span>;</span><br><span class="line">    <span class="keyword">var</span> decodedCookie = decodeURIComponent(document.cookie);</span><br><span class="line">    <span class="keyword">var</span> ca = decodedCookie.<span class="built_in">split</span>(';');</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt;ca.length; i++) &#123;</span><br><span class="line">        <span class="keyword">var</span> <span class="built_in">c</span> = ca[i];</span><br><span class="line">        <span class="keyword">while</span> (<span class="built_in">c</span>.charAt(<span class="number">0</span>) == ' ') &#123;</span><br><span class="line">            <span class="built_in">c</span> = <span class="built_in">c</span>.substring(<span class="number">1</span>);</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">if</span> (<span class="built_in">c</span>.indexOf(name) == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">c</span>.substring(name.length, <span class="built_in">c</span>.length);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置和获取Cookie<br>通过这两个函数就可以设置Cookie和用Cookie的键获取值了。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">setCookie</span><span class="params">(<span class="string">"password"</span>,<span class="string">"123456"</span>,<span class="number">2</span>)</span></span> <span class="comment">//设置Cookie</span></span><br><span class="line">document<span class="selector-class">.cookie</span> <span class="comment">//查看Cookie</span></span><br><span class="line"><span class="function"><span class="title">getCookie</span><span class="params">(<span class="string">"password"</span>)</span></span> <span class="comment">//获取Cookie</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.ax1x.com/2020/02/22/3MdLYF.png" alt="设置和获取Cookie"></p>
+</li>
+<li><p>删除Cookie<br>原理：“他昨天就过期了，但他今天还存在这。”</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">setCookie</span><span class="params">(<span class="string">"password"</span>,<span class="string">"123456"</span>,-<span class="number">1</span>)</span></span> <span class="comment">//重新设置Cookie为过去的时间</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.ax1x.com/2020/02/22/3MroIP.png" alt="删除Cookie"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>Cookie</category>
+      </categories>
+      <tags>
+        <tag>Cookie</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日本语——「を」的用法总结</title>
     <url>/posts/35177/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/12/1b0APO.png" alt=""></p>
@@ -140,8 +214,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>学习笔记</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -503,8 +577,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>学习笔记</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -731,11 +805,11 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>HTML</tag>
         <tag>编程</tag>
         <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
