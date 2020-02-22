@@ -33,6 +33,10 @@ p{
   height: 80px;
 }
 
+h1 .logo{
+	height: 68px!important;
+}
+
 .cards {
   position: relative;
   display: flex;
