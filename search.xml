@@ -70,8 +70,8 @@
         <category>Cookie</category>
       </categories>
       <tags>
-        <tag>Cookie</tag>
         <tag>学习笔记</tag>
+        <tag>Cookie</tag>
       </tags>
   </entry>
   <entry>
@@ -214,8 +214,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>Git</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -513,9 +513,9 @@
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>hexo</tag>
         <tag>hueman主题</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -577,8 +577,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>Git</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -718,9 +718,9 @@
 <hr>
 <blockquote>
 <h3 id="最新版本预览图"><a href="#最新版本预览图" class="headerlink" title="最新版本预览图"></a>最新版本预览图</h3></blockquote>
-<img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/23/33Gh5D.gif">
-
-
+<img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/23/33Gh5D.gif">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/23/333vef.jpg">
+<img style="border-radius:10px;width: 100%;" src="https://s2.ax1x.com/2020/02/23/333xw8.png">
 
 
 <hr>
@@ -747,9 +747,9 @@
 <li>优化了加载速度。[手动狗头]</li>
 <li>附：夜间模式失效，修复中…</li>
 </ol>
-<h5 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/11/1Ijo4S.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/11/1Ij79g.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;width: 96%;" src="https://s2.ax1x.com/2020/02/11/1I6ZkT.png">
+<h5 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h5><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ijo4S.md.jpg">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ij79g.md.jpg">
+<img style="border-radius:10px;width: 100%;" src="https://s2.ax1x.com/2020/02/11/1I6ZkT.png">
 
 <hr>
 <blockquote>
@@ -759,9 +759,9 @@
 <li>新增搜索时的提示词</li>
 <li>新增右下角当地天气显示(天气的字为什么这样不是我的锅，插件的问题，找到好的插件再换)</li>
 </ol>
-<h5 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVIkq.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVot0.md.jpg">
+<h5 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h5><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVIkq.md.jpg">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVot0.md.jpg">
 
 <hr>
 <blockquote>
@@ -771,10 +771,10 @@
 <li>新增侧边栏，有比较多的快捷入口(后续还会添加)</li>
 <li>新增一个不太好用的夜间模式</li>
 </ol>
-<h5 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVtSO.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dVU6e.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dV8Fx.md.jpg">
+<h5 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h5><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVtSO.md.jpg">
+<img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVU6e.md.jpg">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dV8Fx.md.jpg">
 
 <hr>
 <blockquote>
@@ -785,8 +785,9 @@
 <li>导航默认是bing搜索</li>
 <li>完[滑稽]</li>
 </ol>
-<h5 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h5><img style="border:2px solid lightgray;border-radius:10px;float:left;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dFP58.md.jpg">
-<img style="border:2px solid lightgray;border-radius:10px;width: 48%;" src="https://s2.ax1x.com/2020/02/03/1dFCUf.md.jpg">
+<h5 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h5><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dAg4f.gif">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFP58.md.jpg">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFCUf.md.jpg">
 
 <hr>
 <blockquote>
@@ -815,11 +816,11 @@
         <category>前端</category>
       </categories>
       <tags>
+        <tag>前端</tag>
         <tag>HTML</tag>
         <tag>编程</tag>
         <tag>JavaScript</tag>
         <tag>开发</tag>
-        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
