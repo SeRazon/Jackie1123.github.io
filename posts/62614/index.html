@@ -6,20 +6,31 @@
     
 
     
-    <title>标签: 编程 | 小K同學的博客 ☀</title>
+    <title>浅析localStorage和Cookie | 小K同學的博客 ☀</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小K同學的博客 ☀">
-<meta property="og:url" content="https://kksan.top/tags/%E7%BC%96%E7%A8%8B/index.html">
+    <meta name="keywords" content="学习笔记,localStorage" />
+    
+    <meta name="description" content="这几天自己在写浏览器导航页的时候发现页面缺少了点提高用户体验的东西——不能记住用户上次使用的搜索引擎。我发布在酷安，里面很多人喜欢我的页面，但呼声最高的还是加入记住搜索引擎的功能。毕竟用惯了某个引擎每次进来都要切换一下是在让人捉急_ 导航页详情：单纯就是「一个导航」开发日志  现在前端的东西我知道的也不算多，顶多算半桶水。自己边做东西边学的。所以最几天在研究如何实现。在网上查到了网页在客户端本地">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅析localStorage和Cookie">
+<meta property="og:url" content="https://kksan.top/posts/62614/index.html">
 <meta property="og:site_name" content="小K同學的博客 ☀">
-<meta property="og:description" content="📍旅行 | 前端 | PHP | α6000 | 日语 📍">
+<meta property="og:description" content="这几天自己在写浏览器导航页的时候发现页面缺少了点提高用户体验的东西——不能记住用户上次使用的搜索引擎。我发布在酷安，里面很多人喜欢我的页面，但呼声最高的还是加入记住搜索引擎的功能。毕竟用惯了某个引擎每次进来都要切换一下是在让人捉急_ 导航页详情：单纯就是「一个导航」开发日志  现在前端的东西我知道的也不算多，顶多算半桶水。自己边做东西边学的。所以最几天在研究如何实现。在网上查到了网页在客户端本地">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/24/38dngS.jpg">
+<meta property="article:published_time" content="2020-02-22T03:40:22.000Z">
+<meta property="article:modified_time" content="2020-02-24T08:26:25.651Z">
 <meta property="article:author" content="小K同學">
-<meta property="article:tag" content="编程，学习，旅行，生活，摄影，日语，前端，PHP，数据库，α6000">
+<meta property="article:tag" content="localStorage">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content=" JavaScript">
+<meta property="article:tag" content=" 开发">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/24/38dngS.jpg">
     
 
     
@@ -200,75 +211,242 @@ var _hmt = _hmt || [];
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>标签: <em>编程</em>
+    <a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/localStorage/">localStorage</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-浅析localStorage和Cookie" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2020" class="archive-year"><i class="icon fa fa-calendar-o"></i>2020</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/posts/12023/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://s2.ax1x.com/2020/02/14/1OqnSK.jpg)" alt="单纯就是「一个导航」开发日志" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span><a href="https://kksan.top/posts/12023/#isso-thread"></a></span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/">前端</a>
-            </div>
-            <div class="date"><time datetime="2020-01-27T09:00:02.000Z" itemprop="datePublished">2020-01-27</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/posts/12023/">单纯就是「一个导航」开发日志</a>
+        浅析localStorage和Cookie
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/posts/62614/" class="article-date">
+         <time datetime="2020-02-22T03:40:22.000Z" itemprop="datePublished">2020-02-22</time><i style="margin-left:10px" class="fa fa-user"></i> 小K同學
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/localStorage/" rel="tag">localStorage</a>, <a class="tag-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a>
+    </div>
+
+                
+   <span id="/posts/62614/" class="leancloud-visitors" data-flag-title="浅析localStorage和Cookie">
+   <i class="fa fa-eye"></i>
+   <span class="post-meta-item-text">阅读次数: </span>
+   <i class="leancloud-visitors-count">1000000</i>
+   </span>
+
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="https://s2.ax1x.com/2020/02/24/38dngS.jpg" alt=""></p>
+<p>这几天自己在写浏览器导航页的时候发现页面缺少了点提高用户体验的东西——不能记住用户上次使用的搜索引擎。我发布在酷安，里面很多人喜欢我的页面，但呼声最高的还是加入记住搜索引擎的功能。毕竟用惯了某个引擎每次进来都要切换一下是在让人捉急<del>_</del></p>
+<p>导航页详情：<a href="https://kksan.top/posts/12023/">单纯就是「一个导航」开发日志</a></p>
+<hr>
+<p>现在前端的东西我知道的也不算多，顶多算半桶水。自己边做东西边学的。所以最几天在研究如何实现。在网上查到了网页在客户端本地实现储存的两种方法——Cookie和localStorage。</p>
+<p>这两种方法都能在客户端本地存储数据，解开了我对「网易邮箱如何记住密码」多年的疑惑。<br>网易邮箱用的是Cookie，为什么呢？因为它是「十天免登录」，说明有过期时间。<br><img src="https://s2.ax1x.com/2020/02/24/38dc8K.png" alt=""><br>这也是两种储存的区别之一。Cookie有可以设置过期时间，而localStorage的数据只要不通过代码特意的删除或手动删除，是永久保存的。</p>
+<hr>
+<p>一些大公司不会像我这个导航页一样只存一些用户设置过的样式。提高用户体验，除了能放视频它还能放电影、音乐、文章<strong>甚至我们的密码也能放</strong>。很多都是存放用户账号密码，不需用户每次登录都需要输入，节省时间。而这也延伸出一个问题，这两种储存方法的安全性。</p>
+<p>万一我们的电脑被别人破解，知道了我们的密码该怎么办？<br>当然，都说是大公司了，这点问题怎么可能想不到。所以据我了解，解决的方法还是有的。</p>
+<p>首先我们输入用户名密码的时候，我们的客户端会提交用户名密码到服务端，服务端在数据库验证我们的账号密码了，会给我们生成一个随机<strong>token</strong>（身份验证标识）。token随着数据的返回到我们前台，存入客户端的Cookie里边。（避免把密码暴露在大气中）<br>当我们再次登录的时候，客户端就会带着请求数据和token，服务端直接通过token验证身份——&gt;登录成功！<br>当我们注销时，注销的请求也是带着token提交，在服务端删除token，客户端也随即删除Cookie。</p>
+<p>这样就有点安全性可言。当然安全性不是绝对的，可能存在大神会破解呢？</p>
+<hr>
+<p>localStorage这东西，怎么说呢？和Cookie有少许不同，有优势也有局限。</p>
+<p>优势：</p>
+<ol>
+<li>localStorage拓展了<strong>cookie的4K限制</strong>。</li>
+<li>localStorage会可以将第一次请求的数据直接存储到本地，这个<strong>相当于一个5M大小的针对于前端页面的数据库</strong>，相比于cookie可以节约带宽，但是这个却是只有在高版本的浏览器中才支持的。</li>
+</ol>
+<p>中立：</p>
+<ol>
+<li>localStorage不能被爬虫抓取到。</li>
+<li>localStorage在浏览器的隐私模式下面是不可读取的。</li>
+</ol>
+<p>局限：</p>
+<ol>
+<li>浏览器的大小不统一，一般浏览器是支持5M，并且在<strong>IE8以上</strong>的IE版本才支持localStorage这个属性。</li>
+<li>目前所有的浏览器中都会把localStorage的值类型限定为string类型，这个在对我们日常比较常见的JSON对象类型需要一些转换。</li>
+<li>localStorage本质上是对字符串的读取，如果存储内容多的话会消耗内存空间，<strong>会导致页面变卡</strong>。</li>
+</ol>
+<hr>
+<p><a href="https://segmentfault.com/a/1190000018954001" target="_blank" rel="noopener">转载</a>两道面试题：</p>
+<ol>
+<li><code>a.meituan.com</code> 和 <code>b.meituan.com</code> 这两个域能够共享同一个 <code>localStorage</code> 吗？</li>
+<li>如果 <code>localStorage</code> 存满了，再往里存东西，或者要存的东西超过了剩余容量，会发生什么？</li>
+</ol>
+<div class="reward">
+    <button style="border-radius: 0;margin: 10px 0px 5px" id="rewardBtn" onclick="var e=document.getElementById('answer');'none'===e.style.display?e.style.display='block':e.style.display='none'"><span style="background: green;border-radius: 0">答案</span>
+    </button>
+    <div id="answer" style="display: none;border: 1px solid green">
+        <p style="margin:10px 0;padding: 10px;" align="left">localStorage只要在相同的协议、相同的主机名、相同的端口下，就能读取/修改到同一份localStorage数据。
+        <br>第一题：由于<text style="font-weight: bold;">域名不同</text>，不能进行共享。<br>第二题：localStorage理论上来说是永久有效的，即不主动清空的话就不会消失，即使保存的数据超出了浏览器所规定的大小，<text style="font-weight: bold;">也不会把旧数据清空而只会报错</text></p>
+    </div>
+</div>
+
+<hr>
+<p>先写到这，有什么新发现再继续更…</p>
+
+        </div>
+
+        <!-- copyright -->
+        
+        <div style="display: block;">
+            <ul class="post-copyright">
+                <li class="post-copyright-author">
+                    <strong style="font-weight: bolder;">本文作者：</strong>小K同學
+                </li>
+                <li class="post-copyright-link">
+                    <strong style="font-weight: bolder;">源站链接：</strong><a href="https://kksan.top/posts/62614/">https://kksan.top/posts/62614/</a>
+                </li>
+                <li class="post-copyright-license">
+                    <strong style="font-weight: bolder;">版权声明：</strong>本博客所有文章除特别声明外，均采用<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> <i class="fa fa-creative-commons"></i>BY-NC-SA </a>许可协议。转载请注明出处！
+                </li>
+            </ul>
+        </div>
+        
+
+        <!-- read_over -->
+        
+        <div class="read-over">----------本文结束 <i class="fa fa-paw"></i> 我是无情的昏割线----------</div>
+        
+
+        <!-- reward -->
+        
+        <div class="reward">
+            <button id="rewardBtn" onclick="var e=document.getElementById('QR');'none'===e.style.display?e.style.display='block':e.style.display='none'"><span>打赏</span>
+            </button>
+            <div id="QR" style="display: none;">
+                <div id="wechat" style="display: inline-block;">
+                    <img id="wechat_qr" src="https://s2.ax1x.com/2020/02/15/1zzhnA.png">
+                    <p style="margin-bottom: 10px;">微信</p>
+                </div>
+                <div id="alipay" style="display: inline-block;">
+                    <img id="wechat_qr" src="https://s2.ax1x.com/2020/02/15/1zz40I.png">
+                    <p style="margin-bottom: 10px;">支付宝</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer class="article-footer">
             
 
-首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。&#x2728;
-        </p>
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" target="_blank" rel="noopener">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
     </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "小K同學"
+        },
+        "headline": "浅析localStorage和Cookie",
+        "image": "https://kksan.tophttps://s2.ax1x.com/2020/02/24/38dngS.jpg",
+        "keywords": "学习笔记 localStorage",
+        "genre": "学习笔记 localStorage",
+        "datePublished": "2020-02-22",
+        "dateCreated": "2020-02-22",
+        "dateModified": "2020-02-24",
+        "url": "https://kksan.top/posts/62614/",
+        "description": "
+这几天自己在写浏览器导航页的时候发现页面缺少了点提高用户体验的东西——不能记住用户上次使用的搜索引擎。我发布在酷安，里面很多人喜欢我的页面，但呼声最高的还是加入记住搜索引擎的功能。毕竟用惯了某个引擎每次进来都要切换一下是在让人捉急_
+导航页详情：单纯就是「一个导航」开发日志
+
+现在前端的东西我知道的也不算多，顶多算半桶水。自己边做东西边学的。所以最几天在研究如何实现。在网上查到了网页在客户端本地",
+        "wordCount": 74
+    }
+</script>
+
 </article>
+
+    <section id="comments">
     
-        </div>
-    
+        
+    <!-- Valine -->
+    <div class="vcomments"></div>
 
 
-    </div></section>
+    
+    </section>
 
 
 
@@ -330,6 +508,19 @@ var _hmt = _hmt || [];
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/posts/3340/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">初识Cookie</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
