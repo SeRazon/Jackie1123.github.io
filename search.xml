@@ -129,8 +129,8 @@
         <category>Cookie</category>
       </categories>
       <tags>
-        <tag>Cookie</tag>
         <tag>学习笔记</tag>
+        <tag>Cookie</tag>
       </tags>
   </entry>
   <entry>
@@ -273,8 +273,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>Git</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -644,8 +644,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>Git</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -883,11 +883,11 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>HTML</tag>
         <tag>编程</tag>
         <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
