@@ -785,22 +785,21 @@
 <hr>
 <blockquote>
 <h3 id="最新版本预览图"><a href="#最新版本预览图" class="headerlink" title="最新版本预览图"></a>最新版本预览图</h3></blockquote>
-<img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/23/33Gh5D.gif">
-<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/23/333vef.jpg">
-<img style="border-radius:10px;width: 100%;" src="https://s2.ax1x.com/2020/02/23/333xw8.png">
+<img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/27/3dzBEd.gif">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/27/3dze3V.jpg">
+<img style="border-radius:10px;width: 100%;" src="https://s2.ax1x.com/2020/02/27/3dzNjO.png">
 
 
 <hr>
 <blockquote>
 <h3 id="小版本更新"><a href="#小版本更新" class="headerlink" title="小版本更新"></a>小版本更新</h3></blockquote>
 <ul>
-<li>2020年02月26日 V4.0.6 <strong>增加</strong>更多搜索引擎，<strong>添加</strong>侧边栏「显示/干掉壁纸」按钮</li>
+<li>2020年02月27日 V4.0.7 <strong>重写</strong>搜索框，不要那么花里胡哨了，简简单单才是真；<strong>添加</strong>导航页更新提示，有更新会出现弹框</li>
+<li>2020年02月26日 V4.0.6 <strong>增加</strong>更多搜索引擎；<strong>添加</strong>侧边栏「显示/干掉壁纸」按钮</li>
 <li>2020年02月23日 V4.0.5 <strong>支持</strong>记住用户上次使用的搜索引擎，加入移动端背景图</li>
 <li>2020年02月22日 V4.0.4 <strong>更改</strong>右下角天气样式</li>
 <li>2020年02月21日 V4.0.3 <strong>统一</strong>标签图标风格</li>
 <li>2020年02月17日 V4.0.2 <strong>更改</strong>右下角天气为可修改位置，避免定位不准确</li>
-<li>2020年02月16日 V4.0.1 <strong>更改</strong>桌面端的背景图</li>
-<li>2020年02月10日 V3.1.2 <strong>增加</strong>「知乎」和「少数派」标签，<strong>移动</strong>标签中的三个个人网站到侧边栏「个人网站」列</li>
 <li><a href="#moreUpdate">查看更多小版本更新</a></li>
 </ul>
 <hr>
@@ -870,6 +869,8 @@
 <blockquote>
 <h3 id="归档小版本："><a href="#归档小版本：" class="headerlink" title="归档小版本："></a>归档小版本：</h3></blockquote>
 <ul>
+<li>2020年02月16日 V4.0.1 <strong>更改</strong>桌面端的背景图</li>
+<li>2020年02月10日 V3.1.2 <strong>增加</strong>「知乎」和「少数派」标签；<strong>移动</strong>标签中的三个个人网站到侧边栏「个人网站」列</li>
 <li>2020年02月09日 V3.1.1 <strong>增加</strong>seeres搜索，<strong>增加</strong>侧边栏工具列的常用入口，<strong>改变</strong>打开书签位置——点击logo</li>
 <li>2020年02月08日 V3.1.0 <strong>优化</strong>页面加载速度！加载变快了！输入提示词框微调</li>
 <li>2020年02月08日 V3.0.4 <strong>增加</strong>侧边栏追剧列、文件传送列入口</li>
@@ -884,11 +885,11 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>HTML</tag>
         <tag>编程</tag>
         <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
