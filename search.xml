@@ -3,7 +3,8 @@
   <entry>
     <title>PHP自动获取网站 favicon.ico 图标 api源码</title>
     <url>/posts/12819/</url>
-    <content><![CDATA[<p>不是我写的，留着备用，学习一下。</p>
+    <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/03/04/3IzUeK.jpg" alt=""></p>
+<p>不是我写的，留着备用，学习一下。</p>
 <p>源码就一个文件，任意命名为：<code>filename.php</code></p>
 <p>可以放在网站根目录，也可以放二级目录，调用时加上目录就行。</p>
 <p><strong>调用方式：</strong>域名 + /?url=目标网址</p>
