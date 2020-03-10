@@ -1538,6 +1538,9 @@ a.article-title:hover {
 #comments a {
   color: #2c5364;
 }
+#comments textarea {
+  background: url("/css/images/comment_bg.png") 100% 100% no-repeat;
+}
 .archives-wrap {
   margin: block-margin 0;
 }
