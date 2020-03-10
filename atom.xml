@@ -43,13 +43,13 @@
       <category term="PHP自动获取网站 favicon.ico 图标 api源码" scheme="https://kksan.top/categories/%E8%BD%AC%E8%BD%BD/PHP%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99-favicon-ico-%E5%9B%BE%E6%A0%87-api%E6%BA%90%E7%A0%81/"/>
     
     
-      <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="开发" scheme="https://kksan.top/tags/%E5%BC%80%E5%8F%91/"/>
     
       <category term="PHP" scheme="https://kksan.top/tags/PHP/"/>
     
       <category term="编程" scheme="https://kksan.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -231,9 +231,9 @@
       <category term="Git分布式版本管理系统" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
     
     
-      <category term="Git" scheme="https://kksan.top/tags/Git/"/>
-    
       <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Git" scheme="https://kksan.top/tags/Git/"/>
     
   </entry>
   
@@ -327,9 +327,9 @@
       <category term="Git分布式版本管理系统" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
     
     
-      <category term="Git" scheme="https://kksan.top/tags/Git/"/>
-    
       <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Git" scheme="https://kksan.top/tags/Git/"/>
     
   </entry>
   
@@ -448,11 +448,11 @@
     
       <category term="编程" scheme="https://kksan.top/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="HTML" scheme="https://kksan.top/tags/HTML/"/>
     
       <category term="JavaScript" scheme="https://kksan.top/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
