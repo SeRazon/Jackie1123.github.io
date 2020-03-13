@@ -22,9 +22,9 @@
       </categories>
       <tags>
         <tag>学习笔记</tag>
+        <tag>编程</tag>
         <tag>开发</tag>
         <tag>PHP</tag>
-        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -844,6 +844,7 @@
 <blockquote>
 <h3 id="小版本更新"><a href="#小版本更新" class="headerlink" title="小版本更新"></a>小版本更新</h3></blockquote>
 <ul>
+<li>2020年03月14日 V4.1.0 <strong>新增</strong>几个入口并<strong>更改</strong>图标样式</li>
 <li>2020年03月08日 V4.0.9 <strong>增加</strong>淘宝，京东，秘迹搜索，<strong>重写(简化)</strong>一些函数（划水的更新）</li>
 <li>2020年03月04日 V4.0.8 <strong>重写</strong>搜索提示词的样式，百度的太难看了</li>
 <li>2020年02月29日 V4.0.7 <strong>重写</strong>搜索框，不要那么花里胡哨了，简简单单才是真；<strong>添加</strong>导航页更新提示，有更新会出现弹框</li>
@@ -937,11 +938,11 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>开发</tag>
-        <tag>编程</tag>
-        <tag>前端</tag>
         <tag>HTML</tag>
+        <tag>编程</tag>
         <tag>JavaScript</tag>
+        <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
