@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【蓝桥】第十一届软件类校内模拟赛(会做的题哈哈哈)</title>
+    <url>/posts/52865/</url>
+    <content><![CDATA[<p><img src="https://s1.ax1x.com/2020/03/15/83RiVJ.jpg" alt=""></p>
+<p>本篇是蓝桥杯第十一届软件类(Java)校内模拟赛，我会做的题…<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
+<h4 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h4><h4 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h4><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>　　在计算机存储中，15.125GB是多少MB？</p>
+<h5 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h5><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
+<blockquote>
+<p>答案：15488</p>
+</blockquote>
+<p>非要写程序的话…（吃得太饱）</p>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">System.<span class="keyword">out</span>.println(<span class="number">15.125</span>*<span class="number">1024</span>);</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="2"><a href="#2" class="headerlink" title="#2"></a>#2</h4><h5 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h5><p>　　1200000有多少个约数（只计算正约数）。</p>
+<h5 id="答案提交-1"><a href="#答案提交-1" class="headerlink" title="答案提交"></a>答案提交</h5><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
+<blockquote>
+<p>答案：96</p>
+</blockquote>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="symbol">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> static <span class="built_in">void</span> main(String[] args) &#123;</span><br><span class="line">        <span class="built_in">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">1200000</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="number">1200000</span> % i ==<span class="number">0</span>) &#123;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.<span class="keyword">out</span>.println(count);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="3"><a href="#3" class="headerlink" title="#3"></a>#3</h4><h5 id="问题描述-2"><a href="#问题描述-2" class="headerlink" title="问题描述"></a>问题描述</h5><p>　　一棵包含有2019个结点的二叉树，最多包含多少个叶结点？</p>
+<h5 id="答案提交-2"><a href="#答案提交-2" class="headerlink" title="答案提交"></a>答案提交</h5><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
+<blockquote>
+<p>答案：1010</p>
+</blockquote>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">应该不是<span class="number">1</span>个根节点＋<span class="number">2018</span>个叶节点这么简单吧？毕竟他也没说是n叉树。不确定。</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="4"><a href="#4" class="headerlink" title="#4"></a>#4</h4><h5 id="问题描述-3"><a href="#问题描述-3" class="headerlink" title="问题描述"></a>问题描述</h5><p>　　在1至2019中，有多少个数的数位中包含数字9？<br>　　注意，有的数中的数位中包含多个9，这个数只算一次。例如，1999这个数包含数字9，在计算只是算一个数。</p>
+<h5 id="答案提交-3"><a href="#答案提交-3" class="headerlink" title="答案提交"></a>答案提交</h5><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
+<blockquote>
+<p>答案：544</p>
+</blockquote>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="symbol">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> static <span class="built_in">void</span> main(String[] args) &#123;</span><br><span class="line">        Scanner <span class="keyword">in</span>=new Scanner (System.<span class="keyword">in</span>);</span><br><span class="line">        <span class="built_in">int</span> ans=<span class="number">0</span>;<span class="built_in">int</span> a,b,c,d;</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">2019</span>;i++) &#123;</span><br><span class="line">            a=i/<span class="number">1000</span>;</span><br><span class="line">            b=i%<span class="number">1000</span>/<span class="number">100</span>;</span><br><span class="line">            c=i%<span class="number">100</span>/<span class="number">10</span>;</span><br><span class="line">            d=i%<span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span>(a==<span class="number">9</span>||b==<span class="number">9</span>||c==<span class="number">9</span>||d==<span class="number">9</span>) &#123;                </span><br><span class="line">                ans++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.<span class="keyword">out</span>.println(ans);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="程序题"><a href="#程序题" class="headerlink" title="程序题"></a>程序题</h4><h4 id="7"><a href="#7" class="headerlink" title="#7"></a>#7</h4><h5 id="问题描述-4"><a href="#问题描述-4" class="headerlink" title="问题描述"></a>问题描述</h5><p>　　一个正整数如果任何一个数位不大于右边相邻的数位，则称为一个数位递增的数，例如1135是一个数位递增的数，而1024不是一个数位递增的数。<br>　　给定正整数 n，请问在整数 1 至 n 中有多少个数位递增的数？</p>
+<h5 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h5><p>　　输入的第一行包含一个整数 n。</p>
+<h5 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h5><p>　　输出一行包含一个整数，表示答案。</p>
+<h5 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h5><blockquote>
+<p>30</p>
+</blockquote>
+<h5 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h5><blockquote>
+<p>26</p>
+</blockquote>
+<h5 id="评测用例规模与约定"><a href="#评测用例规模与约定" class="headerlink" title="评测用例规模与约定"></a>评测用例规模与约定</h5><p>　　对于 40% 的评测用例，1 &lt;= n &lt;= 1000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000。</p>
+<h5 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line">public <span class="keyword">class</span> Main &#123;</span><br><span class="line">    public static void main(String<span class="literal">[]</span> args) &#123;</span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> <span class="constructor">Scanner(System.<span class="params">in</span>)</span>;</span><br><span class="line">        <span class="built_in">int</span> n = scanner.next<span class="constructor">Int()</span>, count = <span class="number">0</span>;</span><br><span class="line">        for (<span class="built_in">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">            String num = <span class="module-access"><span class="module"><span class="identifier">String</span>.</span></span>value<span class="constructor">Of(<span class="params">i</span>)</span>;</span><br><span class="line">            <span class="built_in">char</span> temp = num.<span class="built_in">char</span><span class="constructor">At(0)</span>;</span><br><span class="line">            <span class="built_in">int</span> len = num.length<span class="literal">()</span>;</span><br><span class="line">            boolean flag = <span class="literal">true</span>;</span><br><span class="line">            for (<span class="built_in">int</span> j = <span class="number">1</span>; j &lt; len<span class="operator"> &amp;&amp; </span>flag; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (num.<span class="built_in">char</span><span class="constructor">At(<span class="params">j</span>)</span> &gt;= temp) &#123;</span><br><span class="line">                    temp = num.<span class="built_in">char</span><span class="constructor">At(<span class="params">j</span>)</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> flag = <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (flag) count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="module-access"><span class="module"><span class="identifier">System</span>.</span></span>out.println(count);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="10"><a href="#10" class="headerlink" title="#10"></a>#10</h4><h5 id="问题描述-5"><a href="#问题描述-5" class="headerlink" title="问题描述"></a>问题描述</h5><p>　　小明要组织一台晚会，总共准备了 n 个节目。然后晚会的时间有限，他只能最终选择其中的 m 个节目。<br>　　这 n 个节目是按照小明设想的顺序给定的，顺序不能改变。<br>　　小明发现，观众对于晚上的喜欢程度与前几个节目的好看程度有非常大的关系，他希望选出的第一个节目尽可能好看，在此前提下希望第二个节目尽可能好看，依次类推。<br>　　小明给每个节目定义了一个好看值，请你帮助小明选择出 m 个节目，满足他的要求。</p>
+<h5 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h5><p>　　输入的第一行包含两个整数 n, m ，表示节目的数量和要选择的数量。<br>　　第二行包含 n 个整数，依次为每个节目的好看值。</p>
+<h5 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h5><p>　　输出一行包含 m 个整数，为选出的节目的好看值。</p>
+<h5 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a>样例输入</h5><blockquote>
+<p>5 3<br>3 1 2 5 4</p>
+</blockquote>
+<h5 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出"></a>样例输出</h5><blockquote>
+<p>3 5 4</p>
+</blockquote>
+<h5 id="样例说明"><a href="#样例说明" class="headerlink" title="样例说明"></a>样例说明</h5><p>　　选择了第1, 4, 5个节目。</p>
+<h5 id="评测用例规模与约定-1"><a href="#评测用例规模与约定-1" class="headerlink" title="评测用例规模与约定"></a>评测用例规模与约定</h5><p>　　对于 30% 的评测用例，1 &lt;= n &lt;= 20；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n &lt;= 100000，0 &lt;= 节目的好看值 &lt;= 100000。</p>
+<h5 id="程序-1"><a href="#程序-1" class="headerlink" title="程序"></a>程序</h5><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> &#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(<span class="keyword">String</span>[] args)</span> </span>&#123;</span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> n = scanner.nextInt(),</span><br><span class="line">            m = scanner.nextInt();</span><br><span class="line">        <span class="keyword">int</span>[] a = <span class="keyword">new</span> <span class="keyword">int</span>[n],<span class="comment">//原数组</span></span><br><span class="line">              b = <span class="keyword">new</span> <span class="keyword">int</span>[n],<span class="comment">//把原数组排序</span></span><br><span class="line">              c = <span class="keyword">new</span> <span class="keyword">int</span>[m];<span class="comment">//新数组</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            a[i] = b[i] = scanner.nextInt();</span><br><span class="line">        &#125;</span><br><span class="line">        scanner.<span class="built_in">close</span>();</span><br><span class="line">        Arrays.sort(b);</span><br><span class="line">        System.arraycopy(b, n - m, c, <span class="number">0</span>, m);<span class="comment">//把排序好的数组b的n-m位开始复制到c数组</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = c.length - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--) &#123;</span><br><span class="line">                <span class="keyword">if</span> (a[i] == c[j]) &#123;</span><br><span class="line">                    System.out.<span class="built_in">print</span>(a[i]+<span class="string">" "</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>就会这么多…会了再把其他题放上来吧…我太菜了<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>蓝桥</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>编程</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PHP自动获取网站 favicon.ico 图标 api源码</title>
     <url>/posts/12819/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/03/04/3IzUeK.jpg" alt=""></p>
