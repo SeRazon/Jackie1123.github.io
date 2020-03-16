@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>《汇编语言》寻址范围练习</title>
+    <url>/posts/49536/</url>
+    <content><![CDATA[<h2 id="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为到"><a href="#给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为到" class="headerlink" title="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为到"></a>给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为<strong><strong>到</strong></strong></h2><p>此题解题背景默认为8080型CPU，地址总线为16根。（8080-16，8086-20，8088-20，80286-24，80386-32）</p>
+<p>16根地址总线寻址能力：<code>(2 ** 16) / 1024 = 65536(B) = 64(KB)</code>, 可以表示的存储单元个数为 <code>0 ~ 2^n-1</code> 个， 即 0 ~ 65535。</p>
+<p>这里的 65535 为十进制数，转换为十六进制数为 0xffff (或 ffffH)，具体转换方法可以用 Python3 函数 hex(65535)。</p>
+<p>再来看CPU内存单元物理地址的划分方法：<code>基础地址（段地址[SA] X 16）+ 偏移地址[EA] = 物理地址</code></p>
+<p>此题中已经假设地址总线为16位，所以偏移地址变化范围是 0 ~ 65535，即 <code>0000H ~ FFFFH</code></p>
+<p>因为给定段地址为0001H，则CPU的寻址范围 <code>（0001H + 0000H * 16）~ （0001H + FFFFH * 16）</code>，</p>
+<p>0001H * 16 为 0001H 左移一位，即 0010H，0000H + 0010H = 0010H， FFFFH + 0010H = 1000FH。</p>
+<p>所以 CPU 寻址范围为 0010H 到 1000FH。</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【蓝桥】第十一届软件类校内模拟赛(会做的题哈哈哈)</title>
     <url>/posts/52865/</url>
-    <content><![CDATA[<p><img src="https://s1.ax1x.com/2020/03/15/83RiVJ.jpg" alt=""></p>
-<p>本篇是蓝桥杯第十一届软件类(Java)校内模拟赛，我会做的题…<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
+    <content><![CDATA[<p>本篇是蓝桥杯第十一届软件类(Java)校内模拟赛，我会做的题…<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
 <h4 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h4><h4 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h4><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>　　在计算机存储中，15.125GB是多少MB？</p>
 <h5 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h5><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
 <blockquote>
@@ -257,8 +275,7 @@
   <entry>
     <title>日本语——「を」的用法总结</title>
     <url>/posts/35177/</url>
-    <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/12/1b0APO.png" alt=""></p>
-<h4 id="表示他动词的宾语（包括助动词后续使役动词的场合）。"><a href="#表示他动词的宾语（包括助动词后续使役动词的场合）。" class="headerlink" title="表示他动词的宾语（包括助动词后续使役动词的场合）。"></a>表示他动词的宾语（包括助动词后续使役动词的场合）。</h4><p>学生在图书馆读书。<br>学生は図书馆で本 <strong>を</strong> 読みます。</p>
+    <content><![CDATA[<h4 id="表示他动词的宾语（包括助动词后续使役动词的场合）。"><a href="#表示他动词的宾语（包括助动词后续使役动词的场合）。" class="headerlink" title="表示他动词的宾语（包括助动词后续使役动词的场合）。"></a>表示他动词的宾语（包括助动词后续使役动词的场合）。</h4><p>学生在图书馆读书。<br>学生は図书馆で本 <strong>を</strong> 読みます。</p>
 <h4 id="表示临时带有他动词性质的自动词的目的或对象。"><a href="#表示临时带有他动词性质的自动词的目的或对象。" class="headerlink" title="表示临时带有他动词性质的自动词的目的或对象。"></a>表示临时带有他动词性质的自动词的目的或对象。</h4><p>因病向公司请假一周。<br>病気で一周间会社 <strong>を</strong> 休みました。</p>
 <h4 id="表示动作移动或经过的场所，を后面的动词为移动性动词。"><a href="#表示动作移动或经过的场所，を后面的动词为移动性动词。" class="headerlink" title="表示动作移动或经过的场所，を后面的动词为移动性动词。"></a>表示动作移动或经过的场所，を后面的动词为移动性动词。</h4><p>夏天放假的时候，去了北海道和九州旅游。<br>如：夏休みには、北海道や九州 <strong>を</strong> 旅行して行きました。 </p>
 <h4 id="表示经过的时间或时间点。"><a href="#表示经过的时间或时间点。" class="headerlink" title="表示经过的时间或时间点。"></a>表示经过的时间或时间点。</h4><p>就这样过了3年。<br>そこで3年 <strong>を</strong> 过ごした。 </p>
@@ -772,8 +789,7 @@
   <entry>
     <title>日本语一类形容词与二类形容词的区别</title>
     <url>/posts/3557/</url>
-    <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/12/1b0APO.png" alt=""></p>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
 <p>众所周知，江湖上日语的形容词分为两大门派——「一类形容词」和「二类形容词」<br>有的教科书上一类形容词和二类形容词也分别称为「い形容词」和「な形容词」<br>在日本则称为「形容詞」和「形容動詞」<br>二者有何不同呢？</p>
 </blockquote>
 <a id="more"></a>
@@ -834,7 +850,6 @@
 <h4 id="表示附着点"><a href="#表示附着点" class="headerlink" title="表示附着点"></a>表示附着点</h4><p>我上了巴士。<br>私はバス <strong><u>に</u></strong> 乗りました。</p>
 <h4 id="表示移动行为目的地（「に」和「へ」通用）"><a href="#表示移动行为目的地（「に」和「へ」通用）" class="headerlink" title="表示移动行为目的地（「に」和「へ」通用）"></a>表示移动行为目的地（「に」和「へ」通用）</h4><p>我和朋友一起去图书馆。<br>友達と一緒 に 図書館 <strong><u>に</u>（へ）</strong> 行きます。</p>
 <hr>
-<p><img src="https://s2.ax1x.com/2020/02/05/1sXu4O.png" alt=""></p>
 <h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><p>以上用法只有<strong>[表示移动行为目的地]</strong>时才可以用「へ」来替换，例如「行きます」「帰ります」「来ます」等典型的移动动词的目的地时，「に」和「へ」才能通用。</p>
 ]]></content>
       <categories>
@@ -849,8 +864,7 @@
   <entry>
     <title>日本语学习笔记——标日初第15课</title>
     <url>/posts/41085/</url>
-    <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/12/1b0APO.png" alt=""></p>
-<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p><span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
+    <content><![CDATA[<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p><span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
 <h5 id="1-動詞て-います"><a href="#1-動詞て-います" class="headerlink" title="1. 動詞て　います"></a>1. <strong><u>動詞</u></strong>て　います</h5><ul>
 <li><strong>表示正在进行，我们英语所说的ing形式</strong><br>组成：动词て型＋います<br>e.g.<br>我正在图书馆看书 ——&gt; わたしは図書館に本を読んでいます。<a id="more"></a></li>
 <li><strong>表示（过去）正在进行的时候，可以把后面的「います」改成「いました」</strong><br>组成：动词て型＋いました<br>e.g.<br>我昨天白天在图书馆看书 ——&gt; 昨日の昼わたしは図書館に本を読んでいました。</li>
