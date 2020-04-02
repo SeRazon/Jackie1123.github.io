@@ -908,7 +908,7 @@
   <entry>
     <title>单纯就是「一个导航」开发日志</title>
     <url>/posts/12023/</url>
-    <content><![CDATA[<img style="width: 50%;" src="https://s2.ax1x.com/2020/02/14/1OqnSK.jpg">
+    <content><![CDATA[<img src="https://s2.ax1x.com/2020/02/14/1OqnSK.jpg">
 
 <p>首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
 <a id="more"></a>
@@ -921,7 +921,7 @@
 <hr>
 <blockquote>
 <h3 id="最新版本预览图"><a href="#最新版本预览图" class="headerlink" title="最新版本预览图"></a>最新版本预览图</h3></blockquote>
-<img style="border-radius: 10px;float: left;width: 50%;" src="https://s1.ax1x.com/2020/03/13/8MEplV.gif">
+<img style="border-radius: 10px;width: 50%;" src="https://s1.ax1x.com/2020/03/13/8MEplV.gif">
 <img style="border-radius:10px;width: 50%;" src="https://s1.ax1x.com/2020/03/14/8MV6Ve.jpg">
 <img style="border-radius:10px;width: 100%;" src="https://s1.ax1x.com/2020/03/13/8MV3uT.png">
 
@@ -951,7 +951,7 @@
 <li>优化了加载速度。[手动狗头]</li>
 <li>附：夜间模式失效，修复中…</li>
 </ol>
-<h3 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ijo4S.md.jpg">
+<h3 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ijo4S.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ij79g.md.jpg">
 <img style="border-radius:10px;width: 100%;" src="https://s2.ax1x.com/2020/02/11/1I6ZkT.png">
 
@@ -963,7 +963,7 @@
 <li>新增搜索时的提示词</li>
 <li>新增右下角当地天气显示(天气的字为什么这样不是我的锅，插件的问题，找到好的插件再换)</li>
 </ol>
-<h3 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
+<h3 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVIkq.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVot0.md.jpg">
 
@@ -975,9 +975,9 @@
 <li>新增侧边栏，有比较多的快捷入口(后续还会添加)</li>
 <li>新增一个不太好用的夜间模式</li>
 </ol>
-<h3 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
+<h3 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVtSO.md.jpg">
-<img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVU6e.md.jpg">
+<img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVU6e.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dV8Fx.md.jpg">
 
 <hr>
@@ -989,7 +989,7 @@
 <li>导航默认是bing搜索</li>
 <li>完[滑稽]</li>
 </ol>
-<h3 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;float:left;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dAg4f.gif">
+<h3 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dAg4f.gif">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFP58.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFCUf.md.jpg">
 
@@ -1004,7 +1004,7 @@
 <hr>
 <p><a name="moreUpdate"></a></p>
 <blockquote>
-<h3 id="归档小版本："><a href="#归档小版本：" class="headerlink" title="归档小版本："></a>归档小版本：</h3></blockquote>
+<h2 id="归档小版本："><a href="#归档小版本：" class="headerlink" title="归档小版本："></a>归档小版本：</h2></blockquote>
 <ul>
 <li>2020年02月22日 V4.0.4 <strong>更改</strong>右下角天气样式</li>
 <li>2020年02月21日 V4.0.3 <strong>统一</strong>标签图标风格</li>
