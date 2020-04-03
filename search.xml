@@ -111,9 +111,9 @@
       </categories>
       <tags>
         <tag>学习笔记</tag>
+        <tag>编程</tag>
         <tag>开发</tag>
         <tag>PHP</tag>
-        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -719,9 +719,9 @@
         <category>hexo</category>
       </categories>
       <tags>
+        <tag>前端</tag>
         <tag>hexo</tag>
         <tag>hueman主题</tag>
-        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -1026,11 +1026,11 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>开发</tag>
-        <tag>编程</tag>
-        <tag>前端</tag>
         <tag>HTML</tag>
+        <tag>编程</tag>
         <tag>JavaScript</tag>
+        <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -1061,6 +1061,42 @@
         <tag>科技</tag>
         <tag>耳机</tag>
         <tag>Ticpods 2 Pro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Open Source！教你用js做一个简单的抽奖系统</title>
+    <url>/posts/43414/</url>
+    <content><![CDATA[<p>很奇怪，可能你们都会问为什么我会突然写一个抽奖系统呢？</p>
+<p>其实起因是最近我协会招新，动员大会前一晚突然收到会长信息(晚上11点了)说想在新生会员动员大会上搞个自动抽奖的东东，最好酷炫点的。第二天就要用了，因为太急我就想到了用我最擅长的js做个简单的出来。<br>其实做个抽奖系统很简单，里面只要一个随机函数就可以了。</p>
+<p>前提：我协会的动员大会上是每人都有一个签的，签上有号码，共389人。</p>
+<h2 id="普通版本"><a href="#普通版本" class="headerlink" title="普通版本"></a>普通版本</h2><p>按照惯例，先给大伙看看样子~<br><img src="https://s1.ax1x.com/2020/04/03/GNagOI.jpg" alt=""><br>两行文字，两个按钮，一个随机数，足矣。<br>界面还行吧，调文字颜色调了好久</p>
+<p>这个界面的html非常简单，总共就21行代码，<code>&lt;body&gt;</code>里面就只剩8行了，一起来看看吧。CSS样式还是由你们自行想象<br><img src="https://s1.ax1x.com/2020/04/03/GNaO00.jpg" alt=""><br>我来解释一下，因为时间比较紧迫(赶着睡觉)，我引入了Bootstrap框架用于主容器的布局(container)和button的外观(<code>class</code>里面的<code>btn-primary</code>和<code>btn-danger</code>)。简单快捷又好看</p>
+<p>布局完界面后，重头戏当然还是js文件，里面写着随机数函数嘛</p>
+<p>在下图可以看到，我是先定义了一个空数组装随机数的，<code>getRandom()</code>函数就是圈定随机数的范围。<br>获取完随机数后用push方法把得到的随机数传到array数组。<br>最后再把数组输出在<code>id</code>为one的<code>div</code>里就可以咯。<br><img src="https://s1.ax1x.com/2020/04/03/GNa5tS.jpg" alt=""><br>插播一个科普：<br><code>push()</code>方法其实就是向数组的末尾添加一个或多个新元素，看一下w3school的实例就明了啦<br>因为我的先前定义的array数组是空的，所以加一个元素进去也就只显示那个元素<br><img src="https://s1.ax1x.com/2020/04/03/GNaBFO.jpg" alt=""><br>到这里随机数就已经搞定了。</p>
+<p>我的想法是什么呢？当然是点击START就开始，点击STOP就结束啊！不然要那两个按钮还搞得这么漂亮干什么</p>
+<p>继续写函数！这两个函数就是控制开始停止的，看我注释应该看得懂，不多说了<br><img src="https://s1.ax1x.com/2020/04/03/GNaTpQ.jpg" alt=""><br>最后！在html页面设置一个js DOM的０级事件(onclick)，大功告成！<br>看到下面那个<code>value=&quot;stop&quot;</code>了吗？就是和上图函数写的判断<code>if(mark==&#39;stop&#39;)</code>有关联。<br><img src="https://s1.ax1x.com/2020/04/03/GNaH6s.jpg" alt=""><br>第二天彩排，会长说有一共30份礼物，一个一个抽太慢了…他想一抽就是30个，好吧！然后我又临时改了一波～</p>
+<p>就改了下面两个地方，html页面加多两个div就行了<br><img src="https://s1.ax1x.com/2020/04/03/GNa4k8.jpg" alt=""><br>js函数改动如下，把<code>Array.push()</code>放在一个循环30次的for循环里，表示生成30个存随机数的数组。<br>然后用<code>innerHTML</code>把30个数组分别十个十个地放在3个<code>div</code>里。<br><img src="https://s1.ax1x.com/2020/04/03/GNaDYD.jpg" alt=""><br>最终效果就是酱紫：<br><img src="https://s1.ax1x.com/2020/04/03/GNaaex.jpg" alt=""></p>
+<hr>
+<h2 id="进阶版本"><a href="#进阶版本" class="headerlink" title="进阶版本"></a>进阶版本</h2><p>有些人可能会说上面的只能在代码里改范围，不方便。ok，那进阶版本就来做个可以自定义输入范围的吧~<br>其实这个也很简单，只需要改下html布局和js的函数就可以了。</p>
+<p>说下思路：设置两个搜索框用于用户输入范围，然后用js获取输入框里面的数值丢到random函数里就ok</p>
+<p>首先在html文件中写两个输入框(input)，下面红色框中就是新增的部分<br><img src="https://s1.ax1x.com/2020/04/03/GNabXn.jpg" alt=""><br>然后改下js的函数，因为我们先要获取到输入框的数值才能进行下面的步骤，所以在函数开头我们先定义两个变量<code>mini</code>和<code>maxi</code>，分别用于储存在<code>input1</code>和<code>input2</code>获取的内容。<br><img src="https://s1.ax1x.com/2020/04/03/GNaNO1.jpg" alt=""><br>强调一下，这里细心的酷友应该会发现下面我把获取到的value转换成数字(number)类型了，其实是因为<code>getElementById</code>获取到的是字符串(string)。那为什么我要保留两个字符串类型的呢？请看下面解释~</p>
+<p>接下来再加个判断就ok啦！加判断的原因是：因为用户有时候会手误输入了一些不正确的数字导致运行错误，所以我设置把<code>min == max、min &gt; max</code>的情况和是否有输入都输出一个提示，其他情况就正常运行。<br><img src="https://s1.ax1x.com/2020/04/03/GNaX7V.jpg" alt=""><br>红色框里是判断部分。黄色框里是判断用户是否有输入(判断长度只能在字符串使用，所以要保留字符串类型)；蓝色框是判断<code>min</code>和<code>max</code>是否相等，和<code>min</code>是否大于<code>max</code>。绿色框就是把<code>min</code>和<code>max</code>丢进<code>getRandom()</code>函数里面。</p>
+<p>看看最终的效果吧 <a href="www.orgloft.com/page/luckyDraw.html">www.orgloft.com/page/luckyDraw.html</a><br><img src="https://s1.ax1x.com/2020/04/03/GNac6A.jpg" alt=""></p>
+<hr>
+<p>插播：至于我的getRandom函数为什么要那样写，大家可以参考下这篇文章，有关js中random函数的运行原理 <a href="https://www.cnblogs.com/mq0036/p/9139231.html" target="_blank" rel="noopener">https://www.cnblogs.com/mq0036/p/9139231.html</a></p>
+<p>想要源码的酷基看过原来呀！ #爱编程#<br>源码在此： <a href="https://pan.baidu.com/s/1cj4hR6c6QlxF8WfL_FGXEQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1cj4hR6c6QlxF8WfL_FGXEQ</a><br>(这个是每次抽一个的源码，有需要抽多个的自己改装呀)</p>
+<p>这篇讲得是不是比上一篇简单一点呀，希望每个人都能看懂</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>编程</tag>
+        <tag>JavaScript</tag>
+        <tag>开发</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
