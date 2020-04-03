@@ -1081,7 +1081,7 @@
 <p>说下思路：设置两个搜索框用于用户输入范围，然后用js获取输入框里面的数值丢到random函数里就ok</p>
 <p>首先在html文件中写两个输入框(input)，下面红色框中就是新增的部分<br><img src="https://s1.ax1x.com/2020/04/03/GNabXn.jpg" alt=""><br>然后改下js的函数，因为我们先要获取到输入框的数值才能进行下面的步骤，所以在函数开头我们先定义两个变量<code>mini</code>和<code>maxi</code>，分别用于储存在<code>input1</code>和<code>input2</code>获取的内容。<br><img src="https://s1.ax1x.com/2020/04/03/GNaNO1.jpg" alt=""><br>强调一下，这里细心的酷友应该会发现下面我把获取到的value转换成数字(number)类型了，其实是因为<code>getElementById</code>获取到的是字符串(string)。那为什么我要保留两个字符串类型的呢？请看下面解释~</p>
 <p>接下来再加个判断就ok啦！加判断的原因是：因为用户有时候会手误输入了一些不正确的数字导致运行错误，所以我设置把<code>min == max、min &gt; max</code>的情况和是否有输入都输出一个提示，其他情况就正常运行。<br><img src="https://s1.ax1x.com/2020/04/03/GNaX7V.jpg" alt=""><br>红色框里是判断部分。黄色框里是判断用户是否有输入(判断长度只能在字符串使用，所以要保留字符串类型)；蓝色框是判断<code>min</code>和<code>max</code>是否相等，和<code>min</code>是否大于<code>max</code>。绿色框就是把<code>min</code>和<code>max</code>丢进<code>getRandom()</code>函数里面。</p>
-<p>看看最终的效果吧 <a href="www.orgloft.com/page/luckyDraw.html">www.orgloft.com/page/luckyDraw.html</a><br><img src="https://s1.ax1x.com/2020/04/03/GNac6A.jpg" alt=""></p>
+<p>看看最终的效果吧 <a href="http://www.orgloft.com/page/luckyDraw.html" target="_blank" rel="noopener">https://www.orgloft.com/page/luckyDraw.html</a><br><img src="https://s1.ax1x.com/2020/04/03/GNac6A.jpg" alt=""></p>
 <hr>
 <p>插播：至于我的getRandom函数为什么要那样写，大家可以参考下这篇文章，有关js中random函数的运行原理 <a href="https://www.cnblogs.com/mq0036/p/9139231.html" target="_blank" rel="noopener">https://www.cnblogs.com/mq0036/p/9139231.html</a></p>
 <p>想要源码的酷基看过原来呀！ #爱编程#<br>源码在此： <a href="https://pan.baidu.com/s/1cj4hR6c6QlxF8WfL_FGXEQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1cj4hR6c6QlxF8WfL_FGXEQ</a><br>(这个是每次抽一个的源码，有需要抽多个的自己改装呀)</p>
