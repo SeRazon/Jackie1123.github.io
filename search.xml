@@ -719,9 +719,9 @@
         <category>hexo</category>
       </categories>
       <tags>
+        <tag>前端</tag>
         <tag>hexo</tag>
         <tag>hueman主题</tag>
-        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -996,7 +996,7 @@
 
 <hr>
 <blockquote>
-<h2 id="食用方法："><a href="#食用方法：" class="headerlink" title="食用方法："></a>食用方法：</h2></blockquote>
+<h2 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h2></blockquote>
 <ol>
 <li>复制网址</li>
 <li>via浏览器＝&gt;设置＝&gt;通用＝&gt;主页＝&gt;粘贴进去</li>
@@ -1005,7 +1005,7 @@
 <hr>
 <p><a name="moreUpdate"></a></p>
 <blockquote>
-<h2 id="归档小版本："><a href="#归档小版本：" class="headerlink" title="归档小版本："></a>归档小版本：</h2></blockquote>
+<h2 id="归档小版本"><a href="#归档小版本" class="headerlink" title="归档小版本"></a>归档小版本</h2></blockquote>
 <ul>
 <li>2020年02月22日 V4.0.4 <strong>更改</strong>右下角天气样式</li>
 <li>2020年02月21日 V4.0.3 <strong>统一</strong>标签图标风格</li>
@@ -1057,10 +1057,10 @@
         <category>Ticpods 2 Pro</category>
       </categories>
       <tags>
+        <tag>Ticpods 2 Pro</tag>
         <tag>电子产品</tag>
         <tag>科技</tag>
         <tag>耳机</tag>
-        <tag>Ticpods 2 Pro</tag>
       </tags>
   </entry>
   <entry>
