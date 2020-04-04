@@ -719,9 +719,9 @@
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>hexo</tag>
         <tag>hueman主题</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -996,7 +996,7 @@
 
 <hr>
 <blockquote>
-<h3 id="食用方法："><a href="#食用方法：" class="headerlink" title="食用方法："></a>食用方法：</h3></blockquote>
+<h2 id="食用方法："><a href="#食用方法：" class="headerlink" title="食用方法："></a>食用方法：</h2></blockquote>
 <ol>
 <li>复制网址</li>
 <li>via浏览器＝&gt;设置＝&gt;通用＝&gt;主页＝&gt;粘贴进去</li>
