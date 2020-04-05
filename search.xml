@@ -84,8 +84,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
+        <tag>学习笔记</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -110,10 +110,10 @@
         <category>PHP自动获取网站 favicon.ico 图标 api源码</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
         <tag>开发</tag>
         <tag>PHP</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -412,8 +412,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>学习笔记</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -586,8 +586,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>美化</tag>
         <tag>hueman主题</tag>
+        <tag>美化</tag>
       </tags>
   </entry>
   <entry>
@@ -783,8 +783,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>学习笔记</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
