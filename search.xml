@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>日本語の週に記録 20200405 曇り</title>
+    <url>/posts/46576/</url>
+    <content><![CDATA[<p>これは私の週に記録の最初の投稿。先週日本語の先生からもらった宿題だ、週に一回記録を書く。ですが、何を書くか分からない。<br>今週はまあまあ。たくさんことが有った。コースをしたり、日本語を勉強したり、英語のBand-Six試験を準備しているなど。自分の趣味のことをする時間がない。<br>あぁ、昨日の朝10時ぐらい、空襲警報が聞くことが有った。</p>
+<blockquote>
+<p>クラクションを鸣らしたのは中国全土の自动车、列车、 舰船および防空警报で、3分间すべての交通が停止、鸣り响くクラクションとともに人々が 黙祷を捧げた。<br>(鸣响汽笛的是中国全国的汽车、火车、轮船以及防空警报。在这三分钟时间内交通全部停止。汽笛鸣响之时，全国人民为死难者默哀。)</p>
+</blockquote>
+<p>この事件はCovid-19の犠牲者への追悼。自分の気持ちは憂鬱(ゆううつ)。<br>Covid-19の影響ので、清明節の伝統ーー祖先を祭ることが行かない。</p>
+<p>今日の企画は日本語を復習したり、学校のコースを習う、同じ普通な一日だ。</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>日语周记</category>
+      </categories>
+      <tags>
+        <tag>日本語の週に記録</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《汇编语言》寻址范围练习</title>
     <url>/posts/49536/</url>
     <content><![CDATA[<h2 id="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"><a href="#给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？" class="headerlink" title="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"></a>给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？</h2><p>此题解题背景默认为8080型CPU，地址总线为16根。（8080-16，8086-20，8088-20，80286-24，80386-32）</p>
@@ -84,8 +102,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>编程</tag>
         <tag>学习笔记</tag>
+        <tag>编程</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -110,10 +128,10 @@
         <category>PHP自动获取网站 favicon.ico 图标 api源码</category>
       </categories>
       <tags>
+        <tag>学习笔记</tag>
         <tag>编程</tag>
         <tag>开发</tag>
         <tag>PHP</tag>
-        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -412,8 +430,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>Git</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -783,8 +801,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>Git</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1057,10 +1075,10 @@
         <category>Ticpods 2 Pro</category>
       </categories>
       <tags>
+        <tag>Ticpods 2 Pro</tag>
         <tag>电子产品</tag>
         <tag>科技</tag>
         <tag>耳机</tag>
-        <tag>Ticpods 2 Pro</tag>
       </tags>
   </entry>
   <entry>
