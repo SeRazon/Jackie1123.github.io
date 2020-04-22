@@ -3,13 +3,13 @@
   <entry>
     <title>自己紹介</title>
     <url>/posts/536/</url>
-    <content><![CDATA[<h2 id="自己紹介-20200421-晴れ、暑い"><a href="#自己紹介-20200421-晴れ、暑い" class="headerlink" title="自己紹介 20200421 晴れ、暑い"></a>自己紹介 20200421 晴れ、暑い</h2><p>　　今日は暑いぞ！！！</p>
-<h3 id="簡単な紹介"><a href="#簡単な紹介" class="headerlink" title="簡単な紹介"></a>簡単な紹介</h3><p>　　初めまして、どうぞよろしくお願い致します。ジャッキーともうします。<br>　　今日は、日本語で自己紹介を作りました。そう言えば、中国語で作ったのは小学生の時ですね。</p>
+    <content><![CDATA[<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><p>　　20200421 晴れ、暑い。今日は暑いぞ！！！</p>
+<h2 id="簡単な紹介"><a href="#簡単な紹介" class="headerlink" title="簡単な紹介"></a>簡単な紹介</h2><p>　　初めまして、どうぞよろしくお願い致します。ジャッキーともうします。<br>　　今日は、日本語で自己紹介を作りました。そう言えば、中国語で作ったのは小学生の時ですね。</p>
 <p>　　今私は大学二年生です。中国の広東省の広州の大学で勉強しています。でも、良くない大学だと思いました。そうして、卒業した後で、日本の大学へ留学したいです。これは今なぜ私は日本語を勉強しています。最初の夢は筑波大学情報システム部です、でも変わる可能性があります。</p>
-<h3 id="趣味"><a href="#趣味" class="headerlink" title="趣味"></a>趣味</h3><p>　　私の趣味は旅行、水泳、プログラミング、スマホの性能パフォーマンスの研究など。</p>
+<h2 id="趣味"><a href="#趣味" class="headerlink" title="趣味"></a>趣味</h2><p>　　私の趣味は旅行、水泳、プログラミング、スマホの性能パフォーマンスの研究など。</p>
 <p>　　<strong>旅行：</strong><br>　　海外旅行はシンガポール、タイ、ベトナム、マレーシアへ行ったことがあります。日本へ行ったことが二回あります（2016.8と2019.2）。綺麗で安全な国だと思いました。日本が大好き、日本劇も気に入ります。<br>　　国内旅行は北京、内モンゴル、大同、武漢、長沙、杭州、大理、北海、深圳、広州、澳門、香港など。ぜひ台湾へ旅行に行きたいです。<br>　　<strong>水泳：</strong><br>　　夏になる時、熱い天気が怖いですから、水泳が大好きです。家から近くのプールがあります、いつも自転車で行きます、とても便利ですね。<br>　　<strong>プログラミング：</strong><br>　　プログラミングは私の専門です（コンピューターサイエンス）。ちょっと難しいと思いましたけど、頑張ります。C、C++、Javaを習ったことがあります。Pythonは勉強しています。フロントエンドは独学しました、今少し上手になったと思います。</p>
-<h3 id="町"><a href="#町" class="headerlink" title="町"></a>町</h3><p>　　家がある町は順德という町です。少し小さいですが、たくさん美味しい食べ物がありますから、全国で人気がある町になりました。人も優しくハードワークですよ。一番好きな町なんです。</p>
-<h2 id="更新中…"><a href="#更新中…" class="headerlink" title="更新中…"></a>更新中…</h2>]]></content>
+<h2 id="町"><a href="#町" class="headerlink" title="町"></a>町</h2><p>　　家がある町は順德という町です。少し小さいですが、たくさん美味しい食べ物がありますから、全国で人気がある町になりました。人も優しくハードワークですよ。一番好きな町なんです。</p>
+<h1 id="更新中…"><a href="#更新中…" class="headerlink" title="更新中…"></a>更新中…</h1>]]></content>
       <categories>
         <category>学习笔记</category>
         <category>日语周记</category>
@@ -24,7 +24,7 @@
     <title>【蓝桥】第十一届软件类校内模拟赛2020.04(会做的题哈哈哈)</title>
     <url>/posts/37177/</url>
     <content><![CDATA[<p>本篇是蓝桥杯第十一届软件类(Java)校内模拟赛，我会做的题…<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span><br>听说这次的模拟赛是省赛的难度。</p>
-<h2 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h2><h2 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　将LANQIAO中的字母重新排列，可以得到不同的单词，如LANQIAO、AAILNOQ等，注意这7个字母都要被用上，单词不一定有具体的英文意义。<br>　　请问，总共能排列如多少个不同的单词。</p>
+<h1 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h1><h2 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　将LANQIAO中的字母重新排列，可以得到不同的单词，如LANQIAO、AAILNOQ等，注意这7个字母都要被用上，单词不一定有具体的英文意义。<br>　　请问，总共能排列如多少个不同的单词。</p>
 <h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
 <blockquote>
 <p>答案：2520</p>
@@ -55,7 +55,7 @@
 <p>也是一题可以手算的</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">01 (((())))</span><br><span class="line">02 ((()()))</span><br><span class="line">03 ((())())</span><br><span class="line">04 ((()))()</span><br><span class="line">05 (()(()))</span><br><span class="line">06 (()()())</span><br><span class="line">07 (()())()</span><br><span class="line">08 (())(())</span><br><span class="line">09 (())()()</span><br><span class="line">10 ()((()))</span><br><span class="line">11 ()(()())</span><br><span class="line">12 ()(())()</span><br><span class="line">13 ()()(())</span><br><span class="line">14 ()()()()</span><br></pre></td></tr></table></figure>
 <hr>
-<h2 id="程序题"><a href="#程序题" class="headerlink" title="程序题"></a>程序题</h2><h2 id="5"><a href="#5" class="headerlink" title="#5"></a>#5</h2><h3 id="问题描述-4"><a href="#问题描述-4" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　给定三个整数 a, b, c，如果一个整数既不是 a 的整数倍也不是 b 的整数倍还不是 c 的整数倍，则这个数称为反倍数。<br>　　请问在 1 至 n 中有多少个反倍数。</p>
+<h1 id="程序题"><a href="#程序题" class="headerlink" title="程序题"></a>程序题</h1><h2 id="5"><a href="#5" class="headerlink" title="#5"></a>#5</h2><h3 id="问题描述-4"><a href="#问题描述-4" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　给定三个整数 a, b, c，如果一个整数既不是 a 的整数倍也不是 b 的整数倍还不是 c 的整数倍，则这个数称为反倍数。<br>　　请问在 1 至 n 中有多少个反倍数。</p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>　　输入的第一行包含一个整数 n。<br>　　第二行包含三个整数 a, b, c，相邻两个数之间用一个空格分隔。</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>　　输出一行包含一个整数，表示答案。</p>
 <h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><blockquote>
@@ -172,7 +172,7 @@
     <title>【蓝桥】第十一届软件类校内模拟赛2020.03(会做的题哈哈哈)</title>
     <url>/posts/52865/</url>
     <content><![CDATA[<p>本篇是蓝桥杯第十一届软件类(Java)校内模拟赛，我会做的题…<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
-<h2 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h2><h2 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　在计算机存储中，15.125GB是多少MB？</p>
+<h1 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h1><h2 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　在计算机存储中，15.125GB是多少MB？</p>
 <h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
 <blockquote>
 <p>答案：15488</p>
@@ -201,7 +201,7 @@
 </blockquote>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner in=<span class="keyword">new</span> Scanner (System.in);</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;<span class="keyword">int</span> a,b,c,d;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">2019</span>;i++) &#123;</span><br><span class="line">            a=i/<span class="number">1000</span>;</span><br><span class="line">            b=i%<span class="number">1000</span>/<span class="number">100</span>;</span><br><span class="line">            c=i%<span class="number">100</span>/<span class="number">10</span>;</span><br><span class="line">            d=i%<span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span>(a==<span class="number">9</span>||b==<span class="number">9</span>||c==<span class="number">9</span>||d==<span class="number">9</span>) &#123;                </span><br><span class="line">                ans++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(ans);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<h2 id="程序题"><a href="#程序题" class="headerlink" title="程序题"></a>程序题</h2><h2 id="7"><a href="#7" class="headerlink" title="#7"></a>#7</h2><h3 id="问题描述-4"><a href="#问题描述-4" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　一个正整数如果任何一个数位不大于右边相邻的数位，则称为一个数位递增的数，例如1135是一个数位递增的数，而1024不是一个数位递增的数。<br>　　给定正整数 n，请问在整数 1 至 n 中有多少个数位递增的数？</p>
+<h1 id="程序题"><a href="#程序题" class="headerlink" title="程序题"></a>程序题</h1><h2 id="7"><a href="#7" class="headerlink" title="#7"></a>#7</h2><h3 id="问题描述-4"><a href="#问题描述-4" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　一个正整数如果任何一个数位不大于右边相邻的数位，则称为一个数位递增的数，例如1135是一个数位递增的数，而1024不是一个数位递增的数。<br>　　给定正整数 n，请问在整数 1 至 n 中有多少个数位递增的数？</p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>　　输入的第一行包含一个整数 n。</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>　　输出一行包含一个整数，表示答案。</p>
 <h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><blockquote>
