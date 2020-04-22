@@ -16,6 +16,8 @@
       </categories>
       <tags>
         <tag>日本語の週に記録</tag>
+        <tag>介绍</tag>
+        <tag>关于我</tag>
       </tags>
   </entry>
   <entry>
@@ -258,9 +260,9 @@
       </categories>
       <tags>
         <tag>学习笔记</tag>
-        <tag>编程</tag>
         <tag>开发</tag>
         <tag>PHP</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -1130,10 +1132,10 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>HTML</tag>
-        <tag>编程</tag>
-        <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>编程</tag>
+        <tag>HTML</tag>
+        <tag>JavaScript</tag>
         <tag>前端</tag>
       </tags>
   </entry>
@@ -1196,10 +1198,10 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>HTML</tag>
-        <tag>编程</tag>
-        <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>编程</tag>
+        <tag>HTML</tag>
+        <tag>JavaScript</tag>
         <tag>前端</tag>
       </tags>
   </entry>
