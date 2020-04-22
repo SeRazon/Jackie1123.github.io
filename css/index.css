@@ -4978,3 +4978,35 @@ img {
   overflow-y: auto;
   max-height: 10.5rem;
 }
+@media (min-width: 768px) {
+  #article-container h1::before {
+    content: "🌈 ";
+    visibility: visible;
+    display: inline;
+  }
+  #article-container h2::before {
+    content: "🚀 ";
+    visibility: visible;
+    display: inline;
+  }
+  #article-container h3::before {
+    content: "🔍 ";
+    visibility: visible;
+    display: inline;
+  }
+  #article-container h4::before {
+    content: "⛅ ";
+    visibility: visible;
+    display: inline;
+  }
+  #article-container h5::before {
+    content: "🖇️ ";
+    visibility: visible;
+    display: inline;
+  }
+  #article-container h6::before {
+    content: "📌 ";
+    visibility: visible;
+    display: inline;
+  }
+}
