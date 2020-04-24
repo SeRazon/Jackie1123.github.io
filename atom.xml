@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kksan.top/"/>
-  <updated>2020-04-22T14:18:48.765Z</updated>
+  <updated>2020-04-24T02:43:26.407Z</updated>
   <id>https://kksan.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【SQL语言】分组(Group by)</title>
+    <link href="https://kksan.top/posts/42135/"/>
+    <id>https://kksan.top/posts/42135/</id>
+    <published>2020-04-24T02:06:39.000Z</published>
+    <updated>2020-04-24T02:43:26.407Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题：得到一个结果集显示每个班的学生人数"><a href="#问题：得到一个结果集显示每个班的学生人数" class="headerlink" title="问题：得到一个结果集显示每个班的学生人数"></a>问题：得到一个结果集显示每个班的学生人数</h1><p>SQL语言中这个分组的理解是一个相对的难点，在实际应用中分组常常与聚合函数一起是用，用于统计分组的相关信息。以防忘记，记录一下。</p><p>现有一个学生表，名为<code>StudentInfo</code>：<br><img src="https://s1.ax1x.com/2020/04/24/J0Hl7t.png" alt="学生表"><br>我们对学生分了班，以上<code>class</code>是储存的班级号</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>题目要求我们求每个班的学生人数，执行以下代码：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> <span class="keyword">class</span>,<span class="keyword">Count</span>(*) <span class="keyword">From</span> StudentInfo <span class="keyword">Group</span> <span class="keyword">by</span> <span class="keyword">class</span></span><br></pre></td></tr></table></figure><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>我们以class为根据对数据进行了分组，上面这一串语句我们可以分成三个部分去理解。</p><ol><li>Select class,Count(*)</li><li>From StudentInfo</li><li>Group by class</li></ol><p>数据库管理系统在执行的时候，先执行第2步，找到表；接着执行第三步，以<code>class</code>字段为根据进行分组<strong>（就是说系统根据<code>class</code>下有多少个不同的字段就分成多少组）</strong>；最后执行第一步，找到<code>class</code>的分组，并通过<code>Count(*)</code>聚合函数统计各个分组的记录数目。</p><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><p>执行代码后得到如下结果：<br><img src="https://s1.ax1x.com/2020/04/24/J0qZsH.png" alt="结果"><br>结果显示，1班有5人，2班有1人，3班有4人。<br>(结果第二列显示“无列名”，想要列名可以把第一步改为<code>Select class,Count(*) as num</code>)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;问题：得到一个结果集显示每个班的学生人数&quot;&gt;&lt;a href=&quot;#问题：得到一个结果集显示每个班的学生人数&quot; class=&quot;headerlink&quot; title=&quot;问题：得到一个结果集显示每个班的学生人数&quot;&gt;&lt;/a&gt;问题：得到一个结果集显示每个班的学生人数&lt;/h1&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>自己紹介</title>
@@ -164,13 +190,13 @@
   </entry>
   
   <entry>
-    <title>《汇编语言》寻址范围练习</title>
+    <title>【汇编语言】寻址范围练习</title>
     <link href="https://kksan.top/posts/49536/"/>
     <id>https://kksan.top/posts/49536/</id>
     <published>2020-03-16T14:27:04.000Z</published>
-    <updated>2020-04-22T09:20:49.515Z</updated>
+    <updated>2020-04-24T02:34:06.945Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"><a href="#给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？" class="headerlink" title="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"></a>给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？</h1><p>此题解题背景默认为8080型CPU，地址总线为16根。（8080-16，8086-20，8088-20，80286-24，80386-32）</p><p>16根地址总线寻址能力：<code>(2 ** 16) / 1024 = 65536(B) = 64(KB)</code>, 可以表示的存储单元个数为 <code>0 ~ 2^n-1</code> 个， 即 0 ~ 65535。</p><p>这里的 65535 为十进制数，转换为十六进制数为 0xffff (或 ffffH)，具体转换方法可以用 Python3 函数 hex(65535)。</p><p>再来看CPU内存单元物理地址的划分方法：<code>基础地址（段地址[SA] X 16）+ 偏移地址[EA] = 物理地址</code></p><p>此题中已经假设地址总线为16位，所以偏移地址变化范围是 0 ~ 65535，即 <code>0000H ~ FFFFH</code></p><p>因为给定段地址为0001H，则CPU的寻址范围 <code>（0001H + 0000H * 16）~ （0001H + FFFFH * 16）</code>，</p><p>0001H * 16 为 0001H 左移一位，即 0010H，0000H + 0010H = 0010H， FFFFH + 0010H = 1000FH。</p><p>所以 CPU 寻址范围为 0010H 到 1000FH。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"><a href="#题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？" class="headerlink" title="题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"></a>题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？</h1><p>此题解题背景默认为8080型CPU，地址总线为16根。（8080-16，8086-20，8088-20，80286-24，80386-32）</p><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>16根地址总线寻址能力：<code>(2 ** 16) / 1024 = 65536(B) = 64(KB)</code>, 可以表示的存储单元个数为 <code>0 ~ 2^n-1</code> 个， 即 0 ~ 65535。</p><p>这里的 65535 为十进制数，转换为十六进制数为 0xffff (或 ffffH)，具体转换方法可以用 Python3 函数 hex(65535)。</p><p>再来看CPU内存单元物理地址的划分方法：<code>基础地址（段地址[SA] X 16）+ 偏移地址[EA] = 物理地址</code></p><p>此题中已经假设地址总线为16位，所以偏移地址变化范围是 0 ~ 65535，即 <code>0000H ~ FFFFH</code></p><p>因为给定段地址为0001H，则CPU的寻址范围 <code>（0001H + 0000H * 16）~ （0001H + FFFFH * 16）</code>，</p><p>0001H * 16 为 0001H 左移一位，即 0010H，0000H + 0010H = 0010H， FFFFH + 0010H = 1000FH。</p><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><p>所以 CPU 寻址范围为 0010H 到 1000FH。</p>]]></content>
     
     <summary type="html">
     
@@ -591,39 +617,6 @@
       <category term="日本语" scheme="https://kksan.top/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
       <category term="「に」的用法" scheme="https://kksan.top/tags/%E3%80%8C%E3%81%AB%E3%80%8D%E7%9A%84%E7%94%A8%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单纯就是「一个导航」开发日志</title>
-    <link href="https://kksan.top/posts/12023/"/>
-    <id>https://kksan.top/posts/12023/</id>
-    <published>2020-01-27T09:00:02.000Z</published>
-    <updated>2020-04-21T13:54:38.591Z</updated>
-    
-    <content type="html"><![CDATA[<img src="https://s2.ax1x.com/2020/02/14/1OqnSK.jpg"><p>首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p><a id="more"></a><p>加上2020年春节的疫情待在家真的是前所未有的无聊，所以就做了个导航页出来。</p><p><strong>注：本导航为纯手敲系列，bootstrap框架只用于布局。<br><em>如果发现你的导航不是最新，进入浏览器清除缓存刷新即可。</em></strong></p><blockquote><p><strong><em>各位可以给点建议，导航持续更新中…</em></strong></p></blockquote><hr><blockquote><h3 id="最新版本预览图"><a href="#最新版本预览图" class="headerlink" title="最新版本预览图"></a>最新版本预览图</h3></blockquote><img style="border-radius: 10px;width: 50%;" src="https://s1.ax1x.com/2020/03/13/8MEplV.gif"><img style="border-radius:10px;width: 50%;" src="https://s1.ax1x.com/2020/03/14/8MV6Ve.jpg"><img style="border-radius:10px;width: 100%;" src="https://s1.ax1x.com/2020/03/13/8MV3uT.png"><hr><blockquote><h3 id="小版本更新"><a href="#小版本更新" class="headerlink" title="小版本更新"></a>小版本更新</h3></blockquote><ul><li>2020年03月23日 V4.1.1 <strong>压缩</strong>图片，<strong>增加</strong>鼠标悬停搜索框时自动选中文本</li><li>2020年03月14日 V4.1.0 <strong>新增</strong>几个入口并<strong>更改</strong>图标样式</li><li>2020年03月08日 V4.0.9 <strong>增加</strong>淘宝，京东，秘迹搜索，<strong>重写(简化)</strong>一些函数（划水的更新）</li><li>2020年03月04日 V4.0.8 <strong>重写</strong>搜索提示词的样式，百度的太难看了</li><li>2020年02月29日 V4.0.7 <strong>重写</strong>搜索框，不要那么花里胡哨了，简简单单才是真；<strong>添加</strong>导航页更新提示，有更新会出现弹框</li><li>2020年02月26日 V4.0.6 <strong>增加</strong>更多搜索引擎；<strong>添加</strong>侧边栏「显示/干掉壁纸」按钮</li><li>2020年02月23日 V4.0.5 <strong>支持</strong>记住用户上次使用的搜索引擎，加入移动端背景图</li><li><a href="#moreUpdate">查看更多小版本更新</a></li></ul><hr><blockquote><h3 id="大版本更新"><a href="#大版本更新" class="headerlink" title="大版本更新"></a>大版本更新</h3></blockquote><blockquote><h2 id="V4-0-0-更新（当前最新）"><a href="#V4-0-0-更新（当前最新）" class="headerlink" title="V4.0.0 更新（当前最新）"></a>V4.0.0 更新<strong>（当前最新）</strong></h2></blockquote><h3 id="更新时间："><a href="#更新时间：" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年02月11日</p><h3 id="更新内容："><a href="#更新内容：" class="headerlink" title="更新内容："></a>更新内容：</h3><ol><li>重写了侧边栏，船新的页面交互体验！移动版下不需按键，右滑即可打开侧边栏！哇哦，awesome！</li><li>桌面版下新增了背景图。我实在找不到有什么好图，各位有什么好的壁纸请在下面留言吧QAQ</li><li>优化了加载速度。[手动狗头]</li><li>附：夜间模式失效，修复中…</li></ol><h3 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ijo4S.md.jpg"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ij79g.md.jpg"><img style="border-radius:10px;width: 100%;" src="https://s2.ax1x.com/2020/02/11/1I6ZkT.png"><hr><blockquote><h2 id="V3-0-0-更新"><a href="#V3-0-0-更新" class="headerlink" title="V3.0.0 更新"></a>V3.0.0 更新</h2></blockquote><h3 id="更新时间：-1"><a href="#更新时间：-1" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年02月01日</p><h3 id="更新内容：-1"><a href="#更新内容：-1" class="headerlink" title="更新内容："></a>更新内容：</h3><ol><li>新增搜索时的提示词</li><li>新增右下角当地天气显示(天气的字为什么这样不是我的锅，插件的问题，找到好的插件再换)</li></ol><h3 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVIkq.md.jpg"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVot0.md.jpg"><hr><blockquote><h2 id="V2-0-0-更新"><a href="#V2-0-0-更新" class="headerlink" title="V2.0.0 更新"></a>V2.0.0 更新</h2></blockquote><h3 id="更新时间：-2"><a href="#更新时间：-2" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年01月30日</p><h3 id="更新内容：-2"><a href="#更新内容：-2" class="headerlink" title="更新内容："></a>更新内容：</h3><ol><li>新增侧边栏，有比较多的快捷入口(后续还会添加)</li><li>新增一个不太好用的夜间模式</li></ol><h3 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVtSO.md.jpg"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVU6e.md.jpg"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dV8Fx.md.jpg"><hr><blockquote><h2 id="V1-0-0-发布"><a href="#V1-0-0-发布" class="headerlink" title="V1.0.0 发布"></a>V1.0.0 发布</h2></blockquote><h3 id="更新时间：-3"><a href="#更新时间：-3" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年01月27日</p><h3 id="内容："><a href="#内容：" class="headerlink" title="内容："></a>内容：</h3><ol><li>导航页分为[便签]和[导航]两个分区，点击可来回切换</li><li>导航默认是bing搜索</li><li>完[滑稽]</li></ol><h3 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dAg4f.gif"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFP58.md.jpg"><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFCUf.md.jpg"><hr><blockquote><h2 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h2></blockquote><ol><li>复制网址</li><li>via浏览器＝&gt;设置＝&gt;通用＝&gt;主页＝&gt;粘贴进去</li></ol><p><strong>网址：<a href="http://www.orgloft.com/page/search/" target="_blank" rel="noopener">http://www.orgloft.com/page/search/</a></strong><br><strong>Github：<a href="https://github.com/Jackie1123/aNavigation" target="_blank" rel="noopener">https://github.com/Jackie1123/aNavigation</a></strong></p><hr><p><a name="moreUpdate"></a></p><blockquote><h2 id="归档小版本"><a href="#归档小版本" class="headerlink" title="归档小版本"></a>归档小版本</h2></blockquote><ul><li>2020年02月22日 V4.0.4 <strong>更改</strong>右下角天气样式</li><li>2020年02月21日 V4.0.3 <strong>统一</strong>标签图标风格</li><li>2020年02月17日 V4.0.2 <strong>更改</strong>右下角天气为可修改位置，避免定位不准确</li><li>2020年02月16日 V4.0.1 <strong>更改</strong>桌面端的背景图</li><li>2020年02月10日 V3.1.2 <strong>增加</strong>「知乎」和「少数派」标签；<strong>移动</strong>标签中的三个个人网站到侧边栏「个人网站」列</li><li>2020年02月09日 V3.1.1 <strong>增加</strong>seeres搜索，<strong>增加</strong>侧边栏工具列的常用入口，<strong>改变</strong>打开书签位置——点击logo</li><li>2020年02月08日 V3.1.0 <strong>优化</strong>页面加载速度！加载变快了！输入提示词框微调</li><li>2020年02月08日 V3.0.4 <strong>增加</strong>侧边栏追剧列、文件传送列入口</li><li>2020年02月07日 V3.0.3 <strong>增加</strong>「开发日志」和「XDA」标签</li><li>2020年02月04日 V3.0.2 <strong>增加</strong>「疫情跟踪」和「疫情辟谣」入口</li><li>2020年02月02日 V3.0.1 <strong>增加</strong>几个比较常用的快捷入口：侧边栏工具列</li><li>2020年01月31日 V2.0.1 <strong>增加</strong>几个比较常用的搜索引擎：「搜狗」「DogeDoge」「微信文章搜索」</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      真的就是一个导航
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="https://kksan.top/categories/%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="前端" scheme="https://kksan.top/categories/%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="HTML" scheme="https://kksan.top/tags/HTML/"/>
-    
-      <category term="编程" scheme="https://kksan.top/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="JavaScript" scheme="https://kksan.top/tags/JavaScript/"/>
-    
-      <category term="开发" scheme="https://kksan.top/tags/%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   

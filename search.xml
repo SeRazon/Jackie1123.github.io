@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【SQL语言】分组(Group by)</title>
+    <url>/posts/42135/</url>
+    <content><![CDATA[<h1 id="问题：得到一个结果集显示每个班的学生人数"><a href="#问题：得到一个结果集显示每个班的学生人数" class="headerlink" title="问题：得到一个结果集显示每个班的学生人数"></a>问题：得到一个结果集显示每个班的学生人数</h1><p>SQL语言中这个分组的理解是一个相对的难点，在实际应用中分组常常与聚合函数一起是用，用于统计分组的相关信息。以防忘记，记录一下。</p>
+<p>现有一个学生表，名为<code>StudentInfo</code>：<br><img src="https://s1.ax1x.com/2020/04/24/J0Hl7t.png" alt="学生表"><br>我们对学生分了班，以上<code>class</code>是储存的班级号</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>题目要求我们求每个班的学生人数，执行以下代码：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Select</span> <span class="keyword">class</span>,<span class="keyword">Count</span>(*) <span class="keyword">From</span> StudentInfo <span class="keyword">Group</span> <span class="keyword">by</span> <span class="keyword">class</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>我们以class为根据对数据进行了分组，上面这一串语句我们可以分成三个部分去理解。</p>
+<ol>
+<li>Select class,Count(*)</li>
+<li>From StudentInfo</li>
+<li>Group by class</li>
+</ol>
+<p>数据库管理系统在执行的时候，先执行第2步，找到表；接着执行第三步，以<code>class</code>字段为根据进行分组<strong>（就是说系统根据<code>class</code>下有多少个不同的字段就分成多少组）</strong>；最后执行第一步，找到<code>class</code>的分组，并通过<code>Count(*)</code>聚合函数统计各个分组的记录数目。</p>
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><p>执行代码后得到如下结果：<br><img src="https://s1.ax1x.com/2020/04/24/J0qZsH.png" alt="结果"><br>结果显示，1班有5人，2班有1人，3班有4人。<br>(结果第二列显示“无列名”，想要列名可以把第一步改为<code>Select class,Count(*) as num</code>)</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自己紹介</title>
     <url>/posts/536/</url>
     <content><![CDATA[<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><p>　　20200421 晴れ、暑い。本当に暑いぞ！！！</p>
@@ -149,16 +173,16 @@
       </tags>
   </entry>
   <entry>
-    <title>《汇编语言》寻址范围练习</title>
+    <title>【汇编语言】寻址范围练习</title>
     <url>/posts/49536/</url>
-    <content><![CDATA[<h1 id="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"><a href="#给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？" class="headerlink" title="给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"></a>给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？</h1><p>此题解题背景默认为8080型CPU，地址总线为16根。（8080-16，8086-20，8088-20，80286-24，80386-32）</p>
-<p>16根地址总线寻址能力：<code>(2 ** 16) / 1024 = 65536(B) = 64(KB)</code>, 可以表示的存储单元个数为 <code>0 ~ 2^n-1</code> 个， 即 0 ~ 65535。</p>
+    <content><![CDATA[<h1 id="题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"><a href="#题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？" class="headerlink" title="题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"></a>题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？</h1><p>此题解题背景默认为8080型CPU，地址总线为16根。（8080-16，8086-20，8088-20，80286-24，80386-32）</p>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>16根地址总线寻址能力：<code>(2 ** 16) / 1024 = 65536(B) = 64(KB)</code>, 可以表示的存储单元个数为 <code>0 ~ 2^n-1</code> 个， 即 0 ~ 65535。</p>
 <p>这里的 65535 为十进制数，转换为十六进制数为 0xffff (或 ffffH)，具体转换方法可以用 Python3 函数 hex(65535)。</p>
 <p>再来看CPU内存单元物理地址的划分方法：<code>基础地址（段地址[SA] X 16）+ 偏移地址[EA] = 物理地址</code></p>
 <p>此题中已经假设地址总线为16位，所以偏移地址变化范围是 0 ~ 65535，即 <code>0000H ~ FFFFH</code></p>
 <p>因为给定段地址为0001H，则CPU的寻址范围 <code>（0001H + 0000H * 16）~ （0001H + FFFFH * 16）</code>，</p>
 <p>0001H * 16 为 0001H 左移一位，即 0010H，0000H + 0010H = 0010H， FFFFH + 0010H = 1000FH。</p>
-<p>所以 CPU 寻址范围为 0010H 到 1000FH。</p>
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><p>所以 CPU 寻址范围为 0010H 到 1000FH。</p>
 ]]></content>
       <categories>
         <category>学习笔记</category>
