@@ -53,9 +53,11 @@
 ]]></content>
       <categories>
         <category>学习笔记</category>
+        <category>SQL</category>
       </categories>
       <tags>
         <tag>学习笔记</tag>
+        <tag>SQL</tag>
       </tags>
   </entry>
   <entry>
@@ -925,9 +927,9 @@
         <category>hexo</category>
       </categories>
       <tags>
+        <tag>前端</tag>
         <tag>hexo</tag>
         <tag>hueman主题</tag>
-        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -1189,10 +1191,10 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>编程</tag>
-        <tag>开发</tag>
         <tag>HTML</tag>
+        <tag>编程</tag>
         <tag>JavaScript</tag>
+        <tag>开发</tag>
         <tag>前端</tag>
       </tags>
   </entry>
@@ -1255,10 +1257,10 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>编程</tag>
-        <tag>开发</tag>
         <tag>HTML</tag>
+        <tag>编程</tag>
         <tag>JavaScript</tag>
+        <tag>开发</tag>
         <tag>前端</tag>
       </tags>
   </entry>

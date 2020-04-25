@@ -51,7 +51,7 @@
     <link href="https://kksan.top/posts/42135/"/>
     <id>https://kksan.top/posts/42135/</id>
     <published>2020-04-24T02:06:39.000Z</published>
-    <updated>2020-04-24T02:43:26.407Z</updated>
+    <updated>2020-04-25T14:14:20.234Z</updated>
     
     <content type="html"><![CDATA[<h1 id="问题：得到一个结果集显示每个班的学生人数"><a href="#问题：得到一个结果集显示每个班的学生人数" class="headerlink" title="问题：得到一个结果集显示每个班的学生人数"></a>问题：得到一个结果集显示每个班的学生人数</h1><p>SQL语言中这个分组的理解是一个相对的难点，在实际应用中分组常常与聚合函数一起是用，用于统计分组的相关信息。以防忘记，记录一下。</p><p>现有一个学生表，名为<code>StudentInfo</code>：<br><img src="https://s1.ax1x.com/2020/04/24/J0Hl7t.png" alt="学生表"><br>我们对学生分了班，以上<code>class</code>是储存的班级号</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>题目要求我们求每个班的学生人数，执行以下代码：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> <span class="keyword">class</span>,<span class="keyword">Count</span>(*) <span class="keyword">From</span> StudentInfo <span class="keyword">Group</span> <span class="keyword">by</span> <span class="keyword">class</span></span><br></pre></td></tr></table></figure><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>我们以class为根据对数据进行了分组，上面这一串语句我们可以分成三个部分去理解。</p><ol><li>Select class,Count(*)</li><li>From StudentInfo</li><li>Group by class</li></ol><p>数据库管理系统在执行的时候，先执行第2步，找到表；接着执行第三步，以<code>class</code>字段为根据进行分组<strong>（就是说系统根据<code>class</code>下有多少个不同的字段就分成多少组）</strong>；最后执行第一步，找到<code>class</code>的分组，并通过<code>Count(*)</code>聚合函数统计各个分组的记录数目。</p><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><p>执行代码后得到如下结果：<br><img src="https://s1.ax1x.com/2020/04/24/J0qZsH.png" alt="结果"><br>结果显示，1班有5人，2班有1人，3班有4人。<br>(结果第二列显示“无列名”，想要列名可以把第一步改为<code>Select class,Count(*) as num</code>)</p>]]></content>
     
@@ -67,8 +67,12 @@
     
       <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
+      <category term="SQL" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SQL/"/>
+    
     
       <category term="学习笔记" scheme="https://kksan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="SQL" scheme="https://kksan.top/tags/SQL/"/>
     
   </entry>
   
@@ -553,11 +557,11 @@
       <category term="hexo" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
     
     
+      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
       <category term="hexo" scheme="https://kksan.top/tags/hexo/"/>
     
       <category term="hueman主题" scheme="https://kksan.top/tags/hueman%E4%B8%BB%E9%A2%98/"/>
-    
-      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
