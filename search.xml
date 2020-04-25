@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>使自己的博客接入CDN加速</title>
+    <url>/posts/53436/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>【SQL语言】分组(Group by)</title>
     <url>/posts/42135/</url>
     <content><![CDATA[<h1 id="问题：得到一个结果集显示每个班的学生人数"><a href="#问题：得到一个结果集显示每个班的学生人数" class="headerlink" title="问题：得到一个结果集显示每个班的学生人数"></a>问题：得到一个结果集显示每个班的学生人数</h1><p>SQL语言中这个分组的理解是一个相对的难点，在实际应用中分组常常与聚合函数一起是用，用于统计分组的相关信息。以防忘记，记录一下。</p>
@@ -110,8 +115,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>编程</tag>
         <tag>学习笔记</tag>
+        <tag>编程</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -256,8 +261,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>编程</tag>
         <tag>学习笔记</tag>
+        <tag>编程</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -282,9 +287,9 @@
         <category>PHP自动获取网站 favicon.ico 图标 api源码</category>
       </categories>
       <tags>
+        <tag>学习笔记</tag>
         <tag>编程</tag>
         <tag>开发</tag>
-        <tag>学习笔记</tag>
         <tag>PHP</tag>
       </tags>
   </entry>
