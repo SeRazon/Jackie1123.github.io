@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kksan.top/"/>
-  <updated>2020-04-25T10:17:57.563Z</updated>
+  <updated>2020-04-25T14:09:43.358Z</updated>
   <id>https://kksan.top/</id>
   
   <author>
@@ -17,17 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使自己的博客接入CDN加速</title>
+    <title>网站接入CDN回源加速</title>
     <link href="https://kksan.top/posts/53436/"/>
     <id>https://kksan.top/posts/53436/</id>
-    <published>2020-04-25T09:49:05.000Z</published>
-    <updated>2020-04-25T10:17:57.563Z</updated>
+    <published>2020-04-26T09:49:05.000Z</published>
+    <updated>2020-04-25T14:09:43.358Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是CDN？"><a href="#什么是CDN？" class="headerlink" title="什么是CDN？"></a>什么是CDN？</h1><p>CDN其实是Content Delivery Network的缩写，中文名叫<strong>内容分发网络</strong>。它是一种互联网上新型的网络构建方式，目的是让客户端访问网页通讯时更快更稳定。</p><h1 id="CDN如何加速？"><a href="#CDN如何加速？" class="headerlink" title="CDN如何加速？"></a>CDN如何加速？</h1><p>CDN能起到加速的作用，得益于CDN的提供商的各个缓存服务器。将这些缓存服务器分布到用户访问相对集中的地区或网络中。在用户访问网站时,利用全局负载技术将用户的访问指向距离最近的工作正常的缓存服务器上,由缓存服务器直接响应用户请求。</p><p>知乎用户——<a href="https://www.zhihu.com/people/qing-lan-98" target="_blank" rel="noopener">青岚</a> 举了一个很好的例子：</p><blockquote><p>我先讲个今年过年时候的事情。<br>除夕那天晚饭后，家里的长辈都凑在一起看春晚，而我和我这一辈的弟弟妹妹没有自虐的习惯，所以我就召集他们一起，拿电脑看了个电影，茱莉亚罗伯茨主演的《奇迹男孩》。<br>桌子那边有一个盛放各类坚果的筐，然后这几个孩子一会儿站起来一趟，伸着腰抓一把榛子放在自己眼前。<br>过一会儿又一个站起来，又抓一把搁在眼前，也不嫌累。<br>就这么一趟又一趟，如果放在我们小的时候，准会被家里的长辈说教一通。<br>我看不过去，转身到厨房拿来一个放水果的盘子，从筐里把坚果盛出一半，直接摆在他们眼前，他们抬头看了我一眼，于是这一席小家伙再没有一个人起身，从筐里抓坚果。<br>你如果问我CDN是什么，我会说<strong>“我把坚果从一个距离他们很远的筐里盛出来，放在距离他们很近的眼前，让他们不用一次次起身费劲的去抓，而是坐在那儿就能够到”</strong>的行为，就是CDN。</p></blockquote><h1 id="利用CDN进行加速"><a href="#利用CDN进行加速" class="headerlink" title="利用CDN进行加速"></a>利用CDN进行加速</h1><p>本站用的是又拍云的网站CDN加速服务。</p><p>首先在又拍云注册一个账号。<br>注册链接：<a href="https://console.upyun.com/register/?invite=rJUZF2-KI" target="_blank" rel="noopener">点击跳转</a></p><p>以下是又拍云联盟的活动，按步骤操作完可以获取免费的10G存储空间和15G的流量。<br>又拍云联盟：<a href="https://www.upyun.com/league" target="_blank" rel="noopener">https://www.upyun.com/league</a></p><h2 id="CDN配置"><a href="#CDN配置" class="headerlink" title="CDN配置"></a>CDN配置</h2><ol><li><p>打开又拍云控制台，选择CDN服务后点击<strong>创建配置</strong>。<br><img src="https://s1.ax1x.com/2020/04/25/JyOrNQ.png" alt=""></p></li><li><p>配置信息。<br><img src="https://s1.ax1x.com/2020/04/25/Jyj2wT.png" alt=""></p></li></ol><h2 id="CNAME解析"><a href="#CNAME解析" class="headerlink" title="CNAME解析"></a>CNAME解析</h2><p>创建好之后，复制又拍云给你的<strong>CNAME记录</strong>，到你的主机控制台解析DNS中。（我这里使用的是阿里云）<br>把你原来指向主机IP的解析停止，新增一个又拍云的CNAME记录即可。<br><img src="https://s1.ax1x.com/2020/04/25/JyvhHf.png" alt=""></p><h2 id="配置SSL"><a href="#配置SSL" class="headerlink" title="配置SSL"></a>配置SSL</h2><p>跳转到<strong>SSL证书配置页面</strong>。如果你已经在别的地方申请了证书，则可以直接添加自有证书。<br><img src="https://s1.ax1x.com/2020/04/25/JyxQxA.png" alt=""></p><p>如果你没有证书，可以免费申购一个。<br><img src="https://s1.ax1x.com/2020/04/25/Jyx7dK.png" alt=""></p><p>配置好后，点击HTTPS配置，开启HTTPS访问。<br><img src="https://s1.ax1x.com/2020/04/25/Jyzne0.png" alt=""></p><p>至此，博客接入CDN回源加速完成。</p><p>以上です。</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;什么是CDN？&quot;&gt;&lt;a href=&quot;#什么是CDN？&quot; class=&quot;headerlink&quot; title=&quot;什么是CDN？&quot;&gt;&lt;/a&gt;什么是CDN？&lt;/h1&gt;&lt;p&gt;CDN其实是Content Delivery Network的缩写，中文名叫&lt;strong&gt;内容分发
+      
     
     </summary>
     
     
+      <category term="学习笔记" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="hexo" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://kksan.top/tags/hexo/"/>
+    
+      <category term="CDN" scheme="https://kksan.top/tags/CDN/"/>
     
   </entry>
   
@@ -538,11 +553,11 @@
       <category term="hexo" scheme="https://kksan.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/"/>
     
     
-      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="hexo" scheme="https://kksan.top/tags/hexo/"/>
     
       <category term="hueman主题" scheme="https://kksan.top/tags/hueman%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="前端" scheme="https://kksan.top/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
