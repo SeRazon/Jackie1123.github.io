@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>网站接入CDN回源加速</title>
-    <url>/posts/53436/</url>
+    <url>/posts/2020/53436/</url>
     <content><![CDATA[<h1 id="什么是CDN？"><a href="#什么是CDN？" class="headerlink" title="什么是CDN？"></a>什么是CDN？</h1><p>CDN其实是Content Delivery Network的缩写，中文名叫<strong>内容分发网络</strong>。它是一种互联网上新型的网络构建方式，目的是让客户端访问网页通讯时更快更稳定。</p>
 <h1 id="CDN如何加速？"><a href="#CDN如何加速？" class="headerlink" title="CDN如何加速？"></a>CDN如何加速？</h1><p>CDN能起到加速的作用，得益于CDN的提供商的各个缓存服务器。将这些缓存服务器分布到用户访问相对集中的地区或网络中。在用户访问网站时,利用全局负载技术将用户的访问指向距离最近的工作正常的缓存服务器上,由缓存服务器直接响应用户请求。</p>
 <p>知乎用户——<a href="https://www.zhihu.com/people/qing-lan-98" target="_blank" rel="noopener">青岚</a> 举了一个很好的例子：</p>
@@ -36,7 +36,7 @@
   </entry>
   <entry>
     <title>【SQL语言】分组(Group by)</title>
-    <url>/posts/42135/</url>
+    <url>/posts/2020/42135/</url>
     <content><![CDATA[<h1 id="问题：得到一个结果集显示每个班的学生人数"><a href="#问题：得到一个结果集显示每个班的学生人数" class="headerlink" title="问题：得到一个结果集显示每个班的学生人数"></a>问题：得到一个结果集显示每个班的学生人数</h1><p>SQL语言中这个分组的理解是一个相对的难点，在实际应用中分组常常与聚合函数一起是用，用于统计分组的相关信息。以防忘记，记录一下。</p>
 <p>现有一个学生表，名为<code>StudentInfo</code>：<br><img src="https://s1.ax1x.com/2020/04/24/J0Hl7t.png" alt="学生表"><br>我们对学生分了班，以上<code>class</code>是储存的班级号</p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>题目要求我们求每个班的学生人数，执行以下代码：</p>
@@ -62,7 +62,7 @@
   </entry>
   <entry>
     <title>自己紹介</title>
-    <url>/posts/536/</url>
+    <url>/posts/2020/536/</url>
     <content><![CDATA[<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><p>　　20200421 晴れ、暑い。本当に暑いぞ！！！</p>
 <h2 id="簡単な紹介"><a href="#簡単な紹介" class="headerlink" title="簡単な紹介"></a>簡単な紹介</h2><p>　　初めまして、どうぞよろしくお願い致します。ジャッキーともうします。<br>　　今日は、日本語で自己紹介を作りました。そう言えば、中国語で作ったのは小学生のことですね。<br>　　今私は大学二年生です。中国の広東省の広州の大学で勉強しています。でも、良くない大学だと思いました。だから、卒業した後で、日本の大学へ留学したいです。これは今なぜ私は日本語を勉強しています。最初の夢は筑波大学情報システム部です、しかし変わる可能性があります。</p>
 <h2 id="趣味"><a href="#趣味" class="headerlink" title="趣味"></a>趣味</h2><p>　　私の趣味は旅行、水泳、プログラミング、スマホの性能パフォーマンスの研究などです。</p>
@@ -81,7 +81,7 @@
   </entry>
   <entry>
     <title>【蓝桥】第十一届软件类校内模拟赛2020.04(会做的题哈哈哈)</title>
-    <url>/posts/37177/</url>
+    <url>/posts/2020/37177/</url>
     <content><![CDATA[<p>本篇是蓝桥杯第十一届软件类(Java)校内模拟赛，我会做的题…<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span><br>听说这次的模拟赛是省赛的难度。</p>
 <h1 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h1><h2 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　将LANQIAO中的字母重新排列，可以得到不同的单词，如LANQIAO、AAILNOQ等，注意这7个字母都要被用上，单词不一定有具体的英文意义。<br>　　请问，总共能排列如多少个不同的单词。</p>
 <h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
@@ -153,7 +153,7 @@
   </entry>
   <entry>
     <title>私のペット</title>
-    <url>/posts/52458/</url>
+    <url>/posts/2020/52458/</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="哦，这是一个无效的密码。请检查并再试一次。" data-whm="哦，这些解密的内容无法验证，但你仍然可以看看。"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="查看本文需要密码" /><label>查看本文需要密码</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="37ffd84d1e8db88559660f3c7ab9f52b483566a79a7d817b88c81b25a14f08e9">68b7091e50bb9f38de6c8a948e4ce092a09eba9363584a1c7e3321cd054d06a02c143a41c5b8aaa02d396022b9a40f9f029df631e91944aeb0fa960cc8d4ff688b6fe5bf00606f292735cc1529ca58286a43e6c1efc9dbc68b51dce383a989c3577c643ef47a5ddf454b64aaf716e6c4f70c0c12579f430892260892263cadfe2fa8afe37b917e220c547694a7196d34f1671079bd8e3cdc52affd041879898c03bc416c44cc8de954cd34da89eb9ed519f8e1a66a9cc229e55d148bf752329310ababbf32e9f98e6acdaddfab7eb8d6a49c1833e7cb1c364928b285407b8bbd0f336fba58e1bb3a68d89031cbcaeba1fedb2a35bdc842d2949ede21fb8277501ed97101bf62674a77f72efb68933af2636bfb2ef6c26b4e559e365414fb2dcf66cc3adacc212267c5031a257014946b69cac0ca5a0217872c9d4b5fb6c1f83a22e35eb7ba61bbc9aff2042aecfbb9d7ffa10dd9e47f50e329c5d31208611c1899f88ba9c6ceac28d70c56bf138ba4b40c4ff1f159f924f79dc64115a28319587ef68d4e23ac273f2b609b43938d6ae66e7aea9689881f44719dbcd50ae7eaa5e2acab840e501c1112c09b4f71f56fdf1c973112312bc3785710c5c3ab6654e478dfc0bc1b93fc9fc639985ead97ad963e6b8722ead427385f4472c4e0e0d887f6fd3e96206ea018bff3f6f704b79fca0bb045b5bba38821a99c45342d23a80687e50b05be5a3443ec2de2ec38566307452f90c13b5e0a04b2437fcb3d88ab294f767891b2fd0c400f55cadaff1044250d00ace63c6955a62c28e66b53aa0ee20192ea501eedd1b47366b714698ed6baccae17111232c995bc497046bac36c7309311876dec34c4eab448445694fb434a7368846097f010de8495107deb601807f6a39baa06f9496c4123d90a16245268f5ca1b0a1565d7b0e1f969d0287d4ecfa20634a402a5f5df4ed122f87bade6c83d15671cd90e7530ef8cceee526e69b7869fc56fe4c17f7ab1b4f0548d5c3840d49bfbb68be39eb2f04391bbb3bdc99ab75158bae92e64048d5d5b1edf664cc79ad9669cbe80312274ebe903ce582dcd7db83201ea55576134c9fa2f598534f71479e0bf87d1401046fe55cfd5c9aabb0232a67f130f19dcc102ec9135041ad29674f13cad12c2fd51ffa203393de8f4f184c5e0f63a5cf73dad0d16d20af9366e82746a6e84e9dd3d2a23992839ced3800bc5403d39eab429d17d38fb68b9a8d29525c856c954d97ff4050f1285afcff6841e1d5081bbc732ea7829d45a133b50aab2a83d3676c2dc00590f0c8055306609df1aaf9dd74ae74ac292226a493225d4d8939b412a4b62e400a4b921411cd1feadf70af234bf688c26183a9d361da17ff05d3f1bda6c9cfc6226c2893e962f9becf1ee361401299c97ddd3a5a6044a6749c5e6e15b810c9fb32fb196e1f09d89b952b6db9ce54498a95ea5d49e4ae82cd3520639a1d98287a908ea43102839d3e8d453dc87cb46e08b09e39570bdc7c95f7ec10c983becfe85a30e1be2d883dfff338470475e5a35cf0d81ad45369455679286315833ee31b20d414e9d07c7ef9140803c279af512d7c018f63de28ce8fe783998584c6b04ba478b10141</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>学习笔记</category>
@@ -165,7 +165,7 @@
   </entry>
   <entry>
     <title>华为Freebuds3简单上手</title>
-    <url>/posts/19088/</url>
+    <url>/posts/2020/19088/</url>
     <content><![CDATA[<blockquote>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1></blockquote>
 <p>上个月初在拼多多看到华为Freebuds3耳机有百亿补贴，这么香的价格冲就完事了！<br>在此之前我是在用出门问问的Ticpods2 Pro。其实出门问问这款什么都挺好，手势也很灵敏，就是连接时非常不稳定，右耳一直会断，这真的是很影响用户体验了。所以在上个月就把Ticpods 2 Pro卖了，入了华为这款Freebuds3，这是原因之一。第二个原因就是我的耳朵是油耳，戴入耳式会有点恶心。（呕<br>说下直观感受，挺不错的，毕竟这款是被用户称为“爵士”的。这也是人生第一次买华为的产品。</p>
@@ -198,7 +198,7 @@
   </entry>
   <entry>
     <title>いつもすること と Covid-19の犠牲者への追悼</title>
-    <url>/posts/46576/</url>
+    <url>/posts/2020/46576/</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="哦，这是一个无效的密码。请检查并再试一次。" data-whm="哦，这些解密的内容无法验证，但你仍然可以看看。"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="查看本文需要密码" /><label>查看本文需要密码</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="b189a50ae7a7a277aef42def452e29979d4aa1682ad15ad2f8111f2af5d6f3f7">bf4a3185af4e10b1a1474078ebbfa1662a9de0c0ad9c83a8db4bc60a5050fa7fec820040601f4e31b821eda6d5ce84b57d99b6f9c6a0acb9053f514da966c99c4ca456c90839d1e514be0646baaaf394c48f39e95d88c34fd70a77039a2c8e4b6906e0bf4a66af617c200751ab72bccb6164aa3d0c53e014a50d78bbf2a4f7a752f8341f035fed8e3a044b6c57d2bf542b31bd77bb33a921d5adb7d0a1d41e83e570defbb185d66bf9dbd89989e301cd12a649804fd643e9a20d23077c73792154a5bbeae13e90858cea7c2b274635678599d0fbe794a869eb895ece0b4cac884af14adeddc3958db75987645fc302c3db8c2ccd3962bd0bdc3af27815a7bad422a08200a763049d83f778f9c4b76b4b7ea4bae5423798f0e1970321dc99bd775750ea6fa7694712b1c11042c6c4721a4f352f1de79463141dc48ead8e5e85de68dce16cb53b301d8bfd8074dcf89ca649ba667bf2934692da214678152f06e646469e3ea6d24fd7391a03f20b97e47b770c19614e92cb67e2fcac117f3d9bae34d5b26940a81f1d92912e5b84b7a2df08992e89c9e1279f5f581fc0e6f1e2441edea21dc322d8bcb8876196db0d8e0e4cdfa93dd33c4cb54171228471cf75e69d10bfa45b2a6a5f37bdcefd95bccecd38fa294e40465e54b0dc076ed3f503196432c75ff13dbf8bfba380aa8a7f53a613e64f2562f8424f9ac2aacf3713246d435874aab051ed6b98c6ca35ea5a5a16bdb6989ba8ebb0bd71ddcfb9cde50ea94d5642ed02e07b744b1c2b73c92c5a769abfddd22e0567da06b10e05e2e064a54c43a6f1a625b22937cf0fed367eedcc8db3af49c877c781b5d934a6d4becf2a3165c2889a99b70fc531756641a1d623d69378d49b6ad124f94cd701b41da85fd54b692425d6257884e6764712dcc92bcd54190448db1aefe9caf85aac348650418bba330e5d8542132442be417f209cd47117e45c509400d5b344a1e20823c6b875fa9d7515e2d23afbec39507924c7e612672fb6e6c04e9d4971a83351e37884e3e40db02b5bb8a2a7969112f08943663fa24690872304dfff3facb1f87dcb71a0dcbe1df49f4ab2239e6ba53ec0c0f18bbf62cbeaa8763af5d96a417106bf157b0a38990917fa8f95770a87b32ffb565fa21a51d8ec60b49fdfafdc4d11c58023dda8112550d7307d2efbc5399e42b3b2859c7e3ee105f4efa9c4a91e12dc44493a9fe3a94073934b02bcaa1d10cfbf1435d0b744edd24de3c6ffe22be632ac16501abd42033f4080a0aa818f11ac4cdb92a0361c7e6d0b9fa90f82b46bec1c1d9fc02f8bde465163de8b15690c5a8af24156f9368e9347a508ffa6f0a1c9c101dc02277966cb33c9366875b6efabb4294fe527df25e8cf77f27e8e2767e01c37f432a62d94d2d5b5e3bdbf3a792ddec9a91ffabfe6f6355b9fb9999b50eded57dd26c946bbb3e8538b55395086bcabf0655e110a6203840dcbd530e8d3ce87916e612da177104886e17401299f85bc4e07f424f25cef2b58a8111ea471dfedf2655fc52a13c78b29ce6d37032c53bc6083e49cb0869b0d26a52b7686bbcedfdd83442301ff0c0c6ce23e462b9c447d8eb3134dd47ca9b5b11512c7483d49ec9c3d985baec514cca20a92c8511000185b0dbc50f6d49e125694a69fca7da94d1432f9f9b3546fc3debcabc191866b24cfbb67585afe19a45802cee8493dd4ed08f8e799566e62d33016122a03f77798b010651b355d818ebb31919847c49134cd805785ee3bfdbeaef3f09bed6f965c43b018810feb2310ed809063c957004e97a1d9c39b46549304729b3ee9da3ad778ce5696022c0d3880e708bc3aa2c6010366b5d153cbf9a967d111276002cfd46639aac610f70b5fcfb72a4b678dcfe2f38dc7cce2119dab72c63d74bcd886572a6f184c94d32b94ed5247d3e1e6a453f74652cd2cc91b949ccac098912a2cddd1c2b968060cb5f9388014eb219a7a8e646caf8e1e34c0f9d52ed6eb21de2f6c0a46cd17f7ca2d6aa3fdba83157b95c3ffdf27ce40129c178448f71939030171d9a1702fdb5a672ee4457ec56e17f1f5ad9718ce134a754d6e5d74fbf790f17ae313990625d250080b974c600254bbe2e1aa021d272806c1a635ce5beffa3314cb78cb7a08fbd4c2470b7bf3f8724fa0ca57672745472b6b350f1676401dcada8ef47b8c32ea6036ec3eff85ea0f2740bd57a0cc4d8ab427370fb5d4fb8a8f2ed4026d009fb187fc45e0b508d26543b66fa9b982be458d9016beb5b1a7fbaaf0cdd0cc74309ad4d1b3ca76d4e1b4acca28ee896a9a8c4d0038a66a0ad981f93be0e82141fed3f82fd9f6813bfcbbe2e17290c433a53e156f443aa7a155abb5a5b12b056c9a5bc1cacf8f0106c76d1c8f1de1ddfce8d093b8dd12b510b2ccfc8b1e27ff72c71ab49d95817b756c792175fda26bd314d8276ee92776714cf951c37c80bf2735c52f5e01e502717a5b6e7299ce33815d9e3cc6d021508be4c45a92afbbf52023bee30b053ae3cae725905a0d38a35484349ab505c5aa904c70d3e8042e99bc5ce4e3daf399015a799472dab217c65ff68deb73640790c581a6f501cb0f626e7e244912c329b60444d9458d65d214c134299d0a80789534b5cecaa742629bec2e935ebc90d513086de96c</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>学习笔记</category>
@@ -210,7 +210,7 @@
   </entry>
   <entry>
     <title>【汇编语言】寻址范围练习</title>
-    <url>/posts/49536/</url>
+    <url>/posts/2020/49536/</url>
     <content><![CDATA[<h1 id="题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"><a href="#题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？" class="headerlink" title="题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？"></a>题目：给定地址段为0001H，仅通过变化偏移地址寻址，CPU的寻址范围为？</h1><p>此题解题背景默认为8080型CPU，地址总线为16根。（8080-16，8086-20，8088-20，80286-24，80386-32）</p>
 <h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>16根地址总线寻址能力：<code>(2 ** 16) / 1024 = 65536(B) = 64(KB)</code>, 可以表示的存储单元个数为 <code>0 ~ 2^n-1</code> 个， 即 0 ~ 65535。</p>
 <p>这里的 65535 为十进制数，转换为十六进制数为 0xffff (或 ffffH)，具体转换方法可以用 Python3 函数 hex(65535)。</p>
@@ -229,7 +229,7 @@
   </entry>
   <entry>
     <title>【蓝桥】第十一届软件类校内模拟赛2020.03(会做的题哈哈哈)</title>
-    <url>/posts/52865/</url>
+    <url>/posts/2020/52865/</url>
     <content><![CDATA[<p>本篇是蓝桥杯第十一届软件类(Java)校内模拟赛，我会做的题…<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span></p>
 <h1 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h1><h2 id="1"><a href="#1" class="headerlink" title="#1"></a>#1</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>　　在计算机存储中，15.125GB是多少MB？</p>
 <h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
@@ -299,7 +299,7 @@
   </entry>
   <entry>
     <title>PHP自动获取网站 favicon.ico 图标 api源码</title>
-    <url>/posts/12819/</url>
+    <url>/posts/2020/12819/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/03/04/3IzUeK.jpg" alt=""></p>
 <p>不是我写的，留着备用，学习一下。</p>
 <p>源码就一个文件，任意命名为：<code>filename.php</code></p>
@@ -326,7 +326,7 @@
   </entry>
   <entry>
     <title>Edge Chromium体验简单报告（附下载地址）</title>
-    <url>/posts/10778/</url>
+    <url>/posts/2020/10778/</url>
     <content><![CDATA[<p>这浏览器没出生之前一直用的CHrome，Edge完全是没动过的。不能说不好用，只能说自定义性太少，没东西玩。开源的Chromium＋Edge这波操作简直太香了，从测试版上线第一天就开始用，从此Chrome转路人了哈哈哈。</p>
 <h1 id="一、使用体验"><a href="#一、使用体验" class="headerlink" title="一、使用体验"></a>一、使用体验</h1><p>如果Chrome可以打<strong>9</strong>分的话，Chromium Edge打<strong>9.5</strong>分也不为过。CHrome的内核加上Edge的流畅，挺舒服的。自带的也有微软的网上应用店，不过没咋上过，一般都是去谷歌的应用店。</p>
 <p>除了可以用插件之外，流畅的体验也是加分项。不过Edge本来就是挺丝滑的。有的网友说稳定版比较卡，测试版依然丝滑？不知道呀，没用过稳定版。</p>
@@ -350,7 +350,7 @@
   </entry>
   <entry>
     <title>浅析localStorage和Cookie</title>
-    <url>/posts/62614/</url>
+    <url>/posts/2020/62614/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/24/38dngS.jpg" alt=""></p>
 <p>这几天自己在写浏览器导航页的时候发现页面缺少了点提高用户体验的东西——不能记住用户上次使用的搜索引擎。我发布在酷安，里面很多人喜欢我的页面，但呼声最高的还是加入记住搜索引擎的功能。毕竟用惯了某个引擎每次进来都要切换一下是在让人捉急<del>_</del></p>
 <p>导航页详情：<a href="https://kksan.top/posts/12023/">单纯就是「一个导航」开发日志</a></p>
@@ -409,7 +409,7 @@
   </entry>
   <entry>
     <title>初识Cookie</title>
-    <url>/posts/3340/</url>
+    <url>/posts/2020/3340/</url>
     <content><![CDATA[<h1 id="Cookie介绍"><a href="#Cookie介绍" class="headerlink" title="Cookie介绍"></a>Cookie介绍</h1><p>某些网站储存在用户本地终端上的数据</p>
 <ul>
 <li>在应用层面，Cookie是一串字符串</li>
@@ -483,7 +483,7 @@
   </entry>
   <entry>
     <title>日本语——「を」的用法总结</title>
-    <url>/posts/35177/</url>
+    <url>/posts/2020/35177/</url>
     <content><![CDATA[<h1 id="表示他动词的宾语（包括助动词后续使役动词的场合）。"><a href="#表示他动词的宾语（包括助动词后续使役动词的场合）。" class="headerlink" title="表示他动词的宾语（包括助动词后续使役动词的场合）。"></a>表示他动词的宾语（包括助动词后续使役动词的场合）。</h1><p>学生在图书馆读书。<br>学生は図书馆で本 <strong>を</strong> 読みます。</p>
 <h1 id="表示临时带有他动词性质的自动词的目的或对象。"><a href="#表示临时带有他动词性质的自动词的目的或对象。" class="headerlink" title="表示临时带有他动词性质的自动词的目的或对象。"></a>表示临时带有他动词性质的自动词的目的或对象。</h1><p>因病向公司请假一周。<br>病気で一周间会社 <strong>を</strong> 休みました。</p>
 <h1 id="表示动作移动或经过的场所，を后面的动词为移动性动词。"><a href="#表示动作移动或经过的场所，を后面的动词为移动性动词。" class="headerlink" title="表示动作移动或经过的场所，を后面的动词为移动性动词。"></a>表示动作移动或经过的场所，を后面的动词为移动性动词。</h1><p>夏天放假的时候，去了北海道和九州旅游。<br>如：夏休みには、北海道や九州 <strong>を</strong> 旅行して行きました。 </p>
@@ -501,7 +501,7 @@
   </entry>
   <entry>
     <title>在hexo博客中插入视频</title>
-    <url>/posts/16422/</url>
+    <url>/posts/2020/16422/</url>
     <content><![CDATA[<p>有时候我们写一些文章需要在文中插入一些视频做辅助，那怎样在文章页面中插入视频呢？其实很简单，我们可以参考 <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">hexo官方文档</a> 中嵌入的视频源码。</p>
 <p><img src="https://s2.ax1x.com/2020/02/18/3k8LJH.png" alt=""><br>我们按F12（或Fn＋F12）打开浏览器的控制台，按照上图图先点击元素审查(1)，接着点击屏幕上的元素(2),然后就会发现控制台自动定义到视频元素那一行了。右键直接把整个div复制下来。如下：</p>
 <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="attribute">class</span>=<span class="string">"video-container"</span>&gt;&lt;iframe <span class="attribute">src</span>=<span class="string">"https://www.youtube.com/embed/PsXWbI2Mqu0"</span> <span class="attribute">frameborder</span>=<span class="string">"0"</span> <span class="attribute">loading</span>=<span class="string">"lazy"</span> <span class="attribute">allowfullscreen</span>=<span class="string">""</span>&gt;&lt;/iframe&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
@@ -526,7 +526,7 @@
   </entry>
   <entry>
     <title>Git分布式版本管理系统入门（二）</title>
-    <url>/posts/26768/</url>
+    <url>/posts/2020/26768/</url>
     <content><![CDATA[<p>前篇回顾：<a href="https://kksan.top/posts/63722/">Git分布式版本管理系统入门（一）</a></p>
 <h1 id="五、Github开源代码库工作方式"><a href="#五、Github开源代码库工作方式" class="headerlink" title="五、Github开源代码库工作方式"></a>五、Github开源代码库工作方式</h1><p>想要完成一个简单的项目，下图中最基本的操作必须要掌握。<br>首先我们要知道，一个项目代码仓库是由任意个分支组成的，<text style="color: red;">每个仓库都应该会自动初始化一个主支【master】</text>。本地仓库有分支，远程仓库也有分支。<br>分支的含义：<text style="color: red;">其实是主支的分支，就像树枝一样。</text>新建一个分支时，Git会自动把主支的内容copy一份到你的分支。</p>
 <ul>
@@ -626,7 +626,7 @@
   </entry>
   <entry>
     <title>hexo——hueman主题美化（持续更新中）</title>
-    <url>/posts/20719/</url>
+    <url>/posts/2020/20719/</url>
     <content><![CDATA[<p>现在hexo的主题中最heat的就是<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener" title="NexT">NexT</a>了。截至我在写这篇文章，它GitHub的<code>star</code>已经达到了4.9k。NexT主题以简洁，自定义度高，插件集成多等等因素，被众多人喜爱。就我入坑hexo的那一会，我也用过一段时间的NexT。但是在后来觉得，NexT没有博客该有的样子，太过于简洁，可视页面上给予浏览者的信息太少，感觉除了首页上的文章不知道还有哪里可看，没有一些突出的地方让浏览者有欲望去点击。</p>
 <p>在网络上我们可以看到关于<code>NexT</code>的美化教程一抓一大把，但关于<code>hueman</code>的却少之又少。所以，有了现在这篇关于<code>hueman</code>主题美化的文章。</p>
 <p>用过<code>NexT</code>后再来用<code>hueman</code>，就发现<code>hueman</code>主题里无论是集成的插件，还是可自定义的东西，和<code>NexT</code>比起来就是白纸一张…不过这也阻止不了我对这个主题的喜爱，没有集成的插件就自己装呗，没有自定义选项就自己去改呗。</p>
@@ -800,7 +800,7 @@
   </entry>
   <entry>
     <title>从零开始入坑hexo博客</title>
-    <url>/posts/34220/</url>
+    <url>/posts/2020/34220/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/13/1O4Iun.png" alt=""></p>
 <p>很多人都喜欢自己写写东西，但是在现在信息化的时代，笔纸间的记录已不是那么流行了。所以在上一年心血来潮之时，利用了hexo搭建了自己的博客。用起来还不赖！</p>
 <p>下面是我hexo的入坑过程。</p>
@@ -934,7 +934,7 @@
   </entry>
   <entry>
     <title>Git分布式版本管理系统入门（一）</title>
-    <url>/posts/63722/</url>
+    <url>/posts/2020/63722/</url>
     <content><![CDATA[<p>分布式版本管理系统Git口语化教程，献给初学的小白同学。</p>
 <h1 id="一、集中式VS分布式（来源：廖雪峰的官方网站）"><a href="#一、集中式VS分布式（来源：廖雪峰的官方网站）" class="headerlink" title="一、集中式VS分布式（来源：廖雪峰的官方网站）"></a>一、集中式VS分布式<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896202780297248" target="_blank" rel="noopener" title="（来源：廖雪峰的官方网站）">（来源：廖雪峰的官方网站）</a></h1><p>Linus（Git创始人）一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统，集中式和分布式版本控制系统有什么区别呢？</p>
 <ul>
@@ -997,7 +997,7 @@
   </entry>
   <entry>
     <title>日本语一类形容词与二类形容词的区别</title>
-    <url>/posts/3557/</url>
+    <url>/posts/2020/3557/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
 <p>众所周知，江湖上日语的形容词分为两大门派——「一类形容词」和「二类形容词」<br>有的教科书上一类形容词和二类形容词也分别称为「い形容词」和「な形容词」<br>在日本则称为「形容詞」和「形容動詞」<br>二者有何不同呢？</p>
 </blockquote>
@@ -1049,7 +1049,7 @@
   </entry>
   <entry>
     <title>日本语——「に」的用法总结</title>
-    <url>/posts/9149/</url>
+    <url>/posts/2020/9149/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/05/1sXu4O.png" alt=""></p>
 <h1 id="表示存在的场所"><a href="#表示存在的场所" class="headerlink" title="表示存在的场所"></a>表示存在的场所</h1><p>公园里有长椅。<br>公園 <strong><u>に</u></strong> ベンチ が あります。</p>
 <h1 id="表示时间"><a href="#表示时间" class="headerlink" title="表示时间"></a>表示时间</h1><p>我七点回家。<br>私は七時 <strong><u>に</u></strong> 帰ります。</p>
@@ -1073,7 +1073,7 @@
   </entry>
   <entry>
     <title>单纯就是「一个导航」开发日志</title>
-    <url>/posts/12023/</url>
+    <url>/posts/2020/12023/</url>
     <content><![CDATA[<img src="https://s2.ax1x.com/2020/02/14/1OqnSK.jpg">
 
 <p>首先，为什么我会想到做一个浏览器导航呢？原因很简单，就是市面上的导航页太杂，要么太复杂，要么太简单，都不合我心意（我真挑剔哈哈哈）。<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
@@ -1200,7 +1200,7 @@
   </entry>
   <entry>
     <title>萌新的第一副无线耳机———Ticpods 2 Pro简单不专业开箱评测</title>
-    <url>/posts/64901/</url>
+    <url>/posts/2019/64901/</url>
     <content><![CDATA[<h1 id="开箱"><a href="#开箱" class="headerlink" title="开箱"></a>开箱</h1><p>今天我来 #开箱评测# 一下刚入手的这款TicPods 2 Pro耳机。这块耳机是新品首发的时候Pro版699入的（原价799）</p>
 <p>之前其实也有想过买第一代的，奈何第一代是入耳式。因为我是油耳，戴入耳式感觉有点恶心</p>
 <p>好了废话不多说，来开箱吧<br>(1号0:00下的单，今天早上到的)<br><img src="https://s1.ax1x.com/2020/04/03/GNGwo4.jpg" alt=""><br>先看外包装，到手后感觉包装还是可以的<br>看看后面的参数。因为本K对耳机了解并不多，还请各位自己看看<br><img src="https://s1.ax1x.com/2020/04/03/GNGKeS.jpg" alt=""><br>推~打开包装<br><img src="https://s1.ax1x.com/2020/04/03/GNGERI.jpg" alt=""><br><img src="https://s1.ax1x.com/2020/04/03/GNGNLT.jpg" alt=""><br>很简洁，打开之后就能看见耳机本尊啦<br>哇哦！awsome<br><img src="https://s1.ax1x.com/2020/04/03/GN8XGR.jpg" alt=""><br>翻开下面的夹层，里面只有一本说明书和充电线<br><img src="https://s1.ax1x.com/2020/04/03/GN8Oi9.jpg" alt=""><br>看看一些特写<br><img src="https://s1.ax1x.com/2020/04/03/GNGCZD.jpg" alt=""><br>耳机舱应该是塑料的，但摸着又不太像，有磁吸舱盖，总体质感还不错，比我想象中的好。<br><img src="https://s1.ax1x.com/2020/04/03/GNGmsf.jpg" alt=""><br>Type C充电口<br><img src="https://s1.ax1x.com/2020/04/03/GN8vxx.jpg" alt=""><br>全家福<br>总的来说，盒子里面就只有两件东西<br><img src="https://s1.ax1x.com/2020/04/03/GNGSsK.jpg" alt=""><br>和我家的“iPhone X”自拍一张<br><img src="https://s1.ax1x.com/2020/04/03/GN8jR1.jpg" alt=""></p>
@@ -1230,7 +1230,7 @@
   </entry>
   <entry>
     <title>Open Source！教你用js做一个简单的抽奖系统</title>
-    <url>/posts/43414/</url>
+    <url>/posts/2019/43414/</url>
     <content><![CDATA[<p>很奇怪，可能你们都会问为什么我会突然写一个抽奖系统呢？</p>
 <p>其实起因是最近我协会招新，动员大会前一晚突然收到会长信息(晚上11点了)说想在新生会员动员大会上搞个自动抽奖的东东，最好酷炫点的。第二天就要用了，因为太急我就想到了用我最擅长的js做个简单的出来。<br>其实做个抽奖系统很简单，里面只要一个随机函数就可以了。</p>
 <p>前提：我协会的动员大会上是每人都有一个签的，签上有号码，共389人。</p>
@@ -1266,7 +1266,7 @@
   </entry>
   <entry>
     <title>多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象</title>
-    <url>/posts/24835/</url>
+    <url>/posts/2019/24835/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/16/3Sm5Y4.jpg" alt=""></p>
 <p>大家猴!本K又来啦~因为一些原因，旅行博主上线！那这次又是去哪里呢？<br>这次的系列图文「多元文化交融的国度，马来西亚了解一下」是我大马自由行的精彩分享和给大家旅行的一些建议。</p>
 <p>旅行时间：2019年8月12日—8月19日<br>人 数：3人<br>好了，开场完成。接下来一起来看看马来西亚在哪里吧，上图！</p>
@@ -1385,7 +1385,7 @@
   </entry>
   <entry>
     <title>&lt;小k周围走&gt;唔同角度睇香港（一）--港岛北</title>
-    <url>/posts/22920/</url>
+    <url>/posts/2019/22920/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/08/1Red0A.md.jpg" alt=""></p>
 <blockquote>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1></blockquote>
@@ -1503,7 +1503,7 @@
   </entry>
   <entry>
     <title>一人の体験2.0（三）——大学生穷游日本2019</title>
-    <url>/posts/54857/</url>
+    <url>/posts/2019/54857/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/03/11/8kloU1.jpg" alt=""></p>
 <p>上一期是写得比较详细的，网友的问题相对少点。</p>
 <p><strong>1. 哪的机票便宜？</strong><br>很多酷友问我机票在哪订这么便宜的。答案很简单偷看就是在某些旅行网站啊(某猪，某程等等)。哪里便宜去哪订。</p>
@@ -1575,7 +1575,7 @@
   </entry>
   <entry>
     <title>一人の体験2.0（二）——大学生穷游日本2019</title>
-    <url>/posts/11601/</url>
+    <url>/posts/2019/11601/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/03/1U3jTe.md.jpg" alt=""></p>
 <blockquote>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1></blockquote>
@@ -1701,7 +1701,7 @@
   </entry>
   <entry>
     <title>一人の体験2.0（一）——大学生穷游日本2019</title>
-    <url>/posts/55052/</url>
+    <url>/posts/2019/55052/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/02/02/1twuhF.md.jpg" alt=""></p>
 <blockquote>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1></blockquote>
