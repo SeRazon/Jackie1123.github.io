@@ -2249,7 +2249,10 @@ blockquote footer cite:before {
   padding: 0 4px;
   vertical-align: text-bottom;
 }
-#footer-wrap .sponsor a img {
+#footer-wrap .sponsor a .upyun {
+  width: 80px;
+}
+#footer-wrap .sponsor a .myssl {
   width: 80px;
 }
 figure.gallery-group {

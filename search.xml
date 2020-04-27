@@ -35,6 +35,11 @@
       </tags>
   </entry>
   <entry>
+    <title>你的下一个显示器，何必是显示器</title>
+    <url>/posts/2020/24322/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>【SQL语言】分组(Group by)</title>
     <url>/posts/2020/42135/</url>
     <content><![CDATA[<h1 id="问题：得到一个结果集显示每个班的学生人数"><a href="#问题：得到一个结果集显示每个班的学生人数" class="headerlink" title="问题：得到一个结果集显示每个班的学生人数"></a>问题：得到一个结果集显示每个班的学生人数</h1><p>SQL语言中这个分组的理解是一个相对的难点，在实际应用中分组常常与聚合函数一起是用，用于统计分组的相关信息。以防忘记，记录一下。</p>
