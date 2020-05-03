@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>用Python实现csv数据求均值</title>
+    <url>/posts/2020/58142/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python学了有一段时间了，最近可以开始做一些小需求。</p>
+<h1 id="需求说明"><a href="#需求说明" class="headerlink" title="需求说明"></a>需求说明</h1><h2 id="计算iris数据集的均值"><a href="#计算iris数据集的均值" class="headerlink" title="计算iris数据集的均值"></a>计算<code>iris</code>数据集的均值</h2><p>使用iris数据集（<code>iris.csv</code>）。iris数据集中包含了3种鸢尾花的4个属性情况——花萼长度、花萼宽度、花瓣长度、花瓣宽度，现需要计算4个属性的均值，然后将均值情况及原始数据存到<code>test.csv</code>中。</p>
+<h2 id="实现思路及步骤"><a href="#实现思路及步骤" class="headerlink" title="实现思路及步骤"></a>实现思路及步骤</h2><ol>
+<li>读取<code>iris.csv</code>文件，并储存为字典形式的数据。</li>
+<li>计算每一个属性的均值，并赋予相应字典的相应值。</li>
+<li>把上述处理后的数据写入新建文件<code>my_iris.csv</code>，确保数据与属性保持一致。</li>
+</ol>
+<h1 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h1>]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>编程</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网站接入CDN回源加速</title>
     <url>/posts/2020/53436/</url>
     <content><![CDATA[<h1 id="什么是CDN？"><a href="#什么是CDN？" class="headerlink" title="什么是CDN？"></a>什么是CDN？</h1><p>CDN其实是Content Delivery Network的缩写，中文名叫<strong>内容分发网络</strong>。它是一种互联网上新型的网络构建方式，目的是让客户端访问网页通讯时更快更稳定。</p>
