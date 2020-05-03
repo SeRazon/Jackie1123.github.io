@@ -10,7 +10,8 @@
 <li>计算每一个属性的均值。</li>
 <li>把上述处理后的数据写入新建文件<code>my_iris.csv</code>，确保数据与属性保持一致。</li>
 </ol>
-<h1 id="这里图方便只写求一个均值。"><a href="#这里图方便只写求一个均值。" class="headerlink" title="这里图方便只写求一个均值。"></a>这里图方便只写求一个均值。</h1><h1 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h1><p>要实现这个需求，首先需要导入<code>csv</code>模块。</p>
+<p><strong>这里图方便只写求一个均值。</strong></p>
+<h1 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h1><p>要实现这个需求，首先需要导入<code>csv</code>模块。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br></pre></td></tr></table></figure>
 <p>这是一个Python的内置模块，使用方法可以到网上查找使用文档。</p>
 <p>定义常量，<code>average</code>用于存储均值，列表<code>my_key</code>用于存储csv表格头标题，<code>old_file</code>和<code>new_file</code>分别是需处理的文件和新生成的文件。</p>
@@ -43,8 +44,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
+        <tag>学习笔记</tag>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -194,8 +195,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
+        <tag>学习笔记</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -340,8 +341,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
+        <tag>学习笔记</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -366,9 +367,9 @@
         <category>PHP自动获取网站 favicon.ico 图标 api源码</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
         <tag>开发</tag>
+        <tag>学习笔记</tag>
         <tag>PHP</tag>
       </tags>
   </entry>
