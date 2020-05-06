@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>新型友達と呼んでいる友達だ「辞書形を使う週記」</title>
-    <url>/posts/2020/42895/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="哦，这是一个无效的密码。请检查并再试一次。" data-whm="哦，这些解密的内容无法验证，但你仍然可以看看。"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="查看本文需要密码" /><label>查看本文需要密码</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="da568bae5d867d439260b5df5b9e0e5c2fe2849eee770f93b722c15c6c73fb55">7292e9589c4dc41935df9cde85d381d7</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>日语周记</category>
-      </categories>
-      <tags>
-        <tag>日本語の週記</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用Python实现csv数据求均值</title>
     <url>/posts/2020/58142/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python学了有一段时间了，最近可以开始做一些小需求。</p>
