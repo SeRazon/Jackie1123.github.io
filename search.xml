@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Django Server 启动报错--UnicodeDecodeError:&#39;utf-8&#39; codec can&#39;t decode byte...</title>
+    <url>/posts/2020/3660/</url>
+    <content><![CDATA[<p><strong>Django Server 启动报错–UnicodeDecodeError:’utf-8’ codec can’t decode byte…</strong></p>
+<p>这个错误困扰了我很久，以至于一度想重装系统<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span>，今天终于解决了…</p>
+<p>出现这个问题的根本原因是机器的字符编码有问题。</p>
+<p>具体改正的方法是：<br>在小娜里面搜索<code>地区</code>。然后更改<code>国家或地区</code>—<code>管理语言设置</code>—在弹出的<code>地区</code>里面点击<code>‘更改系统区域设置’</code>—把<code>BETA版：使用utf-8...</code>那个选上，重启。</p>
+<p>但是开启了这个选项之后有些软件显示中文可能怪怪的，甚至可能乱码。<br><img src="https://s1.ax1x.com/2020/05/09/Y1FyPs.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>Django</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>用Python实现csv数据求均值</title>
     <url>/posts/2020/58142/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python学了有一段时间了，最近可以开始做一些小需求。</p>
@@ -44,8 +62,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
+        <tag>学习笔记</tag>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -196,8 +214,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
+        <tag>学习笔记</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -342,8 +360,8 @@
         <category>蓝桥</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
+        <tag>学习笔记</tag>
         <tag>Java</tag>
       </tags>
   </entry>
@@ -368,9 +386,9 @@
         <category>PHP自动获取网站 favicon.ico 图标 api源码</category>
       </categories>
       <tags>
-        <tag>学习笔记</tag>
         <tag>编程</tag>
         <tag>开发</tag>
+        <tag>学习笔记</tag>
         <tag>PHP</tag>
       </tags>
   </entry>
@@ -670,8 +688,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>学习笔记</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -1041,8 +1059,8 @@
         <category>Git分布式版本管理系统</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>学习笔记</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
