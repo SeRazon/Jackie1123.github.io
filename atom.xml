@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kksan.top/"/>
-  <updated>2020-05-09T14:40:05.384Z</updated>
+  <updated>2020-05-09T14:47:54.527Z</updated>
   <id>https://kksan.top/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="https://kksan.top/posts/2020/3660/"/>
     <id>https://kksan.top/posts/2020/3660/</id>
     <published>2020-05-09T14:28:06.000Z</published>
-    <updated>2020-05-09T14:40:05.384Z</updated>
+    <updated>2020-05-09T14:47:54.527Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Django Server 启动报错–UnicodeDecodeError:’utf-8’ codec can’t decode byte…</strong></p><p>这个错误困扰了我很久，以至于一度想重装系统<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span>，今天终于解决了…</p><p>出现这个问题的根本原因是机器的字符编码有问题。</p><p>具体改正的方法是：<br>在小娜里面搜索<code>地区</code>。然后更改<code>国家或地区</code>—<code>管理语言设置</code>—在弹出的<code>地区</code>里面点击<code>‘更改系统区域设置’</code>—把<code>BETA版：使用utf-8...</code>那个选上，重启。</p><p>但是开启了这个选项之后有些软件显示中文可能怪怪的，甚至可能乱码。<br><img src="https://s1.ax1x.com/2020/05/09/Y1FyPs.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Django Server 启动报错–UnicodeDecodeError:’utf-8’ codec can’t decode byte…</strong></p><p>这个错误困扰了我很久，可谓是开坑第一坑啊。以至于一度想重装系统<span class="emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8">&#x1f62d;</span>，今天终于解决了…</p><p>出现这个问题的根本原因是机器的字符编码有问题。</p><p>具体改正的方法是：<br>在小娜里面搜索<code>地区</code>。然后更改<code>国家或地区</code>—<code>管理语言设置</code>—在弹出的<code>地区</code>里面点击<code>‘更改系统区域设置’</code>—把<code>BETA版：使用utf-8...</code>那个选上，重启。</p><p>但是开启了这个选项之后有些软件显示中文可能怪怪的，甚至可能乱码。<br><img src="https://s1.ax1x.com/2020/05/09/Y1FyPs.png" alt=""></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;&lt;strong&gt;Django Server 启动报错–UnicodeDecodeError:’utf-8’ codec can’t decode byte…&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这个错误困扰了我很久，以至于一度想重装系统&lt;span class=&quot;emoji&quot; s
+&lt;p&gt;这个错误困扰了我很久，可谓是开坑第一坑啊。以至于一度想重装系统&lt;span class
       
     
     </summary>
