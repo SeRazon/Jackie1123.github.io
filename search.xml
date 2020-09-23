@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>单纯就是「一个清单」开发日志</title>
+    <url>/posts/2020/48883/</url>
+    <content><![CDATA[<img src="https://s2.ax1x.com/2020/02/14/1OqnSK.jpg">
+
+<blockquote>
+<h2 id="这是什么？"><a href="#这是什么？" class="headerlink" title="这是什么？"></a>这是什么？</h2></blockquote>
+<p>一个简单的任务清单帮你记录生活的琐事。（由PHP和MySQL强力驱动，原生PHP手打代码，PHP初学者可用于参考）<br><strong><em>各位可以给点建议，清单持续更新中…</em></strong></p>
+<hr>
+<blockquote>
+<h2 id="小版本更新"><a href="#小版本更新" class="headerlink" title="小版本更新"></a>小版本更新</h2></blockquote>
+<ul>
+<li>1.0.1 ——&gt; 加入了标签。</li>
+</ul>
+<hr>
+<blockquote>
+<h2 id="大版本更新"><a href="#大版本更新" class="headerlink" title="大版本更新"></a>大版本更新</h2></blockquote>
+<blockquote>
+<h3 id="2-0-0-更新"><a href="#2-0-0-更新" class="headerlink" title="2.0.0 更新"></a>2.0.0 更新</h3></blockquote>
+<h4 id="更新时间："><a href="#更新时间：" class="headerlink" title="更新时间："></a>更新时间：</h4><p>2020年09月16日</p>
+<h4 id="内容："><a href="#内容：" class="headerlink" title="内容："></a>内容：</h4><ol>
+<li>你可以用你的私人账户登录清单。</li>
+</ol>
+<blockquote>
+<h3 id="1-0-0-发布"><a href="#1-0-0-发布" class="headerlink" title="1.0.0 发布"></a>1.0.0 发布</h3></blockquote>
+<h4 id="发布时间："><a href="#发布时间：" class="headerlink" title="发布时间："></a>发布时间：</h4><p>2020年06月29日</p>
+<h4 id="内容：-1"><a href="#内容：-1" class="headerlink" title="内容："></a>内容：</h4><ol>
+<li>清单诞生。</li>
+</ol>
+<hr>
+<blockquote>
+<h2 id="最新版本Demo"><a href="#最新版本Demo" class="headerlink" title="最新版本Demo"></a>最新版本Demo</h2></blockquote>
+<h3 id="桌面界面"><a href="#桌面界面" class="headerlink" title="桌面界面"></a>桌面界面</h3><p><img src="https://s1.ax1x.com/2020/09/09/w34jTe.png" alt=""></p>
+<h3 id="移动界面"><a href="#移动界面" class="headerlink" title="移动界面"></a>移动界面</h3><p><img src="https://s1.ax1x.com/2020/09/09/w35A0S.jpg" alt=""></p>
+<hr>
+<blockquote>
+<h2 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h2></blockquote>
+<p><strong>开发环境：Apache 2.4、MySQL 5.7、PHP7.4</strong></p>
+<ol>
+<li>电脑(ECS)中需要安装Apache服务器(或其他)、PHP和MySQL。</li>
+<li>创建一个叫做<strong>detailed_list</strong>的数据库。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> detailed_list <span class="keyword">charset</span>=utf8;</span><br></pre></td></tr></table></figure></li>
+<li>在detailed_list数据库里创建一个叫做<strong>project</strong>的表。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">project</span>(</span><br><span class="line">    <span class="keyword">id</span> <span class="built_in">int</span> PRIMARY <span class="keyword">KEY</span> auto_increment,</span><br><span class="line">    isFinished <span class="built_in">TINYINT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'是否完成'</span>,</span><br><span class="line">    <span class="keyword">content</span> <span class="built_in">text</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'内容'</span>,</span><br><span class="line">    pub_time <span class="built_in">INT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'时间戳'</span>,</span><br><span class="line">    label <span class="built_in">varchar</span>(<span class="number">10</span>) <span class="keyword">COMMENT</span> <span class="string">'标签'</span></span><br><span class="line">)<span class="keyword">charset</span> utf8;</span><br></pre></td></tr></table></figure></li>
+<li>在detailed_list数据库里创建一个叫做<strong>project</strong>的表。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">admin</span>(</span><br><span class="line">    <span class="keyword">id</span> <span class="built_in">int</span> PRIMARY <span class="keyword">KEY</span> auto_increment,</span><br><span class="line">    <span class="keyword">admin</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">unique</span> <span class="keyword">COMMENT</span> <span class="string">'所有者'</span>,</span><br><span class="line">    <span class="keyword">password</span> <span class="built_in">varchar</span>(<span class="number">18</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'密码'</span></span><br><span class="line">)<span class="keyword">charset</span> utf8;</span><br></pre></td></tr></table></figure></li>
+<li>进入项目目录<code>detail-list/app/</code>, 打开<code>database_login.php</code>, 修改<code>MySQL address:port</code>, MySQL <code>user</code> 和 <code>password</code>。</li>
+</ol>
+<p><img src="https://s1.ax1x.com/2020/07/01/NTTBOe.jpg" alt=""></p>
+<ol start="6">
+<li>在浏览器中输入localhost的地址即可访问(请访问名为login.html(<code>html/login.html</code>)的文件)。</li>
+</ol>
+<hr>
+<p><strong>项目：<a href="http://kksan.top:81/app/index.php">http://kksan.top:81/app/index.php</a></strong><br><strong>Github：<a href="https://github.com/Jackie1123/detailed-list" target="_blank" rel="noopener">https://github.com/Jackie1123/detailed-list</a></strong><br><strong>测试：</strong><br>账号：test<br>密码：123456</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>HTML</tag>
+        <tag>编程</tag>
+        <tag>JavaScript</tag>
+        <tag>开发</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>彼女ができました</title>
     <url>/posts/2020/33357/</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="哦，这是一个无效的密码。请检查并再试一次。" data-whm="哦，这些解密的内容无法验证，但你仍然可以看看。"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="查看本文需要密码" /><label>查看本文需要密码</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="d62c0bcf5676a70edd95ae3aa030f952992fa728b23dd5c370257f0af098d156">c9973da9cc3806410170bfc0634219d5275416f9e870cfade1f3bb8d03db651df42e9a0a954301a116347700d31fb6ad2179f5bbedb5c8cac8b54ca76eb58bf42f2cdf46efea30322fbb8b674477c6e801083f580b17b2a5f6196361638a9633df5eea584682bfc0e3aa8e21b3de9ab46522ef0d01675cf4c46be0b211be9fc3bff041c8e82518cd07f5b3cf8030945ef418f5591716dbff669d3d9da907a14a61cea28682a016974f356497d9f30780e4140d732b1d44d4d3eb0712e43c807ab9fe91cdbccf38095bc3ee450f64ccf217a2e3618fd08e28d06059e3a438fdd8e24ceecce30b9d3737d9de92d84c3a44e0d969eecea363f186db63d546066d99e5978a879f5050885dd930d1876576a4df57687afbe47e1ab4df1c83f2285a4db3e4765e6efff9b70ec6f7414794966c8d8eb93b39374af26d02ea72fa7a8f203c97dff5803ccb05ce177278e1dd7159ff23ed7c60b1e35856efcbc24f6495727a52d2832084a9009546beb0c01ca6594484cbdbe3ce24692a833c81ff60733935b4bc7a4e7987c2036366e2e468e0e6704e511fc7bae866cd7532ccdc694dfb4145b84c960de8828a0cf9b87f804ac10451328d1e5fbea75403111575517248410f0bf59f00febd78bc0716be78283f8349799f14112732df27020873853f602b7d961175c1517a8da538e1ce4e91e4055533bf7e28fa9b3a0093ec2f02080ca4b89e4eed85432bb349170023af0a855f6b2374844ec38bc6ee218e6a647b450a3737b8729f326896ca3aff7dd6c61b6b75f87d1a401e527917debb4fe5591902f32789c4c5e0ed8ca6c080930a98120ce23ea81510546c817ed8a94b6edd0d859421cd116678a79fe289c09325b007a1ed3915bac840ab09537e327f1e494f6470a6b59c2d0b06e8d0a36131bc6691b7a1cb1cc6b7d448ccf602444afe4ec7b5e45e78fd72f813147995dead95f0cdfe23c221bcb51c965579d68fee1dfe87dd36782e45f13a9a4a8c042d629af1f14e766477ae6ef84bf40cea20df89eb1fe8ad918382cef02cb03620e95fe805f168fd5fcac42fd8461adc71592ccafb354fc63b0b1f12218b8d79ee2aca0e34df6d085ecba2825e2e558db6906a1f6d4a5718fcbf75c144a1467ed12174f3fa89a0adf39534460b4b2f4bfba597a562c3f449fcd4f3772aaec18eae2fe2d8bcf1fd93a60bcec682365eb6752fbedcb136e5a0430c6e8a6021108508f8cbd52c4c8c087d1647bf6782433da6dfb4e55b96ed42fb34370a97c9a88db3eea25ce31bc024ab1a948c56861d0bc1fec43398363266ee729390f87ed45225e117dbfe6b18bddd42832622f1a9ca4dcffe423aaaea94efd61e12e9ec94f5439167e18462977e3890c61d098f6238bf3f44c298c3125e1df7c8dd2dae080ced00eeb32e034ea7657024a9ea2f34f58cabf39941ae1289b2ad82004073ff5cfec94671d3bc6023ab09210d5d2643fc016e4dd5c6b92e35beb24d54a5014d9e7adcd5c3885a5afdc602aa68b59817e387f86d026f5faaad2e029a5c51e04773d03d0d51b3037ee7f21f796b49411a7e85d75149025b63075ed4bc8c3bddb4d0bcbc647cbae49bc96a099c0bc0c94405f33c2f978ca710dbeb85fcde149d9870a42a7469f0570ffebcf19026406386b9de483ca42ccb81b0b661b313011f985c7f15360a7bfcc98ae19cb904576835f7823085987b9a48054af297e1146aedd08939a0ac72efbc94d0764f04df8ad6d2878934ed3bd762070c94604f500dcda1a785d43576a1432cb6e1680d42beb34a29a10b8f2c1f8130178385b7920e472eddc9b8931bb59dcb75e56d0f43212df1a2ebf6682b305dd4523000d4c02a373be4a0a1d1391129b5b959eb6ca00d7382fd7d02637a0329d8241891bc3e830f04947f94faaf71e3e35c700bf4a78163e575875a12cce0e357ddd84a2b97dcb71588fbabfbc9f5c5dbbe5cb003193ce188a78b639c067288dd83557bc5e83bab1d104d388385aad98f867285b60f038a04130544088b4f10ec10bdfba75f090ab13c5fbb91429d9bb75879adc06e9a37825ef8f2f0290a33e1bf70c30208950802442d09e4237488eee6dd7cea8190d056ba1b6fa373758ba3a1d211443735e6c89032425926d7d36e684d2b51009e527e7c47d78d8804bad5a1a7680981e1b0e2cafb2bd25586168106f3bb9ad95611cb8dd698f59b2ecb2d17bf2b557f7f0416deed96da66a5fe32ad695414580232c19c05ac9ded34e2abc9f12e050b4f5385b316ba3636c2f20508f396e3460d2a26733ef8dfd93637494d828f91035d17055c8fa417868d2981bb843d74dce47b210d60f1c72e3539315edcde01701d19052c06ab2e4d4bd09bb5672883d0a0dd24ac631181cc12032c1db8bbe6df37225f91f196db3b7ada758ac7e240257750a11e39f9e324e5c1669e128b8badab19e27199b8e254cb008d66f4074ba805946cb83ba1926c7e668f1b6ea86dcb2e74e06b39710ac516</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
@@ -1269,7 +1334,7 @@
 </blockquote>
 <hr>
 <blockquote>
-<h3 id="最新版本预览图"><a href="#最新版本预览图" class="headerlink" title="最新版本预览图"></a>最新版本预览图</h3></blockquote>
+<h2 id="最新版本预览图"><a href="#最新版本预览图" class="headerlink" title="最新版本预览图"></a>最新版本预览图</h2></blockquote>
 <img style="border-radius: 10px;width: 50%;" src="https://s1.ax1x.com/2020/03/13/8MEplV.gif">
 <img style="border-radius:10px;width: 50%;" src="https://s1.ax1x.com/2020/03/14/8MV6Ve.jpg">
 <img style="border-radius:10px;width: 100%;" src="https://s1.ax1x.com/2020/03/13/8MV3uT.png">
@@ -1277,7 +1342,7 @@
 
 <hr>
 <blockquote>
-<h3 id="小版本更新"><a href="#小版本更新" class="headerlink" title="小版本更新"></a>小版本更新</h3></blockquote>
+<h2 id="小版本更新"><a href="#小版本更新" class="headerlink" title="小版本更新"></a>小版本更新</h2></blockquote>
 <ul>
 <li>2020年03月23日 V4.1.1 <strong>压缩</strong>图片，<strong>增加</strong>鼠标悬停搜索框时自动选中文本</li>
 <li>2020年03月14日 V4.1.0 <strong>新增</strong>几个入口并<strong>更改</strong>图标样式</li>
@@ -1290,55 +1355,55 @@
 </ul>
 <hr>
 <blockquote>
-<h3 id="大版本更新"><a href="#大版本更新" class="headerlink" title="大版本更新"></a>大版本更新</h3></blockquote>
+<h2 id="大版本更新"><a href="#大版本更新" class="headerlink" title="大版本更新"></a>大版本更新</h2></blockquote>
 <blockquote>
-<h2 id="V4-0-0-更新（当前最新）"><a href="#V4-0-0-更新（当前最新）" class="headerlink" title="V4.0.0 更新（当前最新）"></a>V4.0.0 更新<strong>（当前最新）</strong></h2></blockquote>
-<h3 id="更新时间："><a href="#更新时间：" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年02月11日</p>
-<h3 id="更新内容："><a href="#更新内容：" class="headerlink" title="更新内容："></a>更新内容：</h3><ol>
+<h3 id="V4-0-0-更新（当前最新）"><a href="#V4-0-0-更新（当前最新）" class="headerlink" title="V4.0.0 更新（当前最新）"></a>V4.0.0 更新<strong>（当前最新）</strong></h3></blockquote>
+<h4 id="更新时间："><a href="#更新时间：" class="headerlink" title="更新时间："></a>更新时间：</h4><p>2020年02月11日</p>
+<h4 id="更新内容："><a href="#更新内容：" class="headerlink" title="更新内容："></a>更新内容：</h4><ol>
 <li>重写了侧边栏，船新的页面交互体验！移动版下不需按键，右滑即可打开侧边栏！哇哦，awesome！</li>
 <li>桌面版下新增了背景图。我实在找不到有什么好图，各位有什么好的壁纸请在下面留言吧QAQ</li>
 <li>优化了加载速度。[手动狗头]</li>
 <li>附：夜间模式失效，修复中…</li>
 </ol>
-<h3 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ijo4S.md.jpg">
+<h4 id="预览图："><a href="#预览图：" class="headerlink" title="预览图："></a>预览图：</h4><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ijo4S.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/11/1Ij79g.md.jpg">
 <img style="border-radius:10px;width: 100%;" src="https://s2.ax1x.com/2020/02/11/1I6ZkT.png">
 
 <hr>
 <blockquote>
-<h2 id="V3-0-0-更新"><a href="#V3-0-0-更新" class="headerlink" title="V3.0.0 更新"></a>V3.0.0 更新</h2></blockquote>
-<h3 id="更新时间：-1"><a href="#更新时间：-1" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年02月01日</p>
-<h3 id="更新内容：-1"><a href="#更新内容：-1" class="headerlink" title="更新内容："></a>更新内容：</h3><ol>
+<h3 id="V3-0-0-更新"><a href="#V3-0-0-更新" class="headerlink" title="V3.0.0 更新"></a>V3.0.0 更新</h3></blockquote>
+<h4 id="更新时间：-1"><a href="#更新时间：-1" class="headerlink" title="更新时间："></a>更新时间：</h4><p>2020年02月01日</p>
+<h4 id="更新内容：-1"><a href="#更新内容：-1" class="headerlink" title="更新内容："></a>更新内容：</h4><ol>
 <li>新增搜索时的提示词</li>
 <li>新增右下角当地天气显示(天气的字为什么这样不是我的锅，插件的问题，找到好的插件再换)</li>
 </ol>
-<h3 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
+<h4 id="预览图：-1"><a href="#预览图：-1" class="headerlink" title="预览图："></a>预览图：</h4><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVh0s.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVIkq.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVot0.md.jpg">
 
 <hr>
 <blockquote>
-<h2 id="V2-0-0-更新"><a href="#V2-0-0-更新" class="headerlink" title="V2.0.0 更新"></a>V2.0.0 更新</h2></blockquote>
-<h3 id="更新时间：-2"><a href="#更新时间：-2" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年01月30日</p>
-<h3 id="更新内容：-2"><a href="#更新内容：-2" class="headerlink" title="更新内容："></a>更新内容：</h3><ol>
+<h3 id="V2-0-0-更新"><a href="#V2-0-0-更新" class="headerlink" title="V2.0.0 更新"></a>V2.0.0 更新</h3></blockquote>
+<h4 id="更新时间：-2"><a href="#更新时间：-2" class="headerlink" title="更新时间："></a>更新时间：</h4><p>2020年01月30日</p>
+<h4 id="更新内容：-2"><a href="#更新内容：-2" class="headerlink" title="更新内容："></a>更新内容：</h4><ol>
 <li>新增侧边栏，有比较多的快捷入口(后续还会添加)</li>
 <li>新增一个不太好用的夜间模式</li>
 </ol>
-<h3 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
+<h4 id="预览图：-2"><a href="#预览图：-2" class="headerlink" title="预览图："></a>预览图：</h4><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVJfK.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVtSO.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dVU6e.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dV8Fx.md.jpg">
 
 <hr>
 <blockquote>
-<h2 id="V1-0-0-发布"><a href="#V1-0-0-发布" class="headerlink" title="V1.0.0 发布"></a>V1.0.0 发布</h2></blockquote>
-<h3 id="更新时间：-3"><a href="#更新时间：-3" class="headerlink" title="更新时间："></a>更新时间：</h3><p>2020年01月27日</p>
-<h3 id="内容："><a href="#内容：" class="headerlink" title="内容："></a>内容：</h3><ol>
+<h3 id="V1-0-0-发布"><a href="#V1-0-0-发布" class="headerlink" title="V1.0.0 发布"></a>V1.0.0 发布</h3></blockquote>
+<h4 id="更新时间：-3"><a href="#更新时间：-3" class="headerlink" title="更新时间："></a>更新时间：</h4><p>2020年01月27日</p>
+<h4 id="内容："><a href="#内容：" class="headerlink" title="内容："></a>内容：</h4><ol>
 <li>导航页分为[便签]和[导航]两个分区，点击可来回切换</li>
 <li>导航默认是bing搜索</li>
 <li>完[滑稽]</li>
 </ol>
-<h3 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h3><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dAg4f.gif">
+<h4 id="预览图：-3"><a href="#预览图：-3" class="headerlink" title="预览图："></a>预览图：</h4><img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dAg4f.gif">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFP58.md.jpg">
 <img style="border-radius:10px;width: 50%;" src="https://s2.ax1x.com/2020/02/03/1dFCUf.md.jpg">
 
