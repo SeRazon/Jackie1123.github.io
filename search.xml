@@ -26,6 +26,7 @@
 <p><strong>两种方法调用</strong></p>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 第一种，通过对象调用</span></span><br><span class="line">$test2 = <span class="keyword">new</span> constTest1();</span><br><span class="line"><span class="keyword">echo</span> $test2-&gt;displayDifferent();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 第二种，通过类调用</span></span><br><span class="line"><span class="comment">// echo constTest1::displayDifferent(); // 对象名用"::"只能访问静态变量和方法,所以这个不行</span></span><br><span class="line"><span class="keyword">echo</span> constTest1::displayDifferent2();</span><br></pre></td></tr></table></figure>
 
+<hr>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><ol>
 <li>静态成员用类访问，非静态成员用对象访问，类还可以访问类常量。</li>
 <li>静态方法直接用类名访问，不需要创建对象，不需要在内存中分配内存。</li>
@@ -39,9 +40,9 @@
       <tags>
         <tag>学习笔记</tag>
         <tag>后端</tag>
-        <tag>编程</tag>
         <tag>开发</tag>
         <tag>PHP</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -102,10 +103,10 @@
       </categories>
       <tags>
         <tag>后端</tag>
-        <tag>HTML</tag>
-        <tag>编程</tag>
-        <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>编程</tag>
+        <tag>HTML</tag>
+        <tag>JavaScript</tag>
         <tag>前端</tag>
       </tags>
   </entry>
@@ -612,9 +613,9 @@
       <tags>
         <tag>学习笔记</tag>
         <tag>后端</tag>
-        <tag>编程</tag>
         <tag>开发</tag>
         <tag>PHP</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -1484,10 +1485,10 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>HTML</tag>
-        <tag>编程</tag>
-        <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>编程</tag>
+        <tag>HTML</tag>
+        <tag>JavaScript</tag>
         <tag>前端</tag>
       </tags>
   </entry>
@@ -1550,10 +1551,10 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>HTML</tag>
-        <tag>编程</tag>
-        <tag>JavaScript</tag>
         <tag>开发</tag>
+        <tag>编程</tag>
+        <tag>HTML</tag>
+        <tag>JavaScript</tag>
         <tag>前端</tag>
       </tags>
   </entry>
